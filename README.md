@@ -1,2 +1,49 @@
-# miae01-paper-replication
-LoRA paper replication for MIAE01: comparing full fine-tuning and low-rank adaptation.
+# LoRA论文复现：中文源码阅读与方案准备
+
+课程：MIAE01。小组成员：郑子俊2260032070、黄翊轩2260032761、林树辉2260031586。
+
+## 当前阶段
+
+目前完成的是官方源码静态检查、中文流程讲解和统计教学示例。本仓库尚未报告新的小组模型训练结果。
+
+组长已表示读完官方SST-2启动脚本。以下新增资料由AI辅助检查和起草，其他主程序、模型及统计内容仍需成员本人审阅、补充自己的理解，并分别用本人账号提交实际核验与修改。共同材料的一次提交不代表三名成员已经各自完成个人贡献。
+
+## 阅读入口
+
+1. [从启动脚本到训练主程序：中文串讲](docs/week01/00_从脚本到训练主程序_中文.md)
+2. [郑子俊建议主责：数据与训练入口](docs/week01/01_数据与训练入口_中文.md)
+3. [黄翊轩建议主责：LoRA接入与初始化](docs/week01/02_LoRA接入与初始化_中文.md)
+4. [林树辉建议主责：评估统计与日志](docs/week01/03_评估统计与日志_中文.md)
+5. [今天三人的任务与提交方式](docs/week01/04_今日三人任务与提交_中文.md)
+
+## 已核对的参考代码
+
+官方仓库：https://github.com/microsoft/LoRA
+
+参考版本：c4593f060e6a368d7bb5af5273b8e42810cdef90。检查的是下载源码中的SST-2脚本、任务主程序、RoBERTa模型接入和LoRA线性层；本次没有复制或修改上游训练源码。
+
+当前用RoBERTa-base / SST-2作为阅读样例。模型、数据、训练规模及最终采用哪套实现由组长确定；老师没有指定必须采用这一格实验。老师允许声明后的缩小规模，要求至少三个种子、一项扩展、英文最终报告、展示和持续Git周更。
+
+## 可以复查的今天成果
+
+只读核对工具：[tools/week01_readonly_audit.py](tools/week01_readonly_audit.py)。仅使用Python标准库，读取官方源码文本，记录校验值和源码位置，进行明确标记的人工教学计算。它不导入PyTorch、不调用GPU、不下载数据或模型、不训练模型。
+
+- [数据与入口：助手执行的静态核对记录](records/week01/assistant_data_audit.json)
+- [LoRA：助手执行的静态核对记录](records/week01/assistant_lora_audit.json)
+- [统计：助手执行的教学核对记录](records/week01/assistant_statistics_audit.json)
+
+在自己的电脑上复查时，先下载同一版官方源码，然后运行：
+
+~~~text
+python tools/week01_readonly_audit.py --repo "官方源码所在目录" --part data --actor "本人姓名与学号"
+python tools/week01_readonly_audit.py --repo "官方源码所在目录" --part lora --actor "本人姓名与学号"
+python tools/week01_readonly_audit.py --repo "官方源码所在目录" --part statistics --actor "本人姓名与学号"
+~~~
+
+可用--output指定保存位置。相对源码路径、SHA256和生成者保存在记录中；机器记录只是证据的一部分，个人还应说明看过什么、如何核对、发现和修改了什么。
+
+## 后续执行
+
+确定范围后，准备并验证实际云端环境，先跑通FT/LoRA各一次，再完成三个种子的正式主实验和扩展。训练设置、实际硬件和数据版本、逐轮指标、验证预测和分析结果将随真实进度添加。最终英文报告与v1.0发布在完成检查后提交。
+
+每条Git提交信息包含实际提交者学号和全名；三位成员分别使用本人账号。现有LICENSE保留；如后续引入上游源码，保留相应原版权和许可证。

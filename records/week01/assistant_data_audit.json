@@ -1,0 +1,73 @@
+{
+  "记录类型": "源码静态核对与人工教学计算，不是模型训练结果",
+  "执行者": "AI助手；成员独立核验尚待本人完成",
+  "生成时间_UTC加8": "2026-11-07T16:52:37.279268+08:00",
+  "核对部分": "data",
+  "是否下载模型或数据": false,
+  "是否训练模型": false,
+  "源码SHA256": {
+    "examples/NLU/roberta_base_sst2.sh": "d7bf7560f335cad804d6fbd51a600ebce3c00a2cb6997191e900c62cdc0d8378",
+    "examples/NLU/examples/text-classification/run_glue.py": "f23b87af099e2c68601aa4b500545d27a900266bb3d4a223821a31595c379222",
+    "examples/NLU/src/transformers/models/roberta/modeling_roberta.py": "d6f71caa23e9b2e375a8452ade876180402e225466fb6c2a0fc16a30543dabc2",
+    "loralib/layers.py": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797"
+  },
+  "说明": "源码证据不代替真实数据、训练、冻结权重及环境的运行时验证。",
+  "原脚本参数": {
+    "--model_name_or_path": "roberta-base",
+    "--task_name": "sst2",
+    "--do_train": true,
+    "--do_eval": true,
+    "--max_seq_length": "512",
+    "--per_device_train_batch_size": "16",
+    "--learning_rate": "5e-4",
+    "--num_train_epochs": "60",
+    "--output_dir": "$output_dir/model",
+    "--overwrite_output_dir": true,
+    "--logging_steps": "10",
+    "--logging_dir": "$output_dir/log",
+    "--evaluation_strategy": "epoch",
+    "--save_strategy": "epoch",
+    "--warmup_ratio": "0.06",
+    "--apply_lora": true,
+    "--lora_r": "8",
+    "--lora_alpha": "16",
+    "--seed": "0",
+    "--weight_decay": "0.1"
+  },
+  "原脚本GPU数": 8,
+  "原脚本是否设置max_train_samples": false,
+  "主程序证据": [
+    {
+      "行号": 227,
+      "源码": "parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))"
+    },
+    {
+      "行号": 290,
+      "源码": "datasets = load_dataset(\"glue\", data_args.task_name)"
+    },
+    {
+      "行号": 362,
+      "源码": "tokenizer = AutoTokenizer.from_pretrained("
+    },
+    {
+      "行号": 369,
+      "源码": "model = AutoModelForSequenceClassification.from_pretrained("
+    },
+    {
+      "行号": 473,
+      "源码": "result = tokenizer(*args, padding=padding, max_length=max_seq_length, truncation=True)"
+    },
+    {
+      "行号": 484,
+      "源码": "train_dataset = datasets[\"train\"]"
+    },
+    {
+      "行号": 486,
+      "源码": "train_dataset = train_dataset.select(range(data_args.max_train_samples))"
+    },
+    {
+      "行号": 491,
+      "源码": "eval_dataset = datasets[\"validation_matched\" if data_args.task_name == \"mnli\" else \"validation\"]"
+    }
+  ]
+}

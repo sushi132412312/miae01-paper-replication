@@ -1,0 +1,105 @@
+{
+  "记录类型": "源码静态核对与人工教学计算，不是模型训练结果",
+  "执行者": "AI助手；成员独立核验尚待本人完成",
+  "生成时间_UTC加8": "2026-11-07T16:52:37.964969+08:00",
+  "核对部分": "statistics",
+  "是否下载模型或数据": false,
+  "是否训练模型": false,
+  "源码SHA256": {
+    "examples/NLU/roberta_base_sst2.sh": "d7bf7560f335cad804d6fbd51a600ebce3c00a2cb6997191e900c62cdc0d8378",
+    "examples/NLU/examples/text-classification/run_glue.py": "f23b87af099e2c68601aa4b500545d27a900266bb3d4a223821a31595c379222",
+    "examples/NLU/src/transformers/models/roberta/modeling_roberta.py": "d6f71caa23e9b2e375a8452ade876180402e225466fb6c2a0fc16a30543dabc2",
+    "loralib/layers.py": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797"
+  },
+  "说明": "源码证据不代替真实数据、训练、冻结权重及环境的运行时验证。",
+  "人工统计示例_不属于实验结果": {
+    "准确率单位": "百分数",
+    "干净条件": [
+      80.0,
+      82.0,
+      84.0
+    ],
+    "噪声条件": [
+      79.0,
+      80.0,
+      83.0
+    ],
+    "干净均值": 82.0,
+    "干净样本标准差": 2.0,
+    "干净总体标准差_仅供辨别": 1.632993161855452,
+    "逐种子下降_百分点": [
+      1.0,
+      2.0,
+      1.0
+    ],
+    "下降均值_百分点": 1.3333333333333333,
+    "下降样本标准差_百分点": 0.5773502691896257
+  },
+  "人工分类示例_不属于实验结果": {
+    "两个类别的示意分数": [
+      [
+        0.1,
+        1.7
+      ],
+      [
+        1.6,
+        0.2
+      ],
+      [
+        0.5,
+        0.8
+      ]
+    ],
+    "正确标签": [
+      1,
+      0,
+      0
+    ],
+    "选择分数较高的类别": [
+      1,
+      0,
+      1
+    ],
+    "答对数": 2,
+    "总数": 3,
+    "准确率_百分数": 66.66666666666667
+  },
+  "评估与保存证据": [
+    {
+      "行号": 298,
+      "源码": "if training_args.do_predict:"
+    },
+    {
+      "行号": 515,
+      "源码": "def compute_metrics(p: EvalPrediction):"
+    },
+    {
+      "行号": 517,
+      "源码": "preds = np.squeeze(preds) if is_regression else np.argmax(preds, axis=1)"
+    },
+    {
+      "行号": 519,
+      "源码": "result = metric.compute(predictions=preds, references=p.label_ids)"
+    },
+    {
+      "行号": 558,
+      "源码": "train_result = trainer.train(resume_from_checkpoint=checkpoint)"
+    },
+    {
+      "行号": 568,
+      "源码": "trainer.save_metrics(\"train\", metrics)"
+    },
+    {
+      "行号": 583,
+      "源码": "metrics = trainer.evaluate(eval_dataset=eval_dataset)"
+    },
+    {
+      "行号": 589,
+      "源码": "trainer.save_metrics(\"eval\", metrics)"
+    },
+    {
+      "行号": 591,
+      "源码": "if training_args.do_predict:"
+    }
+  ]
+}

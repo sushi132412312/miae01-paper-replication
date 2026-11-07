@@ -1,0 +1,107 @@
+{
+  "记录类型": "源码静态核对与人工教学计算，不是模型训练结果",
+  "执行者": "AI助手；成员独立核验尚待本人完成",
+  "生成时间_UTC加8": "2026-11-07T16:52:37.611619+08:00",
+  "核对部分": "lora",
+  "是否下载模型或数据": false,
+  "是否训练模型": false,
+  "源码SHA256": {
+    "examples/NLU/roberta_base_sst2.sh": "d7bf7560f335cad804d6fbd51a600ebce3c00a2cb6997191e900c62cdc0d8378",
+    "examples/NLU/examples/text-classification/run_glue.py": "f23b87af099e2c68601aa4b500545d27a900266bb3d4a223821a31595c379222",
+    "examples/NLU/src/transformers/models/roberta/modeling_roberta.py": "d6f71caa23e9b2e375a8452ade876180402e225466fb6c2a0fc16a30543dabc2",
+    "loralib/layers.py": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797"
+  },
+  "说明": "源码证据不代替真实数据、训练、冻结权重及环境的运行时验证。",
+  "接入位置证据": [
+    {
+      "行号": 166,
+      "源码": "self.query = lora.Linear(config.hidden_size, self.all_head_size, config.lora_r, lora_alpha=config.lora_alpha)"
+    },
+    {
+      "行号": 170,
+      "源码": "self.key = nn.Linear(config.hidden_size, self.all_head_size)"
+    },
+    {
+      "行号": 173,
+      "源码": "self.value = lora.Linear(config.hidden_size, self.all_head_size, config.lora_r, lora_alpha=config.lora_alpha)"
+    }
+  ],
+  "Linear内部证据": [
+    {
+      "行号": 112,
+      "源码": "self.scaling = self.lora_alpha / self.r"
+    },
+    {
+      "行号": 114,
+      "源码": "self.weight.requires_grad = False"
+    },
+    {
+      "行号": 124,
+      "源码": "nn.init.kaiming_uniform_(self.lora_A, a=math.sqrt(5))"
+    },
+    {
+      "行号": 125,
+      "源码": "nn.init.zeros_(self.lora_B)"
+    }
+  ],
+  "主干和分类头训练策略证据": [
+    {
+      "行号": 385,
+      "源码": "trainable_params.append('lora')"
+    },
+    {
+      "行号": 411,
+      "源码": "if name.startswith('deberta') or name.startswith('roberta'):"
+    },
+    {
+      "行号": 412,
+      "源码": "param.requires_grad = False"
+    },
+    {
+      "行号": 415,
+      "源码": "param.requires_grad = True"
+    },
+    {
+      "行号": 418,
+      "源码": "param.requires_grad = True"
+    }
+  ],
+  "低秩矩阵参数量_理论计算": {
+    "假设": "12层、隐藏维度768、query/value两处、rank8；不含分类头",
+    "计算式": "12 * 2 * (768 * 8 + 8 * 768)",
+    "结果": 294912
+  },
+  "零更新代数演示": {
+    "类型": "人工小矩阵，仅演示B为零时BA为零",
+    "A": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "B": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "BA": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  }
+}

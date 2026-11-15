@@ -1,0 +1,24 @@
+test_mock_complete_unique_id_set_validates_gate (test_mock_workflow.MockDriverTests.test_mock_complete_unique_id_set_validates_gate) ... ok
+test_mock_duplicate_id_cannot_bypass_gate (test_mock_workflow.MockDriverTests.test_mock_duplicate_id_cannot_bypass_gate) ... ok
+test_mock_nonzero_subprocess_exit_is_kept (test_mock_workflow.MockDriverTests.test_mock_nonzero_subprocess_exit_is_kept) ... ok
+test_mock_success_codes_still_block_when_files_absent (test_mock_workflow.MockDriverTests.test_mock_success_codes_still_block_when_files_absent) ... ok
+test_mock_timeout_bytes_logged_and_other_jobs_continue (test_mock_workflow.MockDriverTests.test_mock_timeout_bytes_logged_and_other_jobs_continue) ... ok
+test_mock_timeout_text_is_logged (test_mock_workflow.MockDriverTests.test_mock_timeout_text_is_logged) ... ok
+test_mock_zero_exit_cannot_bypass_test_id_verification (test_mock_workflow.MockDriverTests.test_mock_zero_exit_cannot_bypass_test_id_verification) ... ok
+test_mock_mps_error_is_recorded (test_mock_workflow.MockEnvironmentTests.test_mock_mps_error_is_recorded) ... ok
+test_mock_mps_unavailable_does_not_claim_operation (test_mock_workflow.MockEnvironmentTests.test_mock_mps_unavailable_does_not_claim_operation) ... ok
+test_mock_pip_failure_raises (test_mock_workflow.MockEnvironmentTests.test_mock_pip_failure_raises) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.190s
+
+OK
+
+{
+  "category": "mock_simulated_workflow_only",
+  "tests_run": 10,
+  "passed_count": 10,
+  "expected_failures_known_gaps": 0,
+  "failures": 0,
+  "errors": 0
+}

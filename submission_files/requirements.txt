@@ -1,0 +1,5 @@
+# Mac arm64 使用 PyPI macOS wheel；不要使用 Windows/Linux 的 torch==2.9.1+cpu 锁文件。
+torch==2.9.1
+transformers==4.57.3
+datasets==4.4.1
+numpy==2.2.6

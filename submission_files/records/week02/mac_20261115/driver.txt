@@ -1,0 +1,12 @@
+Running environment
+environment: exit 0
+Running supplementary_models
+supplementary_models: exit 0
+Running original_module_tests
+original_module_tests: exit 1
+Running available_shared_discovery
+available_shared_discovery: exit 1
+{
+  "original_suites_status": "blocked_missing_integrated_project",
+  "overall_requested_task_complete": false
+}

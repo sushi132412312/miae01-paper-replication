@@ -1,0 +1,61 @@
+{
+  "python_executable": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+  "python_version": "3.11.18",
+  "python_prefix": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv",
+  "architecture": "arm64",
+  "hardware": {
+    "hw.memsize": "sysctl: sysctl fmt -1 1024 1: Operation not permitted",
+    "machdep.cpu.brand_string": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+  },
+  "platform": "macOS-26.5-arm64-arm-64bit",
+  "processor": "arm",
+  "cpu_count": 10,
+  "packages": {
+    "torch": "2.9.1",
+    "transformers": "4.57.3",
+    "datasets": "4.4.1",
+    "numpy": "2.2.6",
+    "huggingface-hub": "0.36.2",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0"
+  },
+  "nvidia_smi": "[Errno 2] No such file or directory: 'nvidia-smi'",
+  "torch_cuda_build": null,
+  "torch_cuda_available": false,
+  "mps": {
+    "built": true,
+    "available": false,
+    "operation_passed": false,
+    "error": null
+  },
+  "validated_devices": [
+    "cpu"
+  ],
+  "validated_device": "cpu",
+  "cloud_gpu_connected": false,
+  "pip_check_passed": true,
+  "pip_check_output": "No broken requirements found.",
+  "torch_cpu_operation_passed": true,
+  "datasets_local_operation_passed": true,
+  "transformers_config_operation_passed": true,
+  "numpy_operation_passed": true,
+  "execution_context": {
+    "executor": "AI assistant, executed with user authorization",
+    "student_independent_work": false,
+    "recorded_at_utc": "2026-11-15T15:01:59.515712+00:00",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "python_executable": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+    "git_head_at_execution": "03f8c5441756e30257f0593a58c22c77f4e116d0",
+    "git_context_available": true,
+    "source_sha256": {
+      "src/model_support.py": "d12820c1cbfb1c29db308b87b8a3b8cc0f0192ba2209007586a1257820487f05",
+      "src/models.py": "08308b0468763af1a11ca864b11d4a612f311959fb3b8a9c74578a78b0de41d8",
+      "tools/check_handoff_mac.py": "591b754608f4a6987ce063ddae4740c1df0f04ab835b1e9245b5947d8788d650",
+      "tools/check_lora_mac.py": "dd53995e56c3aeec6cb1ffd77371a0d726f8340bd16b043edd93f57d586cc136",
+      "tools/mac_audit_support.py": "2a42a4bba7a6d24f4027578829b01f2f8c9d45934290be668a8409ff318f5767",
+      "tools/run_week02_mac.py": "cbd0fc2b3ad143c9902ca53e426e1e2dacfb4137db7fe8873e14b1ad50659c81"
+    },
+    "real_roberta_base_training": false,
+    "sst2_downloaded": false
+  }
+}

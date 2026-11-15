@@ -1,0 +1,92 @@
+{
+  "base_commit": "03f8c5441756e30257f0593a58c22c77f4e116d0",
+  "protected_file_count": 17,
+  "all_unchanged": true,
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "26a9549d9b8d0142c7a101575de5f466bb572438a552c41bdc63202116e61972",
+      "unchanged": true
+    },
+    {
+      "path": "records/week01/assistant_data_audit.json",
+      "sha256": "a7e1daa15e0c4edf2ea69915f97c5c470d4264148aa9ee7803d8b1d36d65220c",
+      "unchanged": true
+    },
+    {
+      "path": "records/week01/assistant_lora_audit.json",
+      "sha256": "4edb308776d1d47c0c372fda15250278e83eb32dd5975c94b75d1504d658944b",
+      "unchanged": true
+    },
+    {
+      "path": "records/week01/assistant_statistics_audit.json",
+      "sha256": "a5657e5ccfe2e8d0d01eb1701bec5f94935960c42f8ab3a192842e5a6cd89ebf",
+      "unchanged": true
+    },
+    {
+      "path": "records/week01/my_lora_audit.json",
+      "sha256": "07ec54b25cf9afb666096f5242f2d99679cb9590d2e9a67b9ed1b224815a9b38",
+      "unchanged": true
+    },
+    {
+      "path": "records/week02/recount_verification/README.md",
+      "sha256": "6fa9337dddf8872e6ba1db990583ec85935ce8c1da9eccd6f967cd2b18102126",
+      "unchanged": true
+    },
+    {
+      "path": "records/week02/recount_verification/outputs/inputs/mut_bad_gold.csv",
+      "sha256": "2bfd4bed33258886d41c453d9a18aa7f2afb0edc1c69985a7fee88a775ecf6b6",
+      "unchanged": true
+    },
+    {
+      "path": "records/week02/recount_verification/outputs/inputs/mut_bad_prediction.csv",
+      "sha256": "dc38c2fe69e8d0d2b7685630a93fb1a1ee165309093265c9574c8fd30616c113",
+      "unchanged": true
+    },
+    {
+      "path": "records/week02/recount_verification/outputs/inputs/mut_delete.csv",
+      "sha256": "7c25df8c429c682ed470115b7af5e30ac64e72e3f685a2eacd9e68e773aab77a",
+      "unchanged": true
+    },
+    {
+      "path": "records/week02/recount_verification/outputs/inputs/mut_duplicate.csv",
+      "sha256": "be61374bb6ce41423149db77ead8466a46b91ea85b365ff03075c0491ddf91e2",
+      "unchanged": true
+    },
+    {
+      "path": "records/week02/recount_verification/outputs/inputs/mut_mixed_checkpoint.csv",
+      "sha256": "18d5334518e86b5d9b7fd7aec18f40f6e7eaad2692d13cd3b446fdd762f9b080",
+      "unchanged": true
+    },
+    {
+      "path": "records/week02/recount_verification/outputs/inputs/synthetic_ft_manifest.json",
+      "sha256": "669198ce080c4e8bdca7c485135c04bec9d4bff83c0c22a97a2d646332ecd099",
+      "unchanged": true
+    },
+    {
+      "path": "records/week02/recount_verification/outputs/inputs/synthetic_ft_predictions.csv",
+      "sha256": "7c603926c2b5f9acfae75fbd95fe8b4e72b994d0666ae0e91fab014bb13e9b5b",
+      "unchanged": true
+    },
+    {
+      "path": "records/week02/recount_verification/outputs/inputs/synthetic_lora_predictions.csv",
+      "sha256": "736761e1a05b12d1e9871f4e2d29d66e2be029f44d7c3a88f7db43695aa93352",
+      "unchanged": true
+    },
+    {
+      "path": "records/week02/recount_verification/outputs/recount_verification.json",
+      "sha256": "3c36d53991a4d4835f1f24139f6b846e7176a331c612eade61f0a087ac4e1036",
+      "unchanged": true
+    },
+    {
+      "path": "records/week02/recount_verification/verify_evaluation.py",
+      "sha256": "7d4e4691eed29c13658b8ebeb573cf2bb9998aef1ddabc2d3e037b644ea26233",
+      "unchanged": true
+    },
+    {
+      "path": "tools/week01_readonly_audit.py",
+      "sha256": "0ae71f521b17184f77d9d268c38968397b66f0d98df4e3422214b44f7183f57c",
+      "unchanged": true
+    }
+  ]
+}

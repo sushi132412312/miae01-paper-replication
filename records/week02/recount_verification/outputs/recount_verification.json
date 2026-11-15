@@ -1,0 +1,109 @@
+{
+  "executor": "AI 助手（获林树辉授权执行），林树辉审阅",
+  "student_id": "2260031586",
+  "date": "2026-11-15",
+  "checks": {
+    "1_recompute_matches_saved": {
+      "recomputed": {
+        "run_id": "synthetic_ft",
+        "method": "ft",
+        "seed": 42,
+        "checkpoint": "final-step-2:0e0c993200229a2a",
+        "count": 6,
+        "correct": 3,
+        "accuracy": 0.5,
+        "accuracy_percent": 50.0
+      },
+      "saved": {
+        "run_id": "synthetic_ft",
+        "method": "ft",
+        "seed": 42,
+        "checkpoint": "final-step-2:0e0c993200229a2a",
+        "count": 6,
+        "correct": 3,
+        "accuracy": 0.5,
+        "accuracy_percent": 50.0
+      },
+      "matches": true,
+      "note": "预测 CSV 由本人按交付字段规范重建（原文件未随附件提供），用于核验复算与校验逻辑"
+    },
+    "2_mutations_rejected": {
+      "delete_row": {
+        "raised": true,
+        "message": "预测记录有缺失样本"
+      },
+      "duplicate_row": {
+        "raised": true,
+        "message": "预测记录重复 ID: s5"
+      },
+      "wrong_gold_label": {
+        "raised": true,
+        "message": "金标签与样本清单不一致: s2"
+      },
+      "invalid_prediction": {
+        "raised": true,
+        "message": "预测/金标签必须是 0 或 1"
+      },
+      "mixed_checkpoint": {
+        "raised": true,
+        "message": "一个预测文件混入不同运行、种子或检查点"
+      }
+    },
+    "3_ft_lora_same_manifest": {
+      "same_sample_ids": true,
+      "ft": {
+        "run_id": "synthetic_ft",
+        "method": "ft",
+        "seed": 42,
+        "checkpoint": "final-step-2:0e0c993200229a2a",
+        "count": 6,
+        "accuracy": 0.5
+      },
+      "lora": {
+        "run_id": "synthetic_lora",
+        "method": "lora",
+        "seed": 42,
+        "checkpoint": "final-step-2:382a09b55c1c7d18",
+        "count": 6,
+        "accuracy": 0.5
+      },
+      "same_accuracy": true,
+      "note": "同一清单、同一预测 → 两方法准确率相同；差异只体现在 run_id/method/checkpoint"
+    },
+    "4_seed_summary": {
+      "one_seed": {
+        "ok": true,
+        "result": {
+          "status": "incomplete",
+          "seed_count": 1,
+          "reason": "正式汇总至少需要三个不同训练种子",
+          "mean_percent": null,
+          "sample_sd_pp": null
+        }
+      },
+      "three_seeds": {
+        "ok": true,
+        "result": {
+          "status": "complete",
+          "seed_count": 3,
+          "seeds": [
+            42,
+            43,
+            44
+          ],
+          "mean_percent": 82,
+          "sample_sd_pp": 2.0
+        }
+      },
+      "duplicate_seed": {
+        "ok": false,
+        "error": "不能复制同一个种子充当独立运行"
+      },
+      "mixed_protocol": {
+        "ok": false,
+        "error": "结果不能混用不同的 protocol_sha256"
+      },
+      "note": "不足三个种子返回 incomplete（mean/sd 为 null），不用 0 冒充标准差"
+    }
+  }
+}

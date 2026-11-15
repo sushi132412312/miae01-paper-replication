@@ -1,0 +1,28 @@
+{
+  "samples": [
+    {
+      "sample_id": "s0",
+      "label": 1
+    },
+    {
+      "sample_id": "s1",
+      "label": 0
+    },
+    {
+      "sample_id": "s2",
+      "label": 1
+    },
+    {
+      "sample_id": "s3",
+      "label": 0
+    },
+    {
+      "sample_id": "s4",
+      "label": 1
+    },
+    {
+      "sample_id": "s5",
+      "label": 0
+    }
+  ]
+}

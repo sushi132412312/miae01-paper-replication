@@ -1,0 +1,7 @@
+run_id,method,seed,checkpoint,sample_id,gold_label,predicted_label
+synthetic_lora,lora,42,final-step-2:382a09b55c1c7d18,s0,1,1
+synthetic_lora,lora,42,final-step-2:382a09b55c1c7d18,s1,0,0
+synthetic_lora,lora,42,final-step-2:382a09b55c1c7d18,s2,1,0
+synthetic_lora,lora,42,final-step-2:382a09b55c1c7d18,s3,0,1
+synthetic_lora,lora,42,final-step-2:382a09b55c1c7d18,s4,1,1
+synthetic_lora,lora,42,final-step-2:382a09b55c1c7d18,s5,0,1

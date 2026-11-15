@@ -1,0 +1,31 @@
+{
+  "source": "original handoff test_summary.json, historical IDs only; no claim of current execution",
+  "test_ids": [
+    "test_data_metrics.DataSelectionTests.test_bad_counts_and_duplicate_ids_are_rejected",
+    "test_data_metrics.DataSelectionTests.test_fixed_subset_does_not_change_global_rng",
+    "test_data_metrics.DataSelectionTests.test_fixed_subset_is_repeatable_and_ignores_global_rng",
+    "test_data_metrics.DataSelectionTests.test_manifest_detects_text_or_label_change",
+    "test_data_metrics.DataSelectionTests.test_pending_real_training_is_rejected_before_output_creation",
+    "test_data_metrics.DataSelectionTests.test_real_config_rejects_floating_revisions",
+    "test_data_metrics.PredictionTests.test_accuracy_recomputed_from_ids_not_row_order",
+    "test_data_metrics.PredictionTests.test_duplicate_record_rejected",
+    "test_data_metrics.PredictionTests.test_invalid_prediction_rejected",
+    "test_data_metrics.PredictionTests.test_missing_record_rejected",
+    "test_data_metrics.PredictionTests.test_mixed_checkpoint_rejected",
+    "test_data_metrics.PredictionTests.test_unexpected_run_rejected",
+    "test_data_metrics.PredictionTests.test_wrong_gold_label_rejected",
+    "test_data_metrics.SeedStatisticsTests.test_duplicate_seed_rejected",
+    "test_data_metrics.SeedStatisticsTests.test_mixed_protocol_or_validation_rejected",
+    "test_data_metrics.SeedStatisticsTests.test_non_finite_score_rejected",
+    "test_data_metrics.SeedStatisticsTests.test_one_seed_does_not_report_zero_sd",
+    "test_data_metrics.SeedStatisticsTests.test_sample_standard_deviation",
+    "test_models_pipeline.ModelTests.test_ft_all_parameters_trainable",
+    "test_models_pipeline.ModelTests.test_one_step_freezes_backbone_and_can_update_lora",
+    "test_models_pipeline.ModelTests.test_only_qv_lora_and_classifier_trainable",
+    "test_models_pipeline.ModelTests.test_paired_backbone_head_and_rng_state",
+    "test_models_pipeline.ModelTests.test_training_seed_changes_order_not_data",
+    "test_models_pipeline.ModelTests.test_zero_update_keeps_initial_eval_logits",
+    "test_models_pipeline.PipelineTests.test_synthetic_ft_lora_export_and_recount",
+    "test_models_pipeline.PipelineTests.test_synthetic_run_is_reproducible"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "verification_type": "delivery_consistency_only_not_integration_test_suite",
+  "checks": {
+    "packet_43_verified": true,
+    "official_bytes_verified": true,
+    "historical_records_recounted": true,
+    "supplementary_8_passed": true,
+    "model_exact_packet_source": true,
+    "executed_model_and_support_still_match": true,
+    "cpu_and_packages_ok": true,
+    "host_mps_operation_passed": true,
+    "cuda_unavailable": true,
+    "blocked_original_suites_not_misrepresented": true,
+    "original_failure_log_preserved": true,
+    "prior_work_unchanged": true,
+    "lock_has_no_local_paths": true,
+    "personal_checklist_not_confirmed": true
+  },
+  "all_passed": true,
+  "requested_task_complete": false
+}

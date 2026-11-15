@@ -1,0 +1,83 @@
+{
+  "category": "real_mps_model_direct_import",
+  "helper_substitution": false,
+  "device": "mps",
+  "mps_available": true,
+  "synthetic_only": true,
+  "original_suite": false,
+  "cases": [
+    {
+      "id": "mps_forward_finite",
+      "status": "passed",
+      "details": {
+        "logits": [
+          [
+            -0.0057149319909513,
+            0.014423669315874577
+          ],
+          [
+            -0.005703308619558811,
+            0.014514770358800888
+          ]
+        ],
+        "shape": [
+          2,
+          2
+        ],
+        "finite": true
+      }
+    },
+    {
+      "id": "mps_paired_initial_logits_and_cpu_tolerance",
+      "status": "passed",
+      "details": {
+        "ft_lora_max_abs_diff": 0.0,
+        "cpu_mps_max_abs_diff": 9.313225746154785e-10,
+        "ft_lora_atol": 1e-06,
+        "cpu_mps_atol": 1e-05,
+        "rtol": 1e-05
+      }
+    },
+    {
+      "id": "mps_backward_optimizer_and_frozen_weights",
+      "status": "passed",
+      "details": {
+        "loss": 0.6920419335365295,
+        "changed_names": [
+          "roberta.encoder.layer.0.attention.self.query.lora_B",
+          "roberta.encoder.layer.0.attention.self.value.lora_B",
+          "roberta.encoder.layer.1.attention.self.query.lora_B",
+          "roberta.encoder.layer.1.attention.self.value.lora_B",
+          "classifier.dense.weight",
+          "classifier.dense.bias",
+          "classifier.out_proj.weight",
+          "classifier.out_proj.bias"
+        ],
+        "frozen_weights_unchanged": true,
+        "A_first_gradient_zero": true
+      }
+    }
+  ],
+  "execution_context": {
+    "executor": "AI assistant, executed with user authorization",
+    "student_independent_work": false,
+    "recorded_at_utc": "2026-11-15T15:02:02.790085+00:00",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "python_executable": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+    "git_head_at_execution": "03f8c5441756e30257f0593a58c22c77f4e116d0",
+    "git_context_available": true,
+    "source_sha256": {
+      "src/model_support.py": "d12820c1cbfb1c29db308b87b8a3b8cc0f0192ba2209007586a1257820487f05",
+      "src/models.py": "08308b0468763af1a11ca864b11d4a612f311959fb3b8a9c74578a78b0de41d8",
+      "tools/check_handoff_mac.py": "591b754608f4a6987ce063ddae4740c1df0f04ab835b1e9245b5947d8788d650",
+      "tools/check_lora_mac.py": "dd53995e56c3aeec6cb1ffd77371a0d726f8340bd16b043edd93f57d586cc136",
+      "tools/mac_audit_support.py": "2a42a4bba7a6d24f4027578829b01f2f8c9d45934290be668a8409ff318f5767",
+      "tools/run_week02_mac.py": "cbd0fc2b3ad143c9902ca53e426e1e2dacfb4137db7fe8873e14b1ad50659c81",
+      "tools/check_week02_mps_model.py": "1ddd7a2f7e2e536c1cdf287d41b465d2902bb2fcbcab81e321717e9d1de16073"
+    },
+    "real_roberta_base_training": false,
+    "sst2_downloaded": false
+  },
+  "passed_count": 3,
+  "status": "passed"
+}

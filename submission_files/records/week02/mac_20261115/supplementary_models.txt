@@ -1,0 +1,21 @@
+test_01_qv_injection_and_key (__main__.MacModelDiagnostics.test_01_qv_injection_and_key) ... ok
+test_02_initialization (__main__.MacModelDiagnostics.test_02_initialization) ... ok
+test_03_parameter_freezing_and_head (__main__.MacModelDiagnostics.test_03_parameter_freezing_and_head) ... ok
+test_04_ft_all_trainable (__main__.MacModelDiagnostics.test_04_ft_all_trainable) ... ok
+test_05_shared_weights_rng_and_logits (__main__.MacModelDiagnostics.test_05_shared_weights_rng_and_logits) ... ok
+test_06_optimizer_and_frozen_weights (__main__.MacModelDiagnostics.test_06_optimizer_and_frozen_weights) ... ok
+test_07_reproducible_two_step_synthetic (__main__.MacModelDiagnostics.test_07_reproducible_two_step_synthetic) ... ok
+test_08_train_eval_no_merge_and_config_guards (__main__.MacModelDiagnostics.test_08_train_eval_no_merge_and_config_guards) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.118s
+
+OK
+
+{
+  "suite": "new_mac_supplementary_diagnostics",
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "passed": true
+}

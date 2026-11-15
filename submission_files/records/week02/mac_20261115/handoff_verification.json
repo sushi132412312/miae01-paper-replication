@@ -1,0 +1,344 @@
+{
+  "packet_entries": 43,
+  "packet_all_passed": true,
+  "packet_files": [
+    {
+      "path": "01_代码待本人审阅/docs/week02/02_环境与LoRA检查_中文.md",
+      "expected_sha256": "6b3fcab02bf6937ec1509681794a665b738257add53c1cc99af5e00c16da0185",
+      "actual_sha256": "6b3fcab02bf6937ec1509681794a665b738257add53c1cc99af5e00c16da0185",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/records/week02/assistant_checks/20261115/synthetic_lora/config.json",
+      "expected_sha256": "f781a710aec2f65143ac298f2c25e3b55232e73c16e73605f269c855cbf1da01",
+      "actual_sha256": "f781a710aec2f65143ac298f2c25e3b55232e73c16e73605f269c855cbf1da01",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/records/week02/assistant_checks/20261115/synthetic_lora/execution_context.json",
+      "expected_sha256": "159d732def387aaf111b14be60d5f2c14e58b86534541b01f7de4b4d4a7b0c89",
+      "actual_sha256": "159d732def387aaf111b14be60d5f2c14e58b86534541b01f7de4b4d4a7b0c89",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/records/week02/assistant_checks/20261115/synthetic_lora/metrics.json",
+      "expected_sha256": "b03afee1f01f0b01090c6e432644d34e31feec5177adcd7923e50195a216fd0a",
+      "actual_sha256": "b03afee1f01f0b01090c6e432644d34e31feec5177adcd7923e50195a216fd0a",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/records/week02/assistant_checks/20261115/synthetic_lora/model_initialization.json",
+      "expected_sha256": "658989771ae6daad9dacc0693ef0630e65bff043af65db4470b8c256f5b3757e",
+      "actual_sha256": "658989771ae6daad9dacc0693ef0630e65bff043af65db4470b8c256f5b3757e",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/records/week02/assistant_checks/20261115/synthetic_lora/parameter_check.json",
+      "expected_sha256": "78a434f8b7157f0aa16841d3a27b21e910ae638e1d0d4e403d92a9b79d84cb94",
+      "actual_sha256": "78a434f8b7157f0aa16841d3a27b21e910ae638e1d0d4e403d92a9b79d84cb94",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/records/week02/assistant_checks/20261115/synthetic_lora/predictions.csv",
+      "expected_sha256": "203e26b55c6e8b5f4a937b048c3ed214a97ac212a081341e13a9c944a7dc9959",
+      "actual_sha256": "203e26b55c6e8b5f4a937b048c3ed214a97ac212a081341e13a9c944a7dc9959",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/records/week02/assistant_checks/20261115/synthetic_lora/train_manifest.json",
+      "expected_sha256": "145583c40b18d5adb857f494d295b5c70eaa9dee209dea4b34bb6197f1d07a97",
+      "actual_sha256": "145583c40b18d5adb857f494d295b5c70eaa9dee209dea4b34bb6197f1d07a97",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/records/week02/assistant_checks/20261115/synthetic_lora/training_steps.json",
+      "expected_sha256": "5cb57b72db80f39ef0a57751e00b8c265374136c721f60d4f8301bae8275e58e",
+      "actual_sha256": "5cb57b72db80f39ef0a57751e00b8c265374136c721f60d4f8301bae8275e58e",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/records/week02/assistant_checks/20261115/synthetic_lora/validation_manifest.json",
+      "expected_sha256": "4d2046e39d3c7f7de44a039daab22c3d3a6d6a5caeb0366b2cbee5f5350dcc1c",
+      "actual_sha256": "4d2046e39d3c7f7de44a039daab22c3d3a6d6a5caeb0366b2cbee5f5350dcc1c",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/records/week02/dependency_downloads.json",
+      "expected_sha256": "2cd415abcd6f19a01f9b95df44000e92f7791c9cab1e4ebb7fd0ef7d56c4ee6c",
+      "actual_sha256": "2cd415abcd6f19a01f9b95df44000e92f7791c9cab1e4ebb7fd0ef7d56c4ee6c",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/records/week02/environment_cpu.json",
+      "expected_sha256": "db9be7b59a9b559fadefcb67a7582798fa02adb1c22c8bdc51a96b058896aa3d",
+      "actual_sha256": "db9be7b59a9b559fadefcb67a7582798fa02adb1c22c8bdc51a96b058896aa3d",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/records/week02/source_preflight.json",
+      "expected_sha256": "715c6f1af00e6c2e65e6c0092fd0ffd43fe320a6cf1a0e769d2fd38eb5ee75bc",
+      "actual_sha256": "715c6f1af00e6c2e65e6c0092fd0ffd43fe320a6cf1a0e769d2fd38eb5ee75bc",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/requirements.cpu.lock.txt",
+      "expected_sha256": "7b31cc544035a78a56bcd2e927ed07ff116c64a7dc92d40ee49a6a0984a8e5b4",
+      "actual_sha256": "7b31cc544035a78a56bcd2e927ed07ff116c64a7dc92d40ee49a6a0984a8e5b4",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/requirements.txt",
+      "expected_sha256": "14d0251fe069d5486092981b3dc47152ffe39faafc763b664ccabff4b38419a2",
+      "actual_sha256": "14d0251fe069d5486092981b3dc47152ffe39faafc763b664ccabff4b38419a2",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/src/models.py",
+      "expected_sha256": "c6809c09d258916602f6dc884884e2f80779210f18fcf4bce4d382bdbf77d09a",
+      "actual_sha256": "c6809c09d258916602f6dc884884e2f80779210f18fcf4bce4d382bdbf77d09a",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/tests/test_models_pipeline.py",
+      "expected_sha256": "a05521cd29d4ae5bc1e616b12fa2bc20b601a51c4da7697ed04aeab3ce444509",
+      "actual_sha256": "a05521cd29d4ae5bc1e616b12fa2bc20b601a51c4da7697ed04aeab3ce444509",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/third_party/__init__.py",
+      "expected_sha256": "6c28bf71e6f4eebcef4183f010161a85ebd5e7c7faf89c717e4a24e2120b83b7",
+      "actual_sha256": "6c28bf71e6f4eebcef4183f010161a85ebd5e7c7faf89c717e4a24e2120b83b7",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/third_party/LICENSE.loralib.md",
+      "expected_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "actual_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/third_party/loralib/__init__.py",
+      "expected_sha256": "df9ca7e519d0bbe03679eac45ed00d9b99d0434d106dcdd2b600765b99192027",
+      "actual_sha256": "df9ca7e519d0bbe03679eac45ed00d9b99d0434d106dcdd2b600765b99192027",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/third_party/loralib/layers.py",
+      "expected_sha256": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797",
+      "actual_sha256": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/third_party/loralib/utils.py",
+      "expected_sha256": "9cd157527f79d48cf6f5feb7eb87509696e5f3cbb38862a633239e464eacaa71",
+      "actual_sha256": "9cd157527f79d48cf6f5feb7eb87509696e5f3cbb38862a633239e464eacaa71",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/third_party/loralib_source.json",
+      "expected_sha256": "7b0671d7657c4f5e6459e45d385dbd921db84e1d887fabfa8c1b0638c5d5bae4",
+      "actual_sha256": "7b0671d7657c4f5e6459e45d385dbd921db84e1d887fabfa8c1b0638c5d5bae4",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/third_party/NOTICE.md",
+      "expected_sha256": "8d682b11adf53af4fbc20c614dd304d165b446c681e71f93e0ff508bcd5429fe",
+      "actual_sha256": "8d682b11adf53af4fbc20c614dd304d165b446c681e71f93e0ff508bcd5429fe",
+      "passed": true
+    },
+    {
+      "path": "01_代码待本人审阅/tools/check_environment.py",
+      "expected_sha256": "63b839944641b3cd678ab854479e30d8b59253b6a83bdf0bccc695226368dd13",
+      "actual_sha256": "63b839944641b3cd678ab854479e30d8b59253b6a83bdf0bccc695226368dd13",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/依赖下载校验.json",
+      "expected_sha256": "2cd415abcd6f19a01f9b95df44000e92f7791c9cab1e4ebb7fd0ef7d56c4ee6c",
+      "actual_sha256": "2cd415abcd6f19a01f9b95df44000e92f7791c9cab1e4ebb7fd0ef7d56c4ee6c",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/共同测试/test_results.txt",
+      "expected_sha256": "a21461c1d5f3e901a1bba8943f851ff20d67cee68f6b88767e16cefdf8b986ce",
+      "actual_sha256": "a21461c1d5f3e901a1bba8943f851ff20d67cee68f6b88767e16cefdf8b986ce",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/共同测试/test_summary.json",
+      "expected_sha256": "5be7f20a791415c36e55a303f93544c3e14428e19f54c155db476761dda8c93d",
+      "actual_sha256": "5be7f20a791415c36e55a303f93544c3e14428e19f54c155db476761dda8c93d",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/合成LoRA自检/config.json",
+      "expected_sha256": "f781a710aec2f65143ac298f2c25e3b55232e73c16e73605f269c855cbf1da01",
+      "actual_sha256": "f781a710aec2f65143ac298f2c25e3b55232e73c16e73605f269c855cbf1da01",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/合成LoRA自检/execution_context.json",
+      "expected_sha256": "159d732def387aaf111b14be60d5f2c14e58b86534541b01f7de4b4d4a7b0c89",
+      "actual_sha256": "159d732def387aaf111b14be60d5f2c14e58b86534541b01f7de4b4d4a7b0c89",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/合成LoRA自检/metrics.json",
+      "expected_sha256": "b03afee1f01f0b01090c6e432644d34e31feec5177adcd7923e50195a216fd0a",
+      "actual_sha256": "b03afee1f01f0b01090c6e432644d34e31feec5177adcd7923e50195a216fd0a",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/合成LoRA自检/model_initialization.json",
+      "expected_sha256": "658989771ae6daad9dacc0693ef0630e65bff043af65db4470b8c256f5b3757e",
+      "actual_sha256": "658989771ae6daad9dacc0693ef0630e65bff043af65db4470b8c256f5b3757e",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/合成LoRA自检/parameter_check.json",
+      "expected_sha256": "78a434f8b7157f0aa16841d3a27b21e910ae638e1d0d4e403d92a9b79d84cb94",
+      "actual_sha256": "78a434f8b7157f0aa16841d3a27b21e910ae638e1d0d4e403d92a9b79d84cb94",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/合成LoRA自检/predictions.csv",
+      "expected_sha256": "203e26b55c6e8b5f4a937b048c3ed214a97ac212a081341e13a9c944a7dc9959",
+      "actual_sha256": "203e26b55c6e8b5f4a937b048c3ed214a97ac212a081341e13a9c944a7dc9959",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/合成LoRA自检/train_manifest.json",
+      "expected_sha256": "145583c40b18d5adb857f494d295b5c70eaa9dee209dea4b34bb6197f1d07a97",
+      "actual_sha256": "145583c40b18d5adb857f494d295b5c70eaa9dee209dea4b34bb6197f1d07a97",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/合成LoRA自检/training_steps.json",
+      "expected_sha256": "5cb57b72db80f39ef0a57751e00b8c265374136c721f60d4f8301bae8275e58e",
+      "actual_sha256": "5cb57b72db80f39ef0a57751e00b8c265374136c721f60d4f8301bae8275e58e",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/合成LoRA自检/validation_manifest.json",
+      "expected_sha256": "4d2046e39d3c7f7de44a039daab22c3d3a6d6a5caeb0366b2cbee5f5350dcc1c",
+      "actual_sha256": "4d2046e39d3c7f7de44a039daab22c3d3a6d6a5caeb0366b2cbee5f5350dcc1c",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/实际CPU环境.json",
+      "expected_sha256": "db9be7b59a9b559fadefcb67a7582798fa02adb1c22c8bdc51a96b058896aa3d",
+      "actual_sha256": "db9be7b59a9b559fadefcb67a7582798fa02adb1c22c8bdc51a96b058896aa3d",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/本组交接状态.json",
+      "expected_sha256": "592e8a06c288c37996bfd6bafb835afaf75b7d92d65f593b956ee666793fea04",
+      "actual_sha256": "592e8a06c288c37996bfd6bafb835afaf75b7d92d65f593b956ee666793fea04",
+      "passed": true
+    },
+    {
+      "path": "02_助手执行结果/源码与官方版本校验.json",
+      "expected_sha256": "715c6f1af00e6c2e65e6c0092fd0ffd43fe320a6cf1a0e769d2fd38eb5ee75bc",
+      "actual_sha256": "715c6f1af00e6c2e65e6c0092fd0ffd43fe320a6cf1a0e769d2fd38eb5ee75bc",
+      "passed": true
+    },
+    {
+      "path": "03_本人复核清单.md",
+      "expected_sha256": "bf2b9aeb8b98cb1ea71e70d7a06ff0511a759759e84e97f50ea803cc2b2e18a5",
+      "actual_sha256": "bf2b9aeb8b98cb1ea71e70d7a06ff0511a759759e84e97f50ea803cc2b2e18a5",
+      "passed": true
+    },
+    {
+      "path": "README_先读这个.md",
+      "expected_sha256": "7a06a51e0582a52fbc43d4f3d17395c740e308f68b50f8a8767fec585d1983ff",
+      "actual_sha256": "7a06a51e0582a52fbc43d4f3d17395c740e308f68b50f8a8767fec585d1983ff",
+      "passed": true
+    },
+    {
+      "path": "运行本组复查.ps1",
+      "expected_sha256": "da0f8b56f7fe6ff66bb82cff1f05dc3a144853e160ba00624262fb00f9f5e422",
+      "actual_sha256": "da0f8b56f7fe6ff66bb82cff1f05dc3a144853e160ba00624262fb00f9f5e422",
+      "passed": true
+    }
+  ],
+  "official_source_files": [
+    {
+      "path": "third_party/loralib/__init__.py",
+      "sha256": "df9ca7e519d0bbe03679eac45ed00d9b99d0434d106dcdd2b600765b99192027",
+      "git_blob_sha1": "7fd9ad25a3ec6359639dfe7fa786dcc2c3c3e080",
+      "passed": true
+    },
+    {
+      "path": "third_party/loralib/layers.py",
+      "sha256": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797",
+      "git_blob_sha1": "637865600fc9afbf76831e99e3d71eaca6871bda",
+      "passed": true
+    },
+    {
+      "path": "third_party/loralib/utils.py",
+      "sha256": "9cd157527f79d48cf6f5feb7eb87509696e5f3cbb38862a633239e464eacaa71",
+      "git_blob_sha1": "0d121c9bbd6a424d8f4233fac17335aab5141d9b",
+      "passed": true
+    },
+    {
+      "path": "third_party/LICENSE.loralib.md",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "git_blob_sha1": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+      "passed": true
+    }
+  ],
+  "official_metadata_crosschecked_with_github_tree": "c4593f060e6a368d7bb5af5273b8e42810cdef90",
+  "models_py_unchanged_from_packet": true,
+  "packet_json_files_parsed": 26,
+  "historical_prediction_recount": {
+    "passed": true,
+    "count": 6,
+    "correct": 3,
+    "accuracy": 0.5,
+    "new_mac_training_result": false
+  },
+  "available_original_module_test_count": 8,
+  "original_module_tests": [
+    "ModelTests.test_paired_backbone_head_and_rng_state",
+    "ModelTests.test_zero_update_keeps_initial_eval_logits",
+    "ModelTests.test_only_qv_lora_and_classifier_trainable",
+    "ModelTests.test_ft_all_parameters_trainable",
+    "ModelTests.test_one_step_freezes_backbone_and_can_update_lora",
+    "ModelTests.test_training_seed_changes_order_not_data",
+    "PipelineTests.test_synthetic_ft_lora_export_and_recount",
+    "PipelineTests.test_synthetic_run_is_reproducible"
+  ],
+  "expected_shared_test_count_from_packet": 26,
+  "missing_integration_files": [
+    "src/common.py",
+    "src/data.py",
+    "src/train.py",
+    "src/evaluation.py",
+    "src/__init__.py",
+    "configs/selfcheck.json",
+    "configs/pilot.pending.json",
+    "tests/test_data_metrics.py",
+    "tools/prepare_data.py",
+    "tools/recompute_metrics.py",
+    "tools/run_checks.py",
+    "docs/week02/README_运行指南_中文.md"
+  ],
+  "integration_complete": false,
+  "execution_context": {
+    "executor": "AI assistant, executed with user authorization",
+    "student_independent_work": false,
+    "recorded_at_utc": "2026-11-15T13:51:18.512437+00:00",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "python_executable": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+    "git_head_at_execution": "03f8c5441756e30257f0593a58c22c77f4e116d0",
+    "source_sha256": {
+      "src/models.py": "c6809c09d258916602f6dc884884e2f80779210f18fcf4bce4d382bdbf77d09a",
+      "tools/check_handoff_mac.py": "b57bfa0bf4872492ddf00ed7727c3162022862df250442fe5372a48d2ed32bd8",
+      "tools/check_lora_mac.py": "40c4e7dc13c7d1a044ed24fa95bdb191179e1dca775637e39646fd2aabb1a08c",
+      "tools/mac_audit_support.py": "32ec2368266cbc6336fc30ee270480f173444ca6d05ef5fe5696c2acd184ce76",
+      "tools/run_week02_mac.py": "7cbb6ff268400a1a1e911b0c43aec18cae4b53173744c371ef355524b17d8ae1"
+    },
+    "real_roberta_base_training": false,
+    "sst2_downloaded": false
+  }
+}

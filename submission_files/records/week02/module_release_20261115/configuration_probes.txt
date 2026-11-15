@@ -1,0 +1,136 @@
+[
+  {
+    "case": "rank_1",
+    "input": {
+      "status": "'synthetic_selfcheck'",
+      "lora_r": "1",
+      "lora_alpha": "8"
+    },
+    "accepted": true,
+    "logits_finite": true,
+    "lora_parameters": 256,
+    "trainable_parameters": 1378
+  },
+  {
+    "case": "rank_4",
+    "input": {
+      "status": "'synthetic_selfcheck'",
+      "lora_r": "4",
+      "lora_alpha": "8"
+    },
+    "accepted": true,
+    "logits_finite": true,
+    "lora_parameters": 1024,
+    "trainable_parameters": 2146
+  },
+  {
+    "case": "rank_8",
+    "input": {
+      "status": "'synthetic_selfcheck'",
+      "lora_r": "8",
+      "lora_alpha": "8"
+    },
+    "accepted": true,
+    "logits_finite": true,
+    "lora_parameters": 2048,
+    "trainable_parameters": 3170
+  },
+  {
+    "case": "rank_0",
+    "input": {
+      "status": "'synthetic_selfcheck'",
+      "lora_r": "0",
+      "lora_alpha": "8"
+    },
+    "accepted": false,
+    "exception_type": "ValueError",
+    "message": "LoRA lora_r 必须是正整数，不接受 bool"
+  },
+  {
+    "case": "rank_negative",
+    "input": {
+      "status": "'synthetic_selfcheck'",
+      "lora_r": "-1",
+      "lora_alpha": "8"
+    },
+    "accepted": false,
+    "exception_type": "ValueError",
+    "message": "LoRA lora_r 必须是正整数，不接受 bool"
+  },
+  {
+    "case": "rank_fractional",
+    "input": {
+      "status": "'synthetic_selfcheck'",
+      "lora_r": "2.5",
+      "lora_alpha": "8"
+    },
+    "accepted": false,
+    "exception_type": "ValueError",
+    "message": "LoRA lora_r 必须是正整数，不接受 bool"
+  },
+  {
+    "case": "missing_rank",
+    "input": {
+      "status": "'synthetic_selfcheck'",
+      "lora_alpha": "8"
+    },
+    "accepted": false,
+    "exception_type": "ValueError",
+    "message": "LoRA lora_r 必须是正整数，不接受 bool"
+  },
+  {
+    "case": "alpha_zero",
+    "input": {
+      "status": "'synthetic_selfcheck'",
+      "lora_r": "4",
+      "lora_alpha": "0"
+    },
+    "accepted": false,
+    "exception_type": "ValueError",
+    "message": "LoRA lora_alpha 必须是有限正数"
+  },
+  {
+    "case": "alpha_nan",
+    "input": {
+      "status": "'synthetic_selfcheck'",
+      "lora_r": "4",
+      "lora_alpha": "nan"
+    },
+    "accepted": false,
+    "exception_type": "ValueError",
+    "message": "LoRA lora_alpha 必须是有限正数"
+  },
+  {
+    "case": "alpha_inf",
+    "input": {
+      "status": "'synthetic_selfcheck'",
+      "lora_r": "4",
+      "lora_alpha": "inf"
+    },
+    "accepted": false,
+    "exception_type": "ValueError",
+    "message": "LoRA lora_alpha 必须是有限正数"
+  },
+  {
+    "case": "invalid_method",
+    "input": {
+      "status": "'synthetic_selfcheck'",
+      "lora_r": "4",
+      "lora_alpha": "8"
+    },
+    "accepted": false,
+    "exception_type": "ValueError",
+    "message": "method 只能为 ft 或 lora"
+  },
+  {
+    "case": "wrong_synthetic_status",
+    "input": {
+      "status": "'pending'",
+      "lora_r": "4",
+      "lora_alpha": "8"
+    },
+    "accepted": false,
+    "exception_type": "ValueError",
+    "message": "合成检查必须使用专门配置"
+  }
+]

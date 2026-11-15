@@ -1,0 +1,13 @@
+{
+  "deliverable": "standalone environment and LoRA module",
+  "ready_for_scoped_github_submission": true,
+  "module_real_tests_passed": 20,
+  "mps_real_checks_passed": 3,
+  "extra_real_regression_passed": 52,
+  "mock_workflow_tests_passed_separately": 10,
+  "original_shared_26_passed": false,
+  "formal_training_executed": false,
+  "student_independent_work": false,
+  "executor": "AI assistant with user authorization",
+  "git_commit_push_pr_merge_performed": false
+}

@@ -1,0 +1,94 @@
+{
+  "runs": [
+    {
+      "name": "environment",
+      "command": [
+        "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+        "tools/check_environment.py",
+        "--output",
+        "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/records/week02/mac_20261115/environment.json"
+      ],
+      "started_at_utc": "2026-11-15T13:49:08.655688+00:00",
+      "finished_at_utc": "2026-11-15T13:49:57.223979+00:00",
+      "exit_code": 0,
+      "log_file": "environment.txt"
+    },
+    {
+      "name": "supplementary_models",
+      "command": [
+        "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+        "tools/check_lora_mac.py",
+        "--output",
+        "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/records/week02/mac_20261115"
+      ],
+      "started_at_utc": "2026-11-15T13:49:57.224134+00:00",
+      "finished_at_utc": "2026-11-15T13:50:00.078817+00:00",
+      "exit_code": 0,
+      "log_file": "supplementary_models.txt"
+    },
+    {
+      "name": "original_module_tests",
+      "command": [
+        "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_models_pipeline.py",
+        "-v"
+      ],
+      "started_at_utc": "2026-11-15T13:50:00.078845+00:00",
+      "finished_at_utc": "2026-11-15T13:50:00.583888+00:00",
+      "exit_code": 1,
+      "log_file": "original_module_tests.txt"
+    },
+    {
+      "name": "available_shared_discovery",
+      "command": [
+        "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "started_at_utc": "2026-11-15T13:50:00.583915+00:00",
+      "finished_at_utc": "2026-11-15T13:50:01.165213+00:00",
+      "exit_code": 1,
+      "log_file": "available_shared_discovery.txt"
+    }
+  ],
+  "original_module_expected_tests": 8,
+  "shared_expected_tests": 26,
+  "original_suites_status": "blocked_missing_integrated_project",
+  "missing_integration_files": [
+    "src/common.py",
+    "src/data.py",
+    "src/evaluation.py",
+    "src/train.py",
+    "configs/selfcheck.json",
+    "tests/test_data_metrics.py"
+  ],
+  "overall_requested_task_complete": false,
+  "supplementary_tests_replace_original_suites": false,
+  "execution_context": {
+    "executor": "AI assistant, executed with user authorization",
+    "student_independent_work": false,
+    "recorded_at_utc": "2026-11-15T13:50:01.172577+00:00",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "python_executable": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+    "git_head_at_execution": "03f8c5441756e30257f0593a58c22c77f4e116d0",
+    "source_sha256": {
+      "src/models.py": "c6809c09d258916602f6dc884884e2f80779210f18fcf4bce4d382bdbf77d09a",
+      "tools/check_handoff_mac.py": "61a0f1f77f76ff1180e32737f27ccc909707bb939783e23f48a3623de636eafe",
+      "tools/check_lora_mac.py": "40c4e7dc13c7d1a044ed24fa95bdb191179e1dca775637e39646fd2aabb1a08c",
+      "tools/mac_audit_support.py": "32ec2368266cbc6336fc30ee270480f173444ca6d05ef5fe5696c2acd184ce76",
+      "tools/run_week02_mac.py": "7cbb6ff268400a1a1e911b0c43aec18cae4b53173744c371ef355524b17d8ae1"
+    },
+    "real_roberta_base_training": false,
+    "sst2_downloaded": false
+  }
+}

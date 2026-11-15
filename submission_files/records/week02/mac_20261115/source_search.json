@@ -1,0 +1,108 @@
+{
+  "roots": [
+    "/Users/xuan/Documents",
+    "/Users/xuan/Desktop",
+    "/Users/xuan/Downloads"
+  ],
+  "excluded_directories": [
+    ".Trash",
+    ".git",
+    ".venv",
+    "Library",
+    "__pycache__",
+    "conda-pkgs",
+    "fontcache",
+    "node_modules",
+    "pip-cache",
+    "site-packages"
+  ],
+  "scan_errors": [],
+  "archives_scanned": 26,
+  "week02_archives": [
+    "/Users/xuan/Desktop/2609研一/周六-机器学习编程/第2周任务_20261115.zip"
+  ],
+  "archive_target_source_matches": [],
+  "project_git_branch_checks": [
+    {
+      "repository": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication",
+      "ref": "refs/heads/hyxuan26/week02-mac-lora-20261115",
+      "target_files": []
+    },
+    {
+      "repository": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication",
+      "ref": "refs/heads/main",
+      "target_files": []
+    },
+    {
+      "repository": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication",
+      "ref": "refs/remotes/origin/HEAD",
+      "target_files": []
+    },
+    {
+      "repository": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication",
+      "ref": "refs/remotes/origin/main",
+      "target_files": []
+    },
+    {
+      "repository": "/Users/xuan/Documents/miae01-paper-replication",
+      "ref": "refs/heads/backup/lora-audit-before-author-fix",
+      "target_files": []
+    },
+    {
+      "repository": "/Users/xuan/Documents/miae01-paper-replication",
+      "ref": "refs/heads/lora-audit-xuan",
+      "target_files": []
+    },
+    {
+      "repository": "/Users/xuan/Documents/miae01-paper-replication",
+      "ref": "refs/heads/main",
+      "target_files": []
+    },
+    {
+      "repository": "/Users/xuan/Documents/miae01-paper-replication",
+      "ref": "refs/remotes/origin/HEAD",
+      "target_files": []
+    },
+    {
+      "repository": "/Users/xuan/Documents/miae01-paper-replication",
+      "ref": "refs/remotes/origin/lora-audit-xuan",
+      "target_files": []
+    },
+    {
+      "repository": "/Users/xuan/Documents/miae01-paper-replication",
+      "ref": "refs/remotes/origin/main",
+      "target_files": []
+    },
+    {
+      "repository": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication",
+      "ref": "refs/heads/main",
+      "commit": "03f8c5441756e30257f0593a58c22c77f4e116d0",
+      "after_fetch": true,
+      "target_files": []
+    },
+    {
+      "repository": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication",
+      "ref": "refs/heads/hyxuan26/week02-mac-lora-20261115",
+      "commit": "03f8c5441756e30257f0593a58c22c77f4e116d0",
+      "after_fetch": true,
+      "target_files": []
+    },
+    {
+      "repository": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication",
+      "ref": "refs/remotes/origin/main",
+      "commit": "03f8c5441756e30257f0593a58c22c77f4e116d0",
+      "after_fetch": true,
+      "target_files": []
+    }
+  ],
+  "official_repository_also_checked": "/Users/xuan/Documents/LoRA-official",
+  "official_branch_count": 31,
+  "remote_branches_latest": [
+    {
+      "name": "main",
+      "sha": "03f8c5441756e30257f0593a58c22c77f4e116d0"
+    }
+  ],
+  "missing_source_files_found": false,
+  "note": "Full local scan inventory is retained outside the proposed Git commit."
+}

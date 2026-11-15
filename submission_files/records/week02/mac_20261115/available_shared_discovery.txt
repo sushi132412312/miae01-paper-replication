@@ -1,0 +1,21 @@
+test_models_pipeline (unittest.loader._FailedTest.test_models_pipeline) ... ERROR
+
+======================================================================
+ERROR: test_models_pipeline (unittest.loader._FailedTest.test_models_pipeline)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_models_pipeline
+Traceback (most recent call last):
+  File "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/tests/test_models_pipeline.py", line 8, in <module>
+    from src.common import PROJECT_ROOT, read_json
+ModuleNotFoundError: No module named 'src.common'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

@@ -1,0 +1,162 @@
+{
+  "category": "real_model_boundary_characterization_direct_import",
+  "helper_substitution": false,
+  "cases": [
+    {
+      "case": "rank_1",
+      "input": {
+        "status": "'synthetic_selfcheck'",
+        "lora_r": "1",
+        "lora_alpha": "8"
+      },
+      "accepted": true,
+      "logits_finite": true,
+      "lora_parameters": 256,
+      "trainable_parameters": 1378
+    },
+    {
+      "case": "rank_4",
+      "input": {
+        "status": "'synthetic_selfcheck'",
+        "lora_r": "4",
+        "lora_alpha": "8"
+      },
+      "accepted": true,
+      "logits_finite": true,
+      "lora_parameters": 1024,
+      "trainable_parameters": 2146
+    },
+    {
+      "case": "rank_8",
+      "input": {
+        "status": "'synthetic_selfcheck'",
+        "lora_r": "8",
+        "lora_alpha": "8"
+      },
+      "accepted": true,
+      "logits_finite": true,
+      "lora_parameters": 2048,
+      "trainable_parameters": 3170
+    },
+    {
+      "case": "rank_0",
+      "input": {
+        "status": "'synthetic_selfcheck'",
+        "lora_r": "0",
+        "lora_alpha": "8"
+      },
+      "accepted": false,
+      "exception_type": "ValueError",
+      "message": "LoRA lora_r 必须是正整数，不接受 bool"
+    },
+    {
+      "case": "rank_negative",
+      "input": {
+        "status": "'synthetic_selfcheck'",
+        "lora_r": "-1",
+        "lora_alpha": "8"
+      },
+      "accepted": false,
+      "exception_type": "ValueError",
+      "message": "LoRA lora_r 必须是正整数，不接受 bool"
+    },
+    {
+      "case": "rank_fractional",
+      "input": {
+        "status": "'synthetic_selfcheck'",
+        "lora_r": "2.5",
+        "lora_alpha": "8"
+      },
+      "accepted": false,
+      "exception_type": "ValueError",
+      "message": "LoRA lora_r 必须是正整数，不接受 bool"
+    },
+    {
+      "case": "missing_rank",
+      "input": {
+        "status": "'synthetic_selfcheck'",
+        "lora_alpha": "8"
+      },
+      "accepted": false,
+      "exception_type": "ValueError",
+      "message": "LoRA lora_r 必须是正整数，不接受 bool"
+    },
+    {
+      "case": "alpha_zero",
+      "input": {
+        "status": "'synthetic_selfcheck'",
+        "lora_r": "4",
+        "lora_alpha": "0"
+      },
+      "accepted": false,
+      "exception_type": "ValueError",
+      "message": "LoRA lora_alpha 必须是有限正数"
+    },
+    {
+      "case": "alpha_nan",
+      "input": {
+        "status": "'synthetic_selfcheck'",
+        "lora_r": "4",
+        "lora_alpha": "nan"
+      },
+      "accepted": false,
+      "exception_type": "ValueError",
+      "message": "LoRA lora_alpha 必须是有限正数"
+    },
+    {
+      "case": "alpha_inf",
+      "input": {
+        "status": "'synthetic_selfcheck'",
+        "lora_r": "4",
+        "lora_alpha": "inf"
+      },
+      "accepted": false,
+      "exception_type": "ValueError",
+      "message": "LoRA lora_alpha 必须是有限正数"
+    },
+    {
+      "case": "invalid_method",
+      "input": {
+        "status": "'synthetic_selfcheck'",
+        "lora_r": "4",
+        "lora_alpha": "8"
+      },
+      "accepted": false,
+      "exception_type": "ValueError",
+      "message": "method 只能为 ft 或 lora"
+    },
+    {
+      "case": "wrong_synthetic_status",
+      "input": {
+        "status": "'pending'",
+        "lora_r": "4",
+        "lora_alpha": "8"
+      },
+      "accepted": false,
+      "exception_type": "ValueError",
+      "message": "合成检查必须使用专门配置"
+    }
+  ],
+  "case_count": 12,
+  "not_a_pass_count": true,
+  "probe_mutated_source": false,
+  "execution_context": {
+    "executor": "AI assistant, executed with user authorization",
+    "student_independent_work": false,
+    "recorded_at_utc": "2026-11-15T15:02:03.204408+00:00",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "python_executable": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+    "git_head_at_execution": "03f8c5441756e30257f0593a58c22c77f4e116d0",
+    "git_context_available": true,
+    "source_sha256": {
+      "src/model_support.py": "d12820c1cbfb1c29db308b87b8a3b8cc0f0192ba2209007586a1257820487f05",
+      "src/models.py": "08308b0468763af1a11ca864b11d4a612f311959fb3b8a9c74578a78b0de41d8",
+      "tools/check_handoff_mac.py": "591b754608f4a6987ce063ddae4740c1df0f04ab835b1e9245b5947d8788d650",
+      "tools/check_lora_mac.py": "dd53995e56c3aeec6cb1ffd77371a0d726f8340bd16b043edd93f57d586cc136",
+      "tools/mac_audit_support.py": "2a42a4bba7a6d24f4027578829b01f2f8c9d45934290be668a8409ff318f5767",
+      "tools/run_week02_mac.py": "cbd0fc2b3ad143c9902ca53e426e1e2dacfb4137db7fe8873e14b1ad50659c81"
+    },
+    "real_roberta_base_training": false,
+    "sst2_downloaded": false
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "qv_injection_and_freezing_ast_unchanged": true,
+    "parameter_report_ast_unchanged": true,
+    "synthetic_architecture_unchanged": true,
+    "pending_original_test_bytes_unchanged": true,
+    "initial_41_patch_archive_unchanged": true,
+    "float32_backbone_hash_matches_initial_diagnostics": true,
+    "official_sources_unchanged": true,
+    "prior_17_protected_files_unchanged": true
+  },
+  "all_passed": true,
+  "models_changed_only_for_owned_helpers_input_validation_and_actionable_missing_data_error": true
+}

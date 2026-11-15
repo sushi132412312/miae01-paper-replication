@@ -1,0 +1,58 @@
+test_execution_context_is_real_and_not_student_claim (test_real_modules.AuditSupportRealTests.test_execution_context_is_real_and_not_student_claim) ... ok
+test_hash_detects_name_shape_dtype_value (test_real_modules.AuditSupportRealTests.test_hash_detects_name_shape_dtype_value) ... ok
+test_save_json_rejects_nan_and_unsupported_object (test_real_modules.AuditSupportRealTests.test_save_json_rejects_nan_and_unsupported_object) ... ok
+test_save_json_roundtrip_nested_unicode (test_real_modules.AuditSupportRealTests.test_save_json_roundtrip_nested_unicode) ... ok
+test_seed_controls_python_numpy_torch (test_real_modules.AuditSupportRealTests.test_seed_controls_python_numpy_torch) ... ok
+test_tensor_hash_order_and_grad_are_irrelevant (test_real_modules.AuditSupportRealTests.test_tensor_hash_order_and_grad_are_irrelevant) ... ok
+test_bad_header_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_bad_header_rejected) ... ok
+test_duplicate_row_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_duplicate_row_rejected) ... ok
+test_duplicate_seed_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_duplicate_seed_rejected) ... ok
+test_empty_seed_results_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_empty_seed_results_rejected) ... ok
+test_expected_run_mismatch_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_expected_run_mismatch_rejected) ... ok
+test_invalid_prediction_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_invalid_prediction_rejected) ... ok
+test_manifest_duplicate_and_invalid_label_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_manifest_duplicate_and_invalid_label_rejected) ... ok
+test_missing_row_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_missing_row_rejected) ... ok
+test_mixed_checkpoint_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_mixed_checkpoint_rejected) ... ok
+test_mixed_protocol_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_mixed_protocol_rejected) ... ok
+test_nonfinite_and_out_of_range_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_nonfinite_and_out_of_range_rejected) ... ok
+test_one_seed_incomplete_and_no_zero_sd (test_real_modules.ExistingReviewEvaluationRealTests.test_one_seed_incomplete_and_no_zero_sd) ... ok
+test_recount_by_ids_after_reorder_and_manifest_path (test_real_modules.ExistingReviewEvaluationRealTests.test_recount_by_ids_after_reorder_and_manifest_path) ... ok
+test_three_seeds_use_sample_sd (test_real_modules.ExistingReviewEvaluationRealTests.test_three_seeds_use_sample_sd) ... ok
+test_unknown_id_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_unknown_id_rejected) ... ok
+test_wrong_gold_label_rejected (test_real_modules.ExistingReviewEvaluationRealTests.test_wrong_gold_label_rejected) ... ok
+test_actual_handoff_passes_hashes_and_reports_missing_sources (test_real_modules.ExistingToolCLIRealTests.test_actual_handoff_passes_hashes_and_reports_missing_sources) ... ok
+test_empty_predictions_report_failure_without_division_error (test_real_modules.ExistingToolCLIRealTests.test_empty_predictions_report_failure_without_division_error) ... ok
+test_historical_recount_failure_returns_nonzero (test_real_modules.ExistingToolCLIRealTests.test_historical_recount_failure_returns_nonzero)
+Regression: a failed recount must produce a failing process exit code. ... ok
+test_mac_shell_entry_supports_help (test_real_modules.ExistingToolCLIRealTests.test_mac_shell_entry_supports_help) ... ok
+test_mac_shell_fails_when_project_interpreter_missing (test_real_modules.ExistingToolCLIRealTests.test_mac_shell_fails_when_project_interpreter_missing) ... ok
+test_manifest_path_escape_is_rejected (test_real_modules.ExistingToolCLIRealTests.test_manifest_path_escape_is_rejected) ... ok
+test_missing_handoff_is_rejected (test_real_modules.ExistingToolCLIRealTests.test_missing_handoff_is_rejected) ... ok
+test_nonbinary_prediction_rejected_even_if_accuracy_unchanged (test_real_modules.ExistingToolCLIRealTests.test_nonbinary_prediction_rejected_even_if_accuracy_unchanged) ... ok
+test_real_file_corruption_returns_nonzero (test_real_modules.ExistingToolCLIRealTests.test_real_file_corruption_returns_nonzero) ... ok
+test_required_environment_output_argument (test_real_modules.ExistingToolCLIRealTests.test_required_environment_output_argument) ... ok
+test_week01_audit_on_actual_official_sources (test_real_modules.ExistingToolCLIRealTests.test_week01_audit_on_actual_official_sources) ... ok
+test_first_step_gradients_and_frozen_weight (test_real_modules.LinearRealTests.test_first_step_gradients_and_frozen_weight) ... ok
+test_forward_matches_explicit_low_rank_equation (test_real_modules.LinearRealTests.test_forward_matches_explicit_low_rank_equation) ... ok
+test_invalid_dropout_rejected_by_torch (test_real_modules.LinearRealTests.test_invalid_dropout_rejected_by_torch) ... ok
+test_merge_unmerge_preserves_output (test_real_modules.LinearRealTests.test_merge_unmerge_preserves_output) ... ok
+test_no_bias_and_batch_shape (test_real_modules.LinearRealTests.test_no_bias_and_batch_shape) ... ok
+test_second_step_can_update_A (test_real_modules.LinearRealTests.test_second_step_can_update_A) ... ok
+test_transposed_storage_preserves_forward (test_real_modules.LinearRealTests.test_transposed_storage_preserves_forward) ... ok
+test_wrong_input_dimension_raises (test_real_modules.LinearRealTests.test_wrong_input_dimension_raises) ... ok
+test_zero_rank_disables_adapter_in_official_layer (test_real_modules.LinearRealTests.test_zero_rank_disables_adapter_in_official_layer) ... ok
+test_adapter_state_roundtrip (test_real_modules.OfficialUtilitiesRealTests.test_adapter_state_roundtrip) ... ok
+test_all_bias_mode (test_real_modules.OfficialUtilitiesRealTests.test_all_bias_mode) ... ok
+test_bias_none_freezes_non_adapter_including_head (test_real_modules.OfficialUtilitiesRealTests.test_bias_none_freezes_non_adapter_including_head) ... ok
+test_invalid_bias_flags_raise (test_real_modules.OfficialUtilitiesRealTests.test_invalid_bias_flags_raise) ... ok
+test_lora_only_bias_mode (test_real_modules.OfficialUtilitiesRealTests.test_lora_only_bias_mode) ... ok
+test_state_dict_bias_modes (test_real_modules.OfficialUtilitiesRealTests.test_state_dict_bias_modes) ... ok
+test_convolution_family_kernel_one_smoke (test_real_modules.OtherLayersSmokeRealTests.test_convolution_family_kernel_one_smoke) ... ok
+test_embedding_initial_zero_update (test_real_modules.OtherLayersSmokeRealTests.test_embedding_initial_zero_update) ... ok
+test_merged_linear_disabled_middle_group (test_real_modules.OtherLayersSmokeRealTests.test_merged_linear_disabled_middle_group) ... ok
+test_merged_linear_invalid_partition (test_real_modules.OtherLayersSmokeRealTests.test_merged_linear_invalid_partition) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 1.012s
+
+OK

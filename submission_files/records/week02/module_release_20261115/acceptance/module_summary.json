@@ -1,0 +1,355 @@
+{
+  "scope": "standalone_environment_lora_module",
+  "direct_production_import": "src.models",
+  "mock_used": false,
+  "helper_substitution": false,
+  "synthetic_only": true,
+  "started_at_utc": "2026-11-15T15:01:59.692041+00:00",
+  "finished_at_utc": "2026-11-15T15:02:04.162453+00:00",
+  "jobs": [
+    {
+      "name": "environment",
+      "command": [
+        "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+        "tools/check_environment.py",
+        "--output",
+        "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/records/week02/module_release_20261115/acceptance/environment.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "mps_model_tests",
+      "command": [
+        "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+        "tools/check_week02_mps_model.py",
+        "--output",
+        "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/records/week02/module_release_20261115/acceptance/mps_model_tests.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "tests_run": 20,
+  "passed_count": 20,
+  "expected_test_count": 20,
+  "test_ids_verified": true,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "expected_failures": 0,
+  "test_results": [
+    {
+      "id": "test_lora_module.LoRADirectTests.test_01_qv_injection_and_key",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.LoRADirectTests.test_02_initialization",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.LoRADirectTests.test_03_parameter_freezing_and_head",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.LoRADirectTests.test_04_ft_all_trainable",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.LoRADirectTests.test_05_shared_weights_rng_and_logits",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.LoRADirectTests.test_06_optimizer_and_frozen_weights",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.LoRADirectTests.test_07_reproducible_two_step_synthetic",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.LoRADirectTests.test_08_train_eval_no_merge_and_config_guards",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.ModelContractTests.test_config_requires_mapping",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.ModelContractTests.test_invalid_alpha_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.ModelContractTests.test_invalid_rank_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.ModelContractTests.test_invalid_seed_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.ModelContractTests.test_missing_real_data_module_reports_actionable_error",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.ModelContractTests.test_rank_changes_parameter_count",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.ModelContractTests.test_rejected_request_does_not_advance_cpu_rng",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.ModelContractTests.test_seed_upper_boundary_repeats",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.ModelContractTests.test_synthetic_flag_requires_bool",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.ModelContractTests.test_tensor_hash_duplicate_name_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.ModelContractTests.test_tensor_hash_scalar_and_bfloat16",
+      "status": "passed"
+    },
+    {
+      "id": "test_lora_module.ModelContractTests.test_valid_config_not_mutated",
+      "status": "passed"
+    }
+  ],
+  "environment_passed": true,
+  "mps_required": true,
+  "mps_passed": true,
+  "module_acceptance_passed": true,
+  "original_shared_26_executed": false,
+  "original_shared_suite_status": "pending_full_integrated_source",
+  "model_details": {
+    "qv_module_names": [
+      "roberta.encoder.layer.0.attention.self.query",
+      "roberta.encoder.layer.0.attention.self.value",
+      "roberta.encoder.layer.1.attention.self.query",
+      "roberta.encoder.layer.1.attention.self.value"
+    ],
+    "initialization": [
+      {
+        "module": "roberta.encoder.layer.0.attention.self.query",
+        "A_abs_max": 0.1753299981355667,
+        "kaiming_uniform_bound": 0.17677669529663687,
+        "B_nonzero": 0,
+        "initial_BA_nonzero": 0
+      },
+      {
+        "module": "roberta.encoder.layer.0.attention.self.value",
+        "A_abs_max": 0.1755833625793457,
+        "kaiming_uniform_bound": 0.17677669529663687,
+        "B_nonzero": 0,
+        "initial_BA_nonzero": 0
+      },
+      {
+        "module": "roberta.encoder.layer.1.attention.self.query",
+        "A_abs_max": 0.17606380581855774,
+        "kaiming_uniform_bound": 0.17677669529663687,
+        "B_nonzero": 0,
+        "initial_BA_nonzero": 0
+      },
+      {
+        "module": "roberta.encoder.layer.1.attention.self.value",
+        "A_abs_max": 0.1764707863330841,
+        "kaiming_uniform_bound": 0.17677669529663687,
+        "B_nonzero": 0,
+        "initial_BA_nonzero": 0
+      }
+    ],
+    "lora_parameter_report": {
+      "total_parameters": 24514,
+      "trainable_parameters": 2146,
+      "lora_parameters": 1024,
+      "classifier_parameters": 1122,
+      "frozen_parameters": 22368,
+      "common_backbone_sha256": "9842d354f90d41f0e75b36ccc69a74d49e998e54e3b8a14782f581c0cd7d595c",
+      "classifier_sha256": "15eeddb29f3f7977755a525254ef9aac4a8b33f60adb3959d60ac40aa0624cdf",
+      "frozen_parameters_sha256": "9842d354f90d41f0e75b36ccc69a74d49e998e54e3b8a14782f581c0cd7d595c",
+      "trainable_parameter_names": [
+        "roberta.encoder.layer.0.attention.self.query.lora_A",
+        "roberta.encoder.layer.0.attention.self.query.lora_B",
+        "roberta.encoder.layer.0.attention.self.value.lora_A",
+        "roberta.encoder.layer.0.attention.self.value.lora_B",
+        "roberta.encoder.layer.1.attention.self.query.lora_A",
+        "roberta.encoder.layer.1.attention.self.query.lora_B",
+        "roberta.encoder.layer.1.attention.self.value.lora_A",
+        "roberta.encoder.layer.1.attention.self.value.lora_B",
+        "classifier.dense.weight",
+        "classifier.dense.bias",
+        "classifier.out_proj.weight",
+        "classifier.out_proj.bias"
+      ],
+      "lora_module_names": [
+        "roberta.encoder.layer.0.attention.self.query",
+        "roberta.encoder.layer.0.attention.self.value",
+        "roberta.encoder.layer.1.attention.self.query",
+        "roberta.encoder.layer.1.attention.self.value"
+      ],
+      "lora_merge_weights": false
+    },
+    "ft_parameter_report": {
+      "total_parameters": 23490,
+      "trainable_parameters": 23490,
+      "lora_parameters": 0,
+      "classifier_parameters": 1122,
+      "frozen_parameters": 0,
+      "common_backbone_sha256": "9842d354f90d41f0e75b36ccc69a74d49e998e54e3b8a14782f581c0cd7d595c",
+      "classifier_sha256": "15eeddb29f3f7977755a525254ef9aac4a8b33f60adb3959d60ac40aa0624cdf",
+      "frozen_parameters_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "trainable_parameter_names": [
+        "roberta.embeddings.word_embeddings.weight",
+        "roberta.embeddings.position_embeddings.weight",
+        "roberta.embeddings.token_type_embeddings.weight",
+        "roberta.embeddings.LayerNorm.weight",
+        "roberta.embeddings.LayerNorm.bias",
+        "roberta.encoder.layer.0.attention.self.query.weight",
+        "roberta.encoder.layer.0.attention.self.query.bias",
+        "roberta.encoder.layer.0.attention.self.key.weight",
+        "roberta.encoder.layer.0.attention.self.key.bias",
+        "roberta.encoder.layer.0.attention.self.value.weight",
+        "roberta.encoder.layer.0.attention.self.value.bias",
+        "roberta.encoder.layer.0.attention.output.dense.weight",
+        "roberta.encoder.layer.0.attention.output.dense.bias",
+        "roberta.encoder.layer.0.attention.output.LayerNorm.weight",
+        "roberta.encoder.layer.0.attention.output.LayerNorm.bias",
+        "roberta.encoder.layer.0.intermediate.dense.weight",
+        "roberta.encoder.layer.0.intermediate.dense.bias",
+        "roberta.encoder.layer.0.output.dense.weight",
+        "roberta.encoder.layer.0.output.dense.bias",
+        "roberta.encoder.layer.0.output.LayerNorm.weight",
+        "roberta.encoder.layer.0.output.LayerNorm.bias",
+        "roberta.encoder.layer.1.attention.self.query.weight",
+        "roberta.encoder.layer.1.attention.self.query.bias",
+        "roberta.encoder.layer.1.attention.self.key.weight",
+        "roberta.encoder.layer.1.attention.self.key.bias",
+        "roberta.encoder.layer.1.attention.self.value.weight",
+        "roberta.encoder.layer.1.attention.self.value.bias",
+        "roberta.encoder.layer.1.attention.output.dense.weight",
+        "roberta.encoder.layer.1.attention.output.dense.bias",
+        "roberta.encoder.layer.1.attention.output.LayerNorm.weight",
+        "roberta.encoder.layer.1.attention.output.LayerNorm.bias",
+        "roberta.encoder.layer.1.intermediate.dense.weight",
+        "roberta.encoder.layer.1.intermediate.dense.bias",
+        "roberta.encoder.layer.1.output.dense.weight",
+        "roberta.encoder.layer.1.output.dense.bias",
+        "roberta.encoder.layer.1.output.LayerNorm.weight",
+        "roberta.encoder.layer.1.output.LayerNorm.bias",
+        "classifier.dense.weight",
+        "classifier.dense.bias",
+        "classifier.out_proj.weight",
+        "classifier.out_proj.bias"
+      ],
+      "lora_module_names": [],
+      "lora_merge_weights": false
+    },
+    "initial_logits_max_abs_difference": 0.0,
+    "paired_shared_parameters_equal": true,
+    "cpu_rng_state_preserved_by_injection": true,
+    "ft_optimizer_step": {
+      "loss": 0.6963561773300171,
+      "changed_names": [
+        "roberta.embeddings.word_embeddings.weight",
+        "roberta.embeddings.position_embeddings.weight",
+        "roberta.embeddings.token_type_embeddings.weight",
+        "roberta.embeddings.LayerNorm.weight",
+        "roberta.embeddings.LayerNorm.bias",
+        "roberta.encoder.layer.0.attention.self.query.weight",
+        "roberta.encoder.layer.0.attention.self.query.bias",
+        "roberta.encoder.layer.0.attention.self.key.weight",
+        "roberta.encoder.layer.0.attention.self.key.bias",
+        "roberta.encoder.layer.0.attention.self.value.weight",
+        "roberta.encoder.layer.0.attention.self.value.bias",
+        "roberta.encoder.layer.0.attention.output.dense.weight",
+        "roberta.encoder.layer.0.attention.output.dense.bias",
+        "roberta.encoder.layer.0.attention.output.LayerNorm.weight",
+        "roberta.encoder.layer.0.attention.output.LayerNorm.bias",
+        "roberta.encoder.layer.0.intermediate.dense.weight",
+        "roberta.encoder.layer.0.intermediate.dense.bias",
+        "roberta.encoder.layer.0.output.dense.weight",
+        "roberta.encoder.layer.0.output.dense.bias",
+        "roberta.encoder.layer.0.output.LayerNorm.weight",
+        "roberta.encoder.layer.0.output.LayerNorm.bias",
+        "roberta.encoder.layer.1.attention.self.query.weight",
+        "roberta.encoder.layer.1.attention.self.query.bias",
+        "roberta.encoder.layer.1.attention.self.key.weight",
+        "roberta.encoder.layer.1.attention.self.key.bias",
+        "roberta.encoder.layer.1.attention.self.value.weight",
+        "roberta.encoder.layer.1.attention.self.value.bias",
+        "roberta.encoder.layer.1.attention.output.dense.weight",
+        "roberta.encoder.layer.1.attention.output.dense.bias",
+        "roberta.encoder.layer.1.attention.output.LayerNorm.weight",
+        "roberta.encoder.layer.1.attention.output.LayerNorm.bias",
+        "roberta.encoder.layer.1.intermediate.dense.weight",
+        "roberta.encoder.layer.1.intermediate.dense.bias",
+        "roberta.encoder.layer.1.output.dense.weight",
+        "roberta.encoder.layer.1.output.dense.bias",
+        "roberta.encoder.layer.1.output.LayerNorm.weight",
+        "roberta.encoder.layer.1.output.LayerNorm.bias",
+        "classifier.dense.weight",
+        "classifier.dense.bias",
+        "classifier.out_proj.weight",
+        "classifier.out_proj.bias"
+      ],
+      "initial_frozen_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_frozen_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "frozen_weights_unchanged": true
+    },
+    "lora_optimizer_step": {
+      "loss": 0.6963561773300171,
+      "changed_names": [
+        "roberta.encoder.layer.0.attention.self.query.lora_B",
+        "roberta.encoder.layer.0.attention.self.value.lora_B",
+        "roberta.encoder.layer.1.attention.self.query.lora_B",
+        "roberta.encoder.layer.1.attention.self.value.lora_B",
+        "classifier.dense.weight",
+        "classifier.dense.bias",
+        "classifier.out_proj.weight",
+        "classifier.out_proj.bias"
+      ],
+      "initial_frozen_sha256": "9842d354f90d41f0e75b36ccc69a74d49e998e54e3b8a14782f581c0cd7d595c",
+      "final_frozen_sha256": "9842d354f90d41f0e75b36ccc69a74d49e998e54e3b8a14782f581c0cd7d595c",
+      "frozen_weights_unchanged": true
+    },
+    "two_step_synthetic_repeat": {
+      "losses": [
+        0.6963561773300171,
+        0.6935455799102783
+      ],
+      "predictions": [
+        1,
+        1
+      ],
+      "model_sha256": "3713c562490bcce1b17f1fc898746fa3869d21350cadce6e31396b13b8a718a0"
+    },
+    "train_eval_does_not_merge_weights": true
+  },
+  "execution_context": {
+    "executor": "AI assistant, executed with user authorization",
+    "student_independent_work": false,
+    "recorded_at_utc": "2026-11-15T15:02:04.150667+00:00",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "python_executable": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+    "git_head_at_execution": "03f8c5441756e30257f0593a58c22c77f4e116d0",
+    "git_context_available": true,
+    "source_sha256": {
+      "src/model_support.py": "d12820c1cbfb1c29db308b87b8a3b8cc0f0192ba2209007586a1257820487f05",
+      "src/models.py": "08308b0468763af1a11ca864b11d4a612f311959fb3b8a9c74578a78b0de41d8",
+      "tools/check_handoff_mac.py": "591b754608f4a6987ce063ddae4740c1df0f04ab835b1e9245b5947d8788d650",
+      "tools/check_lora_mac.py": "dd53995e56c3aeec6cb1ffd77371a0d726f8340bd16b043edd93f57d586cc136",
+      "tools/mac_audit_support.py": "2a42a4bba7a6d24f4027578829b01f2f8c9d45934290be668a8409ff318f5767",
+      "tools/run_week02_mac.py": "cbd0fc2b3ad143c9902ca53e426e1e2dacfb4137db7fe8873e14b1ad50659c81",
+      "tools/run_lora_module_checks.py": "387f34484281ae477ea353d07aa70d2c244b17e632c3564b5085e3cf7b66a498",
+      "tests/test_lora_module.py": "3fc874c9f852794206f79ebb054424463104c86f17dce14c8ca5d88bc12bd486",
+      "tests/week02_module_cases.json": "bce69328f62295002e6cea7f25d5c84f045dbf739e34cf2c357c55a1840fe2c4",
+      "third_party/loralib/layers.py": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797",
+      "third_party/loralib/utils.py": "9cd157527f79d48cf6f5feb7eb87509696e5f3cbb38862a633239e464eacaa71"
+    },
+    "real_roberta_base_training": false,
+    "sst2_downloaded": false
+  }
+}

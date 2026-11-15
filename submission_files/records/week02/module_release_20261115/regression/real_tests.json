@@ -1,0 +1,259 @@
+{
+  "category": "real_existing_module_execution",
+  "no_missing_production_module_created": true,
+  "original_26_suite": false,
+  "started_at_utc": "2026-11-15T15:01:55.074594+00:00",
+  "finished_at_utc": "2026-11-15T15:01:56.086633+00:00",
+  "tests_run": 52,
+  "passed_count": 52,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "expected_failures_known_gaps": 0,
+  "unexpected_successes": 0,
+  "unittest_runner_success": true,
+  "all_desired_assertions_satisfied": true,
+  "test_results": [
+    {
+      "id": "test_real_modules.AuditSupportRealTests.test_execution_context_is_real_and_not_student_claim",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.AuditSupportRealTests.test_hash_detects_name_shape_dtype_value",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.AuditSupportRealTests.test_save_json_rejects_nan_and_unsupported_object",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.AuditSupportRealTests.test_save_json_roundtrip_nested_unicode",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.AuditSupportRealTests.test_seed_controls_python_numpy_torch",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.AuditSupportRealTests.test_tensor_hash_order_and_grad_are_irrelevant",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_bad_header_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_duplicate_row_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_duplicate_seed_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_empty_seed_results_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_expected_run_mismatch_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_invalid_prediction_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_manifest_duplicate_and_invalid_label_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_missing_row_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_mixed_checkpoint_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_mixed_protocol_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_nonfinite_and_out_of_range_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_one_seed_incomplete_and_no_zero_sd",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_recount_by_ids_after_reorder_and_manifest_path",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_three_seeds_use_sample_sd",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_unknown_id_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingReviewEvaluationRealTests.test_wrong_gold_label_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingToolCLIRealTests.test_actual_handoff_passes_hashes_and_reports_missing_sources",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingToolCLIRealTests.test_empty_predictions_report_failure_without_division_error",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingToolCLIRealTests.test_historical_recount_failure_returns_nonzero",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingToolCLIRealTests.test_mac_shell_entry_supports_help",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingToolCLIRealTests.test_mac_shell_fails_when_project_interpreter_missing",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingToolCLIRealTests.test_manifest_path_escape_is_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingToolCLIRealTests.test_missing_handoff_is_rejected",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingToolCLIRealTests.test_nonbinary_prediction_rejected_even_if_accuracy_unchanged",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingToolCLIRealTests.test_real_file_corruption_returns_nonzero",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingToolCLIRealTests.test_required_environment_output_argument",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.ExistingToolCLIRealTests.test_week01_audit_on_actual_official_sources",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.LinearRealTests.test_first_step_gradients_and_frozen_weight",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.LinearRealTests.test_forward_matches_explicit_low_rank_equation",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.LinearRealTests.test_invalid_dropout_rejected_by_torch",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.LinearRealTests.test_merge_unmerge_preserves_output",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.LinearRealTests.test_no_bias_and_batch_shape",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.LinearRealTests.test_second_step_can_update_A",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.LinearRealTests.test_transposed_storage_preserves_forward",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.LinearRealTests.test_wrong_input_dimension_raises",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.LinearRealTests.test_zero_rank_disables_adapter_in_official_layer",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.OfficialUtilitiesRealTests.test_adapter_state_roundtrip",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.OfficialUtilitiesRealTests.test_all_bias_mode",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.OfficialUtilitiesRealTests.test_bias_none_freezes_non_adapter_including_head",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.OfficialUtilitiesRealTests.test_invalid_bias_flags_raise",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.OfficialUtilitiesRealTests.test_lora_only_bias_mode",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.OfficialUtilitiesRealTests.test_state_dict_bias_modes",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.OtherLayersSmokeRealTests.test_convolution_family_kernel_one_smoke",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.OtherLayersSmokeRealTests.test_embedding_initial_zero_update",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.OtherLayersSmokeRealTests.test_merged_linear_disabled_middle_group",
+      "status": "passed"
+    },
+    {
+      "id": "test_real_modules.OtherLayersSmokeRealTests.test_merged_linear_invalid_partition",
+      "status": "passed"
+    }
+  ],
+  "execution_context": {
+    "executor": "AI assistant with user authorization",
+    "student_independent_work": false,
+    "python": "/Users/xuan/Documents/Codex/2026-11-15/xian/work/miae01-paper-replication/.venv/bin/python",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "git_head": "03f8c5441756e30257f0593a58c22c77f4e116d0",
+    "source_sha256": {
+      "records/week02/recount_verification/verify_evaluation.py": "7d4e4691eed29c13658b8ebeb573cf2bb9998aef1ddabc2d3e037b644ea26233",
+      "src/model_support.py": "d12820c1cbfb1c29db308b87b8a3b8cc0f0192ba2209007586a1257820487f05",
+      "src/models.py": "08308b0468763af1a11ca864b11d4a612f311959fb3b8a9c74578a78b0de41d8",
+      "tests/week02_independent/test_mock_workflow.py": "1d20d8ed9416ef17a5964ca89a44b94bbde6f63c2b7fd5509c7ef4254002b840",
+      "tests/week02_independent/test_real_modules.py": "3bd8942ef38c4c9e6cf2b921a4d2729027bef23a6094586565c757b99b48195f",
+      "third_party/loralib/__init__.py": "df9ca7e519d0bbe03679eac45ed00d9b99d0434d106dcdd2b600765b99192027",
+      "third_party/loralib/layers.py": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797",
+      "third_party/loralib/utils.py": "9cd157527f79d48cf6f5feb7eb87509696e5f3cbb38862a633239e464eacaa71",
+      "tools/check_environment.py": "dae46f8f2e219e3ec165634a4b68338b0e1c75ac77e444c7128e171a1aa488ea",
+      "tools/check_handoff_mac.py": "591b754608f4a6987ce063ddae4740c1df0f04ab835b1e9245b5947d8788d650",
+      "tools/check_lora_mac.py": "dd53995e56c3aeec6cb1ffd77371a0d726f8340bd16b043edd93f57d586cc136",
+      "tools/check_week02_mps_model.py": "1ddd7a2f7e2e536c1cdf287d41b465d2902bb2fcbcab81e321717e9d1de16073",
+      "tools/mac_audit_support.py": "2a42a4bba7a6d24f4027578829b01f2f8c9d45934290be668a8409ff318f5767",
+      "tools/probe_week02_configuration.py": "26fdb3b84c7b6d95006c685884682309d44d603640f6700b5d54d99b0260fe08",
+      "tools/run_lora_module_checks.py": "387f34484281ae477ea353d07aa70d2c244b17e632c3564b5085e3cf7b66a498",
+      "tools/run_week02_independent_tests.py": "284dc22ed328763de905ed1ff9b87830faea1860a021af9e530ebf9d02110d06",
+      "tools/run_week02_mac.py": "cbd0fc2b3ad143c9902ca53e426e1e2dacfb4137db7fe8873e14b1ad50659c81",
+      "tools/week01_readonly_audit.py": "0ae71f521b17184f77d9d268c38968397b66f0d98df4e3422214b44f7183f57c"
+    }
+  },
+  "notes": [
+    "Fixtures use artificial data; no pretrained weights, SST-2 or cloud training.",
+    "Review evaluation functions are existing review code; identity to missing src/evaluation.py is unverified.",
+    "Expected failures are unmet desired behavior, not passed tests.",
+    "Mock outcomes do not attest hardware, subprocess execution or integration completeness."
+  ]
+}

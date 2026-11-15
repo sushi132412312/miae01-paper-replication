@@ -1,0 +1,24 @@
+{
+  "ft": {
+    "predicted_labels": {
+      "0": 64
+    },
+    "gold_labels": {
+      "1": 30,
+      "0": 34
+    },
+    "training_presentations": 20,
+    "unique_seen_training_ids": 20
+  },
+  "lora": {
+    "predicted_labels": {
+      "0": 64
+    },
+    "gold_labels": {
+      "1": 30,
+      "0": 34
+    },
+    "training_presentations": 20,
+    "unique_seen_training_ids": 20
+  }
+}

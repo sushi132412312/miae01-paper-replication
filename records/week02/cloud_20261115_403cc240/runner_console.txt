@@ -1,0 +1,1 @@
+{"status": "complete", "paired_checks": {"same_training_samples": true, "same_validation_samples": true, "same_common_backbone": true, "same_classifier_initialization": true, "same_update_count": true, "same_training_order": true, "lora_initial_B_zero": true, "lora_frozen_weights_unchanged": true}}

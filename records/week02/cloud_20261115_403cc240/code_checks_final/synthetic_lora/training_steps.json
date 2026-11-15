@@ -1,0 +1,18 @@
+[
+  {
+    "step": 1,
+    "loss": 0.6942694187164307,
+    "sample_ids": [
+      "synthetic-train:6",
+      "synthetic-train:3"
+    ]
+  },
+  {
+    "step": 2,
+    "loss": 0.6947201490402222,
+    "sample_ids": [
+      "synthetic-train:0",
+      "synthetic-train:7"
+    ]
+  }
+]

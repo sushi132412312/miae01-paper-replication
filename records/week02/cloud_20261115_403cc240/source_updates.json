@@ -1,0 +1,21 @@
+{
+  "executor": "AI assistant authorized by group leader",
+  "reason": "separate training timing/peak GPU memory; image dependency compatibility; user-approved real engineering pilot",
+  "updated_source_sha256": {
+    "src/train.py": "f7c9a2dfd54535178f961a8f3cc8f51e4cdca51404ad336f0c05196cc0db30a5",
+    "src/models.py": "468b8c9b2a9a8c26297b9c8db87b855d9adb4fe42115718850f63239915c5774",
+    "tools/cloud_pilot_runner.py": "d266029756682a81a70e9e92f6728c655216c29063cb8485dfc6d07386110997",
+    "requirements.cloud.txt": "55b22e06a437a29c4c51756e6c49fc63f671d4802a67b16afb4455fe8c48f941",
+    "configs/pilot.approved.20261115.json": "01e916ad5a8904ebea44c00d9f4e89f83ac24d7eb207801a95ccd64579005c0d"
+  },
+  "user_approved_pilot": {
+    "train_size": 64,
+    "validation_size": 64,
+    "seed": 42,
+    "methods": [
+      "ft",
+      "lora"
+    ],
+    "max_steps_each": 10
+  }
+}

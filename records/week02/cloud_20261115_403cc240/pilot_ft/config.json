@@ -1,0 +1,25 @@
+{
+  "status": "approved_engineering_pilot",
+  "purpose": "用户确认的真实流程试跑；不是正式三种子论文成绩",
+  "authorization": "组长于2026-11-15明确同意部署通过后按64训练/64验证、seed42、FT与LoRA各10步执行",
+  "model_id": "FacebookAI/roberta-base",
+  "model_revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+  "dataset_id": "nyu-mll/glue",
+  "dataset_revision": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+  "train_size": 64,
+  "validation_size": 64,
+  "subset_seed": 2026,
+  "train_seed": 42,
+  "max_length": 128,
+  "batch_size": 2,
+  "max_steps": 10,
+  "lora_r": 8,
+  "lora_alpha": 8,
+  "learning_rates": {
+    "ft": 2e-05,
+    "lora": 0.0005
+  },
+  "weight_decay": 0.1,
+  "precision": "float32",
+  "checkpoint_rule": "final_step_for_engineering_pilot_only"
+}

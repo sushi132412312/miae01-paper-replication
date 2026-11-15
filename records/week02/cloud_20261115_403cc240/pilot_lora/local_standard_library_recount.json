@@ -1,0 +1,10 @@
+{
+  "run_id": "pilot_lora",
+  "method": "lora",
+  "seed": 42,
+  "checkpoint": "final-step-10:99b9a0f095937285",
+  "count": 64,
+  "correct": 34,
+  "accuracy": 0.53125,
+  "accuracy_percent": 53.125
+}

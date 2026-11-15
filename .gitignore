@@ -205,6 +205,16 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
+# 本组运行产生的大文件与本地环境，不提交模型权重、数据缓存和虚拟环境。
+/cache/
+/checkpoints/
+/local_runs/
+/wheel_cache/
+*.safetensors
+*.pt
+*.pth
+*.bin
+
 # Ruff stuff:
 .ruff_cache/
 

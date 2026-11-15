@@ -1,0 +1,10 @@
+{
+  "https://huggingface.co": {
+    "available": false,
+    "error": "<urlopen error [Errno 101] Network is unreachable>"
+  },
+  "https://hf-mirror.com": {
+    "available": true,
+    "sha": "e2da8e2f811d1448a5b465c236feacd80ffbac7b"
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "step": 1,
+    "loss": 0.8184245824813843,
+    "sample_ids": [
+      "train:52064",
+      "train:32966"
+    ]
+  },
+  {
+    "step": 2,
+    "loss": 0.7551474571228027,
+    "sample_ids": [
+      "train:59873",
+      "train:67316"
+    ]
+  },
+  {
+    "step": 3,
+    "loss": 0.7197827100753784,
+    "sample_ids": [
+      "train:13444",
+      "train:40501"
+    ]
+  },
+  {
+    "step": 4,
+    "loss": 0.6384605765342712,
+    "sample_ids": [
+      "train:48345",
+      "train:61525"
+    ]
+  },
+  {
+    "step": 5,
+    "loss": 0.7476399540901184,
+    "sample_ids": [
+      "train:30005",
+      "train:11886"
+    ]
+  },
+  {
+    "step": 6,
+    "loss": 0.6832418441772461,
+    "sample_ids": [
+      "train:60433",
+      "train:332"
+    ]
+  },
+  {
+    "step": 7,
+    "loss": 0.6375832557678223,
+    "sample_ids": [
+      "train:41187",
+      "train:61609"
+    ]
+  },
+  {
+    "step": 8,
+    "loss": 0.6744494438171387,
+    "sample_ids": [
+      "train:56283",
+      "train:15613"
+    ]
+  },
+  {
+    "step": 9,
+    "loss": 0.5933260917663574,
+    "sample_ids": [
+      "train:11752",
+      "train:58937"
+    ]
+  },
+  {
+    "step": 10,
+    "loss": 0.666629433631897,
+    "sample_ids": [
+      "train:47650",
+      "train:6407"
+    ]
+  }
+]

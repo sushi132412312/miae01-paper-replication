@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/microsoft/LoRA",
+  "commit": "c4593f060e6a368d7bb5af5273b8e42810cdef90",
+  "origin": "user-provided LoRA-main.zip",
+  "modified": false,
+  "files": {
+    "loralib/__init__.py": {
+      "sha256": "df9ca7e519d0bbe03679eac45ed00d9b99d0434d106dcdd2b600765b99192027",
+      "git_blob_sha1": "7fd9ad25a3ec6359639dfe7fa786dcc2c3c3e080"
+    },
+    "loralib/layers.py": {
+      "sha256": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797",
+      "git_blob_sha1": "637865600fc9afbf76831e99e3d71eaca6871bda"
+    },
+    "loralib/utils.py": {
+      "sha256": "9cd157527f79d48cf6f5feb7eb87509696e5f3cbb38862a633239e464eacaa71",
+      "git_blob_sha1": "0d121c9bbd6a424d8f4233fac17335aab5141d9b"
+    },
+    "LICENSE.md": {
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "git_blob_sha1": "9e841e7a26e4eb057b24511e7b92d42b257a80e5"
+    }
+  }
+}

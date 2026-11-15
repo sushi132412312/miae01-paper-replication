@@ -1,0 +1,28 @@
+{
+  "intended_handoff_member": "林树辉",
+  "student_id": "2260031586",
+  "github": "2967338890-rgb",
+  "actual_executor": "AI assistant, authorized by group leader",
+  "student_independently_verified": false,
+  "related_passed_checks": [
+    "test_data_metrics.PredictionTests.test_accuracy_recomputed_from_ids_not_row_order",
+    "test_data_metrics.PredictionTests.test_duplicate_record_rejected",
+    "test_data_metrics.PredictionTests.test_invalid_prediction_rejected",
+    "test_data_metrics.PredictionTests.test_missing_record_rejected",
+    "test_data_metrics.PredictionTests.test_mixed_checkpoint_rejected",
+    "test_data_metrics.PredictionTests.test_unexpected_run_rejected",
+    "test_data_metrics.PredictionTests.test_wrong_gold_label_rejected",
+    "test_data_metrics.SeedStatisticsTests.test_duplicate_seed_rejected",
+    "test_data_metrics.SeedStatisticsTests.test_mixed_protocol_or_validation_rejected",
+    "test_data_metrics.SeedStatisticsTests.test_non_finite_score_rejected",
+    "test_data_metrics.SeedStatisticsTests.test_one_seed_does_not_report_zero_sd",
+    "test_data_metrics.SeedStatisticsTests.test_sample_standard_deviation"
+  ],
+  "related_passed_check_count": 12,
+  "shared_suite_count": 26,
+  "real_roberta_base_or_sst2_training": false,
+  "cloud_gpu_used": false,
+  "synthetic_model": "randomly initialized RoBERTa, 2 layers, hidden size 32",
+  "real_training_status": "pending_user_configuration",
+  "pushed_to_github": false
+}

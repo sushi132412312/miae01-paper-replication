@@ -1,38 +1,50 @@
 {
-  "ft": {
-    "run_id": "synthetic_ft",
-    "method": "ft",
-    "seed": 42,
-    "checkpoint": "final-step-2:0e0c993200229a2a",
+  "manifest": {
     "count": 6,
-    "correct": 3,
-    "accuracy": 0.5,
-    "accuracy_percent": 50.0,
-    "matches_saved_accuracy": true,
-    "formal_seed_summary": {
-      "status": "incomplete",
-      "seed_count": 1,
-      "reason": "正式汇总至少需要三个不同训练种子",
-      "mean_percent": null,
-      "sample_sd_pp": null
+    "subset_seed": 2026,
+    "label_counts": {
+      "0": 3,
+      "1": 3
+    },
+    "validation_selection_sha256": null
+  },
+  "runs": {
+    "ft": {
+      "run_id": "synthetic_ft",
+      "checkpoint": "final-step-2:0e0c993200229a2a",
+      "seed": 42,
+      "count": 6,
+      "correct": 3,
+      "accuracy": 0.5,
+      "accuracy_percent": 50.0,
+      "all_ids_covered": true,
+      "saved_accuracy_percent": 50.0,
+      "matches_saved": true,
+      "predicted_label_counts": {
+        "0": 6,
+        "1": 0
+      }
+    },
+    "lora": {
+      "run_id": "synthetic_lora",
+      "checkpoint": "final-step-2:382a09b55c1c7d18",
+      "seed": 42,
+      "count": 6,
+      "correct": 3,
+      "accuracy": 0.5,
+      "accuracy_percent": 50.0,
+      "all_ids_covered": true,
+      "saved_accuracy_percent": 50.0,
+      "matches_saved": true,
+      "predicted_label_counts": {
+        "0": 0,
+        "1": 6
+      }
     }
   },
-  "lora": {
-    "run_id": "synthetic_lora",
-    "method": "lora",
-    "seed": 42,
-    "checkpoint": "final-step-2:382a09b55c1c7d18",
-    "count": 6,
-    "correct": 3,
-    "accuracy": 0.5,
-    "accuracy_percent": 50.0,
-    "matches_saved_accuracy": true,
-    "formal_seed_summary": {
-      "status": "incomplete",
-      "seed_count": 1,
-      "reason": "正式汇总至少需要三个不同训练种子",
-      "mean_percent": null,
-      "sample_sd_pp": null
-    }
+  "summary": {
+    "synthetic_only": true,
+    "note": "6 条合成样本，仅验证复算与校验逻辑，不进入 Paper vs Ours",
+    "both_methods_equal": true
   }
 }

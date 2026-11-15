@@ -1,0 +1,21 @@
+{
+  "status": "pending_confirmation",
+  "purpose": "拟议的工程试跑；用户尚未确认训练设置，禁止直接开始真实模型训练",
+  "model_id": "FacebookAI/roberta-base",
+  "model_revision": null,
+  "dataset_id": "nyu-mll/glue",
+  "dataset_revision": null,
+  "train_size": 64,
+  "validation_size": 64,
+  "subset_seed": 2026,
+  "train_seed": 42,
+  "max_length": 128,
+  "batch_size": 2,
+  "max_steps": 10,
+  "lora_r": 8,
+  "lora_alpha": 8,
+  "learning_rates": {"ft": 0.00002, "lora": 0.0005},
+  "weight_decay": 0.1,
+  "precision": "float32",
+  "checkpoint_rule": "final_step_for_engineering_pilot_only"
+}

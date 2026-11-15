@@ -1,0 +1,38 @@
+{
+  "ft": {
+    "run_id": "synthetic_ft",
+    "method": "ft",
+    "seed": 42,
+    "checkpoint": "final-step-2:04dfd063db544624",
+    "count": 6,
+    "correct": 3,
+    "accuracy": 0.5,
+    "accuracy_percent": 50.0,
+    "matches_saved_accuracy": true,
+    "formal_seed_summary": {
+      "status": "incomplete",
+      "seed_count": 1,
+      "reason": "正式汇总至少需要三个不同训练种子",
+      "mean_percent": null,
+      "sample_sd_pp": null
+    }
+  },
+  "lora": {
+    "run_id": "synthetic_lora",
+    "method": "lora",
+    "seed": 42,
+    "checkpoint": "final-step-2:2e588ab38aaf6a6b",
+    "count": 6,
+    "correct": 3,
+    "accuracy": 0.5,
+    "accuracy_percent": 50.0,
+    "matches_saved_accuracy": true,
+    "formal_seed_summary": {
+      "status": "incomplete",
+      "seed_count": 1,
+      "reason": "正式汇总至少需要三个不同训练种子",
+      "mean_percent": null,
+      "sample_sd_pp": null
+    }
+  }
+}

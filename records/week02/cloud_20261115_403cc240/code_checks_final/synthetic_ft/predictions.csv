@@ -1,0 +1,7 @@
+run_id,method,seed,checkpoint,sample_id,gold_label,predicted_label
+synthetic_ft,ft,42,final-step-2:04dfd063db544624,synthetic-validation:0,0,0
+synthetic_ft,ft,42,final-step-2:04dfd063db544624,synthetic-validation:1,1,0
+synthetic_ft,ft,42,final-step-2:04dfd063db544624,synthetic-validation:2,0,0
+synthetic_ft,ft,42,final-step-2:04dfd063db544624,synthetic-validation:3,1,0
+synthetic_ft,ft,42,final-step-2:04dfd063db544624,synthetic-validation:4,0,0
+synthetic_ft,ft,42,final-step-2:04dfd063db544624,synthetic-validation:5,1,0

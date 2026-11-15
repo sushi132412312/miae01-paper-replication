@@ -1,0 +1,1 @@
+{"pid": 1149, "command": ["/data/coding/miae01_cloud_20261115_403cc240/.venv_gpu/bin/python", "-u", "tools/cloud_pilot_runner.py", "--config", "configs/pilot.approved.20261115.json", "--output-root", "/data/coding/miae01_cloud_20261115_403cc240/records/week02/cloud_20261115_403cc240", "--hf-endpoint", "https://hf-mirror.com"]}

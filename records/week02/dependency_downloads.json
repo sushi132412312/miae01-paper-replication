@@ -1,0 +1,467 @@
+{
+  "purpose": "dependency download checks, not model/data downloads",
+  "executor": "AI assistant",
+  "downloaded_packages": [
+    {
+      "name": "filelock",
+      "version": "4.2.10",
+      "file": "filelock-4.2.10-py3-none-any.whl",
+      "sha256": "9479aaeb4db20b5a53e3da28493edd24720b66b8a0b84030aa56ccdf243d6857",
+      "size": 218040,
+      "official_metadata": "https://pypi.org/pypi/filelock/4.2.10/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "file": "typing_extensions-4.16.0-py3-none-any.whl",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "size": 45571,
+      "official_metadata": "https://pypi.org/pypi/typing-extensions/4.16.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "datasets",
+      "version": "4.4.1",
+      "file": "datasets-4.4.1-py3-none-any.whl",
+      "sha256": "c1163de5211e42546079ab355cc0250c7e6db16eb209ac5ac6252f801f596c44",
+      "size": 511591,
+      "official_metadata": "https://pypi.org/pypi/datasets/4.4.1/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0",
+      "file": "sympy-1.14.0-py3-none-any.whl",
+      "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+      "size": 6299353,
+      "official_metadata": "https://pypi.org/pypi/sympy/1.14.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "jinja2",
+      "version": "3.1.6",
+      "file": "jinja2-3.1.6-py3-none-any.whl",
+      "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+      "size": 134899,
+      "official_metadata": "https://pypi.org/pypi/jinja2/3.1.6/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "fsspec",
+      "version": "2025.10.0",
+      "file": "fsspec-2025.10.0-py3-none-any.whl",
+      "sha256": "7c7712353ae7d875407f97715f0e1ffcc21e33d5b24556cb1e090ae9409ec61d",
+      "size": 200966,
+      "official_metadata": "https://pypi.org/pypi/fsspec/2025.10.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "setuptools",
+      "version": "84.2.1",
+      "file": "setuptools-84.2.1-py3-none-any.whl",
+      "sha256": "ca140b45d5325a9478f880e351484f62fef15f336462e449ca0c03c873d589c2",
+      "size": 876263,
+      "official_metadata": "https://pypi.org/pypi/setuptools/84.2.1/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "networkx",
+      "version": "3.7",
+      "file": "networkx-3.7-py3-none-any.whl",
+      "sha256": "e3fd2c13a7814cee3746340d8d7f8598a67f16a58bf47fb7f8793fab6efca1b0",
+      "size": 2142205,
+      "official_metadata": "https://pypi.org/pypi/networkx/3.7/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0",
+      "file": "mpmath-1.3.0-py3-none-any.whl",
+      "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+      "size": 536198,
+      "official_metadata": "https://pypi.org/pypi/mpmath/1.3.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.4",
+      "file": "markupsafe-3.0.4-cp312-cp312-win_amd64.whl",
+      "sha256": "11935df9bf455ed0c04eb87bcd720f02b1fe5e02128a9430f23aed6f93336fc7",
+      "size": 14303,
+      "official_metadata": "https://pypi.org/pypi/MarkupSafe/3.0.4/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "huggingface-hub",
+      "version": "0.36.2",
+      "file": "huggingface_hub-0.36.2-py3-none-any.whl",
+      "sha256": "48f0c8eac16145dfce371e9d2d7772854a4f591bcb56c9cf548accf531d54270",
+      "size": 566395,
+      "official_metadata": "https://pypi.org/pypi/huggingface-hub/0.36.2/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6",
+      "file": "numpy-2.2.6-cp312-cp312-win_amd64.whl",
+      "sha256": "c1f9540be57940698ed329904db803cf7a402f3fc200bfe599334c9bd84a40b2",
+      "size": 12614190,
+      "official_metadata": "https://pypi.org/pypi/numpy/2.2.6/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "file": "packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "size": 129956,
+      "official_metadata": "https://pypi.org/pypi/packaging/26.3/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2",
+      "file": "requests-2.34.2-py3-none-any.whl",
+      "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0",
+      "size": 73075,
+      "official_metadata": "https://pypi.org/pypi/requests/2.34.2/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "file": "pyyaml-6.0.3-cp312-cp312-win_amd64.whl",
+      "sha256": "5fcd34e47f6e0b794d17de1b4ff496c00986e1c83f7ab2fb8fcfe9616ff7477b",
+      "size": 154003,
+      "official_metadata": "https://pypi.org/pypi/pyyaml/6.0.3/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "regex",
+      "version": "2026.11.9",
+      "file": "regex-2026.11.9-cp312-cp312-win_amd64.whl",
+      "sha256": "ae42ad9825cde4cd374abfce6bc82233b91099170c138b349554813e97da5100",
+      "size": 280891,
+      "official_metadata": "https://pypi.org/pypi/regex/2026.11.9/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0",
+      "file": "safetensors-0.8.0-cp310-abi3-win_amd64.whl",
+      "sha256": "096ec1a98435df7beb08853bb5aa9081a84f23d0adc67ed1a0a10550f608373f",
+      "size": 355540,
+      "official_metadata": "https://pypi.org/pypi/safetensors/0.8.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "dill",
+      "version": "0.4.0",
+      "file": "dill-0.4.0-py3-none-any.whl",
+      "sha256": "44f54bf6412c2c8464c14e8243eb163690a9800dbe2c367330883b19c7561049",
+      "size": 119668,
+      "official_metadata": "https://pypi.org/pypi/dill/0.4.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.22.2",
+      "file": "tokenizers-0.22.2-cp39-abi3-win_amd64.whl",
+      "sha256": "c9ea31edff2968b44a88f97d784c2f16dc0729b8b143ed004699ebca91f05c48",
+      "size": 2747786,
+      "official_metadata": "https://pypi.org/pypi/tokenizers/0.22.2/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1",
+      "file": "tqdm-4.70.1-py3-none-any.whl",
+      "sha256": "c293e525e6fef9c20e8728fd4612df02a0aa31bb5fe91ecd93e123b1b7bffa73",
+      "size": 80199,
+      "official_metadata": "https://pypi.org/pypi/tqdm/4.70.1/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "file": "httpx-0.28.1-py3-none-any.whl",
+      "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "size": 73517,
+      "official_metadata": "https://pypi.org/pypi/httpx/0.28.1/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "xxhash",
+      "version": "4.1.0",
+      "file": "xxhash-4.1.0-cp312-cp312-win_amd64.whl",
+      "sha256": "0e687251ab499b3e6efaa0ed18e65a577d805ee59d7ac5347716489f6972b7ac",
+      "size": 48252,
+      "official_metadata": "https://pypi.org/pypi/xxhash/4.1.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "anyio",
+      "version": "4.16.0",
+      "file": "anyio-4.16.0-py3-none-any.whl",
+      "sha256": "c66ae634e0b8228396b801741beb3294326d4b6102f7bba4041c0dfb58c29026",
+      "size": 134521,
+      "official_metadata": "https://pypi.org/pypi/anyio/4.16.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "multiprocess",
+      "version": "0.70.18",
+      "file": "multiprocess-0.70.18-py312-none-any.whl",
+      "sha256": "9b78f8e5024b573730bfb654783a13800c2c0f2dfc0c25e70b40d184d64adaa2",
+      "size": 150287,
+      "official_metadata": "https://pypi.org/pypi/multiprocess/0.70.18/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.5",
+      "file": "aiohttp-3.14.5-cp312-cp312-win_amd64.whl",
+      "sha256": "2cc38a4f2b516bef1714e690df87a0e043faf1a7693c82d860091684453d5111",
+      "size": 506141,
+      "official_metadata": "https://pypi.org/pypi/aiohttp/3.14.5/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "certifi",
+      "version": "2026.10.23",
+      "file": "certifi-2026.10.23-py3-none-any.whl",
+      "sha256": "e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1",
+      "size": 135082,
+      "official_metadata": "https://pypi.org/pypi/certifi/2026.10.23/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "file": "httpcore-1.0.9-py3-none-any.whl",
+      "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "size": 78784,
+      "official_metadata": "https://pypi.org/pypi/httpcore/1.0.9/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "file": "idna-3.20-py3-none-any.whl",
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "size": 69583,
+      "official_metadata": "https://pypi.org/pypi/idna/3.20/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "file": "h11-0.16.0-py3-none-any.whl",
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "size": 37515,
+      "official_metadata": "https://pypi.org/pypi/h11/0.16.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2",
+      "file": "charset_normalizer-3.5.2-cp312-cp312-win_amd64.whl",
+      "sha256": "780fbe7cab297b81dad9fb8dc5eb003c0468ffb0d9e5f65068c53a34661a96bc",
+      "size": 207486,
+      "official_metadata": "https://pypi.org/pypi/charset-normalizer/3.5.2/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "file": "urllib3-2.8.0-py3-none-any.whl",
+      "sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3",
+      "size": 135717,
+      "official_metadata": "https://pypi.org/pypi/urllib3/2.8.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "file": "colorama-0.4.6-py2.py3-none-any.whl",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "size": 25335,
+      "official_metadata": "https://pypi.org/pypi/colorama/0.4.6/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "python-dateutil",
+      "version": "4.0.0",
+      "file": "python_dateutil-4.0.0-py3-none-any.whl",
+      "sha256": "a5e246f79eb80475e691bf93862cead98decd8a498cf53ba0516fcdc0f50dc1c",
+      "size": 92853,
+      "official_metadata": "https://pypi.org/pypi/python-dateutil/4.0.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0",
+      "file": "aiosignal-1.4.0-py3-none-any.whl",
+      "sha256": "053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e",
+      "size": 7490,
+      "official_metadata": "https://pypi.org/pypi/aiosignal/1.4.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1",
+      "file": "aiohappyeyeballs-2.7.1-py3-none-any.whl",
+      "sha256": "9243213661e29250eb41368e5daa826fc017156c3b8a11440826b2e3ed376472",
+      "size": 15038,
+      "official_metadata": "https://pypi.org/pypi/aiohappyeyeballs/2.7.1/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "file": "attrs-26.1.0-py3-none-any.whl",
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+      "size": 67548,
+      "official_metadata": "https://pypi.org/pypi/attrs/26.1.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.6",
+      "file": "tzdata-2026.6-py2.py3-none-any.whl",
+      "sha256": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
+      "size": 348210,
+      "official_metadata": "https://pypi.org/pypi/tzdata/2026.6/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0",
+      "file": "frozenlist-1.8.0-cp312-cp312-win_amd64.whl",
+      "sha256": "34187385b08f866104f0c0617404c8eb08165ab1272e884abc89c112e9c00746",
+      "size": 44591,
+      "official_metadata": "https://pypi.org/pypi/frozenlist/1.8.0/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.4",
+      "file": "propcache-0.5.4-cp312-cp312-win_amd64.whl",
+      "sha256": "98914de2c4d7f0f9f4a8c6ea4bf05841f4175796941e3ef7d47eb718f22311fb",
+      "size": 46190,
+      "official_metadata": "https://pypi.org/pypi/propcache/0.5.4/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "multidict",
+      "version": "7.2.1",
+      "file": "multidict-7.2.1-cp312-cp312-win_amd64.whl",
+      "sha256": "781ca5dfc2f1d58e47f52216a0c1c7e1ba91ce8aa235459e20de2d402af77fb3",
+      "size": 95372,
+      "official_metadata": "https://pypi.org/pypi/multidict/7.2.1/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "file": "six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "size": 11050,
+      "official_metadata": "https://pypi.org/pypi/six/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1",
+      "file": "pandas-3.1.1-cp312-cp312-win_amd64.whl",
+      "sha256": "eef35cb3f07dbc8e10e298b8a55ee4aa04d6511f27d5277f13c3df45d3bbef5c",
+      "size": 10751076,
+      "official_metadata": "https://pypi.org/pypi/pandas/3.1.1/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.8.0",
+      "file": "hf_xet-1.8.0-cp38-abi3-win_amd64.whl",
+      "sha256": "92188598dedc1e1f5609bd718d4db8687a6c89915553912571e2f587892eecec",
+      "size": 3911559,
+      "official_metadata": "https://pypi.org/pypi/hf-xet/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "yarl",
+      "version": "1.25.1",
+      "file": "yarl-1.25.1-cp312-cp312-win_amd64.whl",
+      "sha256": "7d575b54cb3863ef9bc290ea4b009999d55dc237326131e4853cf33e888fee03",
+      "size": 102593,
+      "official_metadata": "https://pypi.org/pypi/yarl/1.25.1/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    },
+    {
+      "name": "pyarrow",
+      "version": "26.0.1",
+      "file": "pyarrow-26.0.1-cp312-cp312-win_amd64.whl",
+      "sha256": "9379f0d1056cad6866c4697aec83a15830202ec7e0bd52f8bd508b316260fa61",
+      "size": 29078866,
+      "official_metadata": "https://pypi.org/pypi/pyarrow/26.0.1/json",
+      "mirror": "https://pypi.tuna.tsinghua.edu.cn",
+      "verified": true
+    }
+  ],
+  "cpu_torch": {
+    "version": "2.9.1+cpu",
+    "url": "https://download.pytorch.org/whl/cpu/torch-2.9.1%2Bcpu-cp312-cp312-win_amd64.whl",
+    "sha256": "a4e06b4f441675d26b462123c8a83e77c55f1ec8ebc081203be2db1ea8054add"
+  },
+  "transformers": {
+    "version": "4.57.3",
+    "pypi_sha256_verified": true
+  },
+  "global_pip_configuration_changed": false,
+  "note": "downloaded_packages includes prefetched wheels; actual installed versions are in requirements.cpu.lock.txt and environment_cpu.json"
+}

@@ -1,0 +1,10 @@
+{
+  "run_id": "pilot_ft",
+  "method": "ft",
+  "seed": 42,
+  "checkpoint": "final-step-10:582a65307bf65835",
+  "count": 64,
+  "correct": 34,
+  "accuracy": 0.53125,
+  "accuracy_percent": 53.125
+}

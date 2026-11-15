@@ -1,0 +1,52 @@
+{
+  "split": "train",
+  "subset_seed": 2026,
+  "count": 8,
+  "label_counts": {
+    "0": 4,
+    "1": 4
+  },
+  "samples": [
+    {
+      "sample_id": "synthetic-train:0",
+      "label": 0,
+      "tokens_sha256": "b3f32f0630ae6c06c09f8b319f43796dbac8a3c636984b5a40d5a9561f8c98b3"
+    },
+    {
+      "sample_id": "synthetic-train:1",
+      "label": 1,
+      "tokens_sha256": "da05bdc67b5f7b2257aef6c6591dcb456fa2f8f44ab20b659a5399e93a29886b"
+    },
+    {
+      "sample_id": "synthetic-train:2",
+      "label": 0,
+      "tokens_sha256": "45beeda7b60d90c05f040c6072127356171ce1fa405603626621370e2d1e62b8"
+    },
+    {
+      "sample_id": "synthetic-train:3",
+      "label": 1,
+      "tokens_sha256": "f89fa2ae50c9b6aec7160b87c9df23527e7312ff5c20713400852f35b83d83f1"
+    },
+    {
+      "sample_id": "synthetic-train:4",
+      "label": 0,
+      "tokens_sha256": "76869fee43736091ce6ba974b3b624d87002a1d5ac5fede9fb022e46da1c655c"
+    },
+    {
+      "sample_id": "synthetic-train:5",
+      "label": 1,
+      "tokens_sha256": "b0d85f37243cf752d0592f028600bb028326bcb38f695656f2066a8b23a6b92f"
+    },
+    {
+      "sample_id": "synthetic-train:6",
+      "label": 0,
+      "tokens_sha256": "842e05a9994ef7692302688f9d6bacdb483755eaf3a697b17fbcb29e28ad6fc3"
+    },
+    {
+      "sample_id": "synthetic-train:7",
+      "label": 1,
+      "tokens_sha256": "8c87056c44db2324ee42b6a32c9f9fd73c6d40b534447a03c0b7da95fc2a2af4"
+    }
+  ],
+  "selection_sha256": "07f91040714603a86f9c679f7209bc6ecb6bce1173ad8eaa202a1e24515f68ab"
+}

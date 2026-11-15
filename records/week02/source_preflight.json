@@ -1,0 +1,30 @@
+{
+  "executor": "AI assistant",
+  "student_independent_work": false,
+  "python_files_syntax_checked": [
+    "src/common.py",
+    "src/data.py",
+    "src/evaluation.py",
+    "src/models.py",
+    "src/train.py",
+    "src/__init__.py",
+    "tools/check_environment.py",
+    "tools/prepare_data.py",
+    "tools/recompute_metrics.py",
+    "tools/run_checks.py",
+    "tools/week01_readonly_audit.py",
+    "tests/test_data_metrics.py",
+    "tests/test_models_pipeline.py",
+    "third_party/__init__.py",
+    "third_party/loralib/layers.py",
+    "third_party/loralib/utils.py",
+    "third_party/loralib/__init__.py"
+  ],
+  "syntax_passed": true,
+  "official_source_git_blobs_match": {
+    "__init__.py": "7fd9ad25a3ec6359639dfe7fa786dcc2c3c3e080",
+    "layers.py": "637865600fc9afbf76831e99e3d71eaca6871bda",
+    "utils.py": "0d121c9bbd6a424d8f4233fac17335aab5141d9b"
+  },
+  "official_reference": "https://github.com/microsoft/LoRA/tree/c4593f060e6a368d7bb5af5273b8e42810cdef90/loralib"
+}

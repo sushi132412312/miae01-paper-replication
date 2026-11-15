@@ -1,0 +1,10 @@
+{
+  "run_id": "synthetic_lora",
+  "method": "lora",
+  "seed": 42,
+  "checkpoint": "final-step-2:382a09b55c1c7d18",
+  "count": 6,
+  "correct": 3,
+  "accuracy": 0.5,
+  "accuracy_percent": 50.0
+}

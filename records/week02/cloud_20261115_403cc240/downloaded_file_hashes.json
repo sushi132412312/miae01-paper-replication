@@ -1,0 +1,18 @@
+{
+  "cache/hf_home/hub/datasets--nyu-mll--glue/blobs/66a253e67968acfabcbe49dbe9da964b42ac1c851c40ab760e8c8942efdb3229": {
+    "bytes": 3110468,
+    "sha256": "66a253e67968acfabcbe49dbe9da964b42ac1c851c40ab760e8c8942efdb3229"
+  },
+  "cache/nyu-mll___glue/sst2/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c/glue-train.arrow": {
+    "bytes": 4700272,
+    "sha256": "47387d613631ae60c690f2dd67b8f80d0c39e36d9080ca438eb0f18e1ca4cb4a"
+  },
+  "cache/models--FacebookAI--roberta-base/blobs/ad0bcbeb288f0d1373d88e0762e66357f55b8311": {
+    "bytes": 1355863,
+    "sha256": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e"
+  },
+  "cache/models--FacebookAI--roberta-base/blobs/5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81": {
+    "bytes": 498818054,
+    "sha256": "5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81"
+  }
+}

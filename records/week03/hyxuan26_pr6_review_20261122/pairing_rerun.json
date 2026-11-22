@@ -1,0 +1,183 @@
+{
+  "status": "pass",
+  "runs": [
+    {
+      "run_id": "flips0_ft_seed42",
+      "scores_out_of_6": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "accuracy_percent": 50.0
+    },
+    {
+      "run_id": "flips0_ft_seed43",
+      "scores_out_of_6": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "accuracy_percent": 50.0
+    },
+    {
+      "run_id": "flips0_ft_seed44",
+      "scores_out_of_6": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "accuracy_percent": 50.0
+    },
+    {
+      "run_id": "flips0_lora_seed42",
+      "scores_out_of_6": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "accuracy_percent": 50.0
+    },
+    {
+      "run_id": "flips0_lora_seed43",
+      "scores_out_of_6": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "accuracy_percent": 50.0
+    },
+    {
+      "run_id": "flips0_lora_seed44",
+      "scores_out_of_6": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "accuracy_percent": 50.0
+    },
+    {
+      "run_id": "flips2_ft_seed42",
+      "scores_out_of_6": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "accuracy_percent": 50.0
+    },
+    {
+      "run_id": "flips2_ft_seed43",
+      "scores_out_of_6": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "accuracy_percent": 50.0
+    },
+    {
+      "run_id": "flips2_ft_seed44",
+      "scores_out_of_6": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "accuracy_percent": 50.0
+    },
+    {
+      "run_id": "flips2_lora_seed42",
+      "scores_out_of_6": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "accuracy_percent": 50.0
+    },
+    {
+      "run_id": "flips2_lora_seed43",
+      "scores_out_of_6": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "accuracy_percent": 50.0
+    },
+    {
+      "run_id": "flips2_lora_seed44",
+      "scores_out_of_6": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "accuracy_percent": 50.0
+    }
+  ],
+  "seed_pairing": {
+    "42": {
+      "common_backbone_sha256": "deb1c54626e3aecfac18fd270cf1ca0d1f91aaf2b0f6de17c8adf22219c6897a",
+      "classifier_sha256": "9f127dd17531c01e5cab23162b5061642539f2e59e4e3ae30c360c1a2f3f74bf",
+      "sample_order_sha256": "a28719f70d35aa32cdf54d13ba82682d24730d84fb50cddd8291f646e18f3b13"
+    },
+    "43": {
+      "common_backbone_sha256": "308ee44c6d14e6ca9c5692ccbc10cc6c38071e5837c874de31d4c79eca97eacb",
+      "classifier_sha256": "9a79e788d3b396644c3b2487fb415a507bdd2c7225b9fcaa3eafeb2bb253e5a3",
+      "sample_order_sha256": "13b1e1674408dda320a968511198518d98a3dc04d1766ef7981f13f6f07eaf93"
+    },
+    "44": {
+      "common_backbone_sha256": "010eb916c576b8a4cff5ba8d663e7abd2e01f715d80165a4244213be4b6fa425",
+      "classifier_sha256": "12528abe1cb5e83158dc6683a9f82f02aaf7eb31dd086d9da848dbd3c69b67c1",
+      "sample_order_sha256": "ef0027531c84683edec1aa9d8a08e6f2f4d36c3977a060ee002d7ea5a5c30458"
+    }
+  },
+  "train_clean_sha256": "07f91040714603a86f9c679f7209bc6ecb6bce1173ad8eaa202a1e24515f68ab",
+  "train_noisy_sha256": "78acf7e0482400393e8601950a1d736212a1f3a4fcf4991e405a58950a62454c",
+  "validation_sha256": "9aec6b7f600c1058c1abc7270921c7b3ad3a2897e56b278b150e11ef5d3861e1",
+  "label_noise_seed": 2027,
+  "flipped_rows": [
+    {
+      "sample_id": "synthetic-train:1",
+      "clean": 1,
+      "noisy": 0
+    },
+    {
+      "sample_id": "synthetic-train:3",
+      "clean": 1,
+      "noisy": 0
+    }
+  ],
+  "validated_training_steps": 144,
+  "validated_epoch_prediction_rows": 216,
+  "paired_summary_means_sample_sds_and_percentage_point_differences_match": true,
+  "reader_controls": {
+    "missing_one_run": [
+      {
+        "method": "lora",
+        "seed": 44
+      }
+    ],
+    "duplicate_run_rejection": "重复运行，标签翻转数 2、方法 lora、种子 44",
+    "misreported_noise_ids_rejection": "flips2_lora_seed42 的训练标签翻转证据不一致",
+    "one_member_wrong_order_rejection": "种子 42 的共同初值或样本顺序没有配对",
+    "all_four_seed42_records_use_seed43_order": {
+      "fixture_only": true,
+      "expected_order_sha256": "a28719f70d35aa32cdf54d13ba82682d24730d84fb50cddd8291f646e18f3b13",
+      "injected_sha256": "13b1e1674408dda320a968511198518d98a3dc04d1766ef7981f13f6f07eaf93",
+      "pr_summary_conditions_status": {
+        "0": "complete",
+        "2": "complete"
+      },
+      "matches_declared_seed": false,
+      "within_seed_four_way_order_still_paired": true
+    }
+  }
+}

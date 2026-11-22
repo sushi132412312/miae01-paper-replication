@@ -1,0 +1,149 @@
+{
+  "commit": "7fcffbb6aa7170a93692abf8a40417ee56f56722",
+  "device": "cpu",
+  "status": "synthetic_selfcheck",
+  "training_process_pid": 33322,
+  "scripted_best_epoch": {
+    "fixture": "controlled scores, real synthetic LoRA gradient updates",
+    "correct_by_epoch": [
+      2,
+      5,
+      5
+    ],
+    "winner": 2,
+    "restored_parameter_tensor_mismatches_by_epoch": [
+      12,
+      0,
+      12
+    ],
+    "full_model_named_tensor_count": 49,
+    "serialized_tensor_names": [
+      "classifier.dense.bias",
+      "classifier.dense.weight",
+      "classifier.out_proj.bias",
+      "classifier.out_proj.weight",
+      "roberta.encoder.layer.0.attention.self.query.lora_A",
+      "roberta.encoder.layer.0.attention.self.query.lora_B",
+      "roberta.encoder.layer.0.attention.self.value.lora_A",
+      "roberta.encoder.layer.0.attention.self.value.lora_B",
+      "roberta.encoder.layer.1.attention.self.query.lora_A",
+      "roberta.encoder.layer.1.attention.self.query.lora_B",
+      "roberta.encoder.layer.1.attention.self.value.lora_A",
+      "roberta.encoder.layer.1.attention.self.value.lora_B"
+    ],
+    "winner_predictions_sha256": "896f98989c06f8efb4a3f7f056d956e5ef2768e933dc38ed6b1e8527cc71bd6c",
+    "weights": {
+      "filename": "best.safetensors",
+      "bytes": 9824,
+      "sha256": "09964f296dcd6b41c47c1dd0a453a8c9692ac5afaa15a44ed5f6ddab2fae9dd9",
+      "tensor_count": 12
+    }
+  },
+  "restore_rejections": {
+    "stale_sha256": {
+      "rejected": true,
+      "no_parameter_updated": true,
+      "error": "最佳权重的文件大小或 SHA256 不符"
+    },
+    "missing_tensor": {
+      "rejected": true,
+      "no_parameter_updated": true,
+      "error": "最佳权重和模型可训练张量集合不一致"
+    },
+    "wrong_shape": {
+      "rejected": true,
+      "no_parameter_updated": true,
+      "error": "最佳权重的张量形状或类型不符: classifier.out_proj.weight"
+    },
+    "wrong_dtype": {
+      "rejected": true,
+      "no_parameter_updated": true,
+      "error": "最佳权重的张量形状或类型不符: classifier.out_proj.weight"
+    }
+  },
+  "unmodified_replay": {
+    "stdout": "回读通过，最佳轮次 1，6 条预测完全一致\n",
+    "stderr": "",
+    "exit_code": 0,
+    "pid": 33335,
+    "result": {
+      "run_id": "baseline",
+      "method": "lora",
+      "seed": 42,
+      "checkpoint": "epoch-1-step-4",
+      "count": 6,
+      "correct": 3,
+      "accuracy": 0.5,
+      "accuracy_percent": 50.0,
+      "best_epoch": 1,
+      "device": "cpu",
+      "verified_weights_sha256": "9cc2b2f27cc2c4283c59e26240b12a48ff5f491fcf8a71a7a43e1d80fd58c4d1",
+      "all_predictions_match": true
+    }
+  },
+  "metadata_consistency_probes": {
+    "stale_epoch_fields": {
+      "inputs": {
+        "fields": [
+          "metrics.best_epoch",
+          "checkpoint_selection.best_epoch"
+        ],
+        "from": 1,
+        "to": 2
+      },
+      "replay": {
+        "stdout": "回读通过，最佳轮次 2，6 条预测完全一致\n",
+        "stderr": "",
+        "exit_code": 0,
+        "pid": 33338,
+        "result": {
+          "run_id": "baseline",
+          "method": "lora",
+          "seed": 42,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "accuracy_percent": 50.0,
+          "best_epoch": 2,
+          "device": "cpu",
+          "verified_weights_sha256": "9cc2b2f27cc2c4283c59e26240b12a48ff5f491fcf8a71a7a43e1d80fd58c4d1",
+          "all_predictions_match": true
+        }
+      },
+      "separate_paired_read_run_rejected_with": "<run> 的最佳轮次或逐例预测不符合选择规则"
+    },
+    "stale_lora_scaling": {
+      "inputs": {
+        "fields": [
+          "config.lora_alpha"
+        ],
+        "from": 8,
+        "to": 16,
+        "max_abs_logit_delta": 1.1307187378406525e-05,
+        "all_predicted_labels_still_match": true
+      },
+      "replay": {
+        "stdout": "回读通过，最佳轮次 1，6 条预测完全一致\n",
+        "stderr": "",
+        "exit_code": 0,
+        "pid": 33339,
+        "result": {
+          "run_id": "baseline",
+          "method": "lora",
+          "seed": 42,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy": 0.5,
+          "accuracy_percent": 50.0,
+          "best_epoch": 1,
+          "device": "cpu",
+          "verified_weights_sha256": "9cc2b2f27cc2c4283c59e26240b12a48ff5f491fcf8a71a7a43e1d80fd58c4d1",
+          "all_predictions_match": true
+        }
+      },
+      "separate_paired_read_run_rejected_with": "<run> 的配置、指标、样本清单或更新步数不一致"
+    }
+  }
+}

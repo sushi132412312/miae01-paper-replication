@@ -1,0 +1,181 @@
+{
+  "runs": [
+    {
+      "run": "flips0_ft_seed42",
+      "csv_fields_identical": {
+        "predictions.csv": true,
+        "epochs/001/predictions.csv": true,
+        "epochs/002/predictions.csv": true,
+        "epochs/003/predictions.csv": true
+      },
+      "pr_weight_sha256": "f21a573392d55c6c7675f48f98cb4dfb91f67cf6954de4887afb95eeb71c7345",
+      "local_weight_sha256": "c90be583b91d0283ce0c6b3cedd0d3926d1d6ca175335b7380d5ef37e9378036",
+      "cross_host_weight_digest_equal": false
+    },
+    {
+      "run": "flips0_lora_seed42",
+      "csv_fields_identical": {
+        "predictions.csv": true,
+        "epochs/001/predictions.csv": true,
+        "epochs/002/predictions.csv": true,
+        "epochs/003/predictions.csv": true
+      },
+      "pr_weight_sha256": "178c67d2c39fdefa59790053be759089e5701afe275e843046f0d925d64b7e15",
+      "local_weight_sha256": "9cc2b2f27cc2c4283c59e26240b12a48ff5f491fcf8a71a7a43e1d80fd58c4d1",
+      "cross_host_weight_digest_equal": false
+    },
+    {
+      "run": "flips0_ft_seed43",
+      "csv_fields_identical": {
+        "predictions.csv": true,
+        "epochs/001/predictions.csv": true,
+        "epochs/002/predictions.csv": true,
+        "epochs/003/predictions.csv": true
+      },
+      "pr_weight_sha256": "3ccdf59e3e03c22415ff71337a53784f001e3ad3fce32961dcd78031400fe10d",
+      "local_weight_sha256": "d9728fc52d6f16ece68000cf08bf2e49a1071f7d733121202f0b096cd0a95357",
+      "cross_host_weight_digest_equal": false
+    },
+    {
+      "run": "flips0_lora_seed43",
+      "csv_fields_identical": {
+        "predictions.csv": true,
+        "epochs/001/predictions.csv": true,
+        "epochs/002/predictions.csv": true,
+        "epochs/003/predictions.csv": true
+      },
+      "pr_weight_sha256": "f7d6556d0501355d5c3c7cde760c91aeb321ffc826a0489c23cb2f3e2f60c219",
+      "local_weight_sha256": "694a94d695362530d30923842dfed8a71744b8023d2f406be7e34d4558b2afd4",
+      "cross_host_weight_digest_equal": false
+    },
+    {
+      "run": "flips0_ft_seed44",
+      "csv_fields_identical": {
+        "predictions.csv": true,
+        "epochs/001/predictions.csv": true,
+        "epochs/002/predictions.csv": true,
+        "epochs/003/predictions.csv": true
+      },
+      "pr_weight_sha256": "fff38f901beb0f746a47ce9f19ec6ac4e4821a5691c0b956b758780fed843911",
+      "local_weight_sha256": "a0880fd93a08450c6f2f4c432d2816ca160edd05dc9bf472116ecc1c5307398a",
+      "cross_host_weight_digest_equal": false
+    },
+    {
+      "run": "flips0_lora_seed44",
+      "csv_fields_identical": {
+        "predictions.csv": true,
+        "epochs/001/predictions.csv": true,
+        "epochs/002/predictions.csv": true,
+        "epochs/003/predictions.csv": true
+      },
+      "pr_weight_sha256": "428565b70a8414f656e5d7be4d1ca5180a3c3ca38b795a6a08503f6c0773d2af",
+      "local_weight_sha256": "a1d2852ee51126cfef3cbc59a30fde719fe81ad333af052c7de890377d4c8b04",
+      "cross_host_weight_digest_equal": false
+    },
+    {
+      "run": "flips2_ft_seed42",
+      "csv_fields_identical": {
+        "predictions.csv": true,
+        "epochs/001/predictions.csv": true,
+        "epochs/002/predictions.csv": true,
+        "epochs/003/predictions.csv": true
+      },
+      "pr_weight_sha256": "ae9bd69849ec0b79f8ac6a7923a905a6cebddbeddb555495005bd0abaadace28",
+      "local_weight_sha256": "3dfa36bdd4298b7a1f1b622d640b6044783f695b28fb110d3bffbe4e677a35d3",
+      "cross_host_weight_digest_equal": false
+    },
+    {
+      "run": "flips2_lora_seed42",
+      "csv_fields_identical": {
+        "predictions.csv": true,
+        "epochs/001/predictions.csv": true,
+        "epochs/002/predictions.csv": true,
+        "epochs/003/predictions.csv": true
+      },
+      "pr_weight_sha256": "2d5a9c5c783d1749cd1e89c055a148253cd7e332e3f5f006efb345be73ee86cb",
+      "local_weight_sha256": "a009f01cf25003974cb0cf050a3980981ed777ee5af61dbc6e69a19b3d63aeed",
+      "cross_host_weight_digest_equal": false
+    },
+    {
+      "run": "flips2_ft_seed43",
+      "csv_fields_identical": {
+        "predictions.csv": true,
+        "epochs/001/predictions.csv": true,
+        "epochs/002/predictions.csv": true,
+        "epochs/003/predictions.csv": true
+      },
+      "pr_weight_sha256": "b752fa800a5604c2353255227106897f0b73d5b5c2aad5028745dc7d2bf9cd9b",
+      "local_weight_sha256": "1d9bee4cd2e4a80585f85198a66d2dc0a0ec566868c9f367817905ab336c570a",
+      "cross_host_weight_digest_equal": false
+    },
+    {
+      "run": "flips2_lora_seed43",
+      "csv_fields_identical": {
+        "predictions.csv": true,
+        "epochs/001/predictions.csv": true,
+        "epochs/002/predictions.csv": true,
+        "epochs/003/predictions.csv": true
+      },
+      "pr_weight_sha256": "9f6406bb92cda7e7c8f664168cda975fd2afbdaf1fb09ebdfba2884adfda9b0f",
+      "local_weight_sha256": "1434fd43a6a61d240a4262c2584464c1fe36a3862a902aa12aa44935fe255dd0",
+      "cross_host_weight_digest_equal": false
+    },
+    {
+      "run": "flips2_ft_seed44",
+      "csv_fields_identical": {
+        "predictions.csv": true,
+        "epochs/001/predictions.csv": true,
+        "epochs/002/predictions.csv": true,
+        "epochs/003/predictions.csv": true
+      },
+      "pr_weight_sha256": "47e14b28be2f9bcf5e2797aebc4a80179ebd5653ced809ab8ae76ee8637fcd79",
+      "local_weight_sha256": "08a26267d777e51eeccc4dfd356257c92068726235ac9cd0036324ca5b838157",
+      "cross_host_weight_digest_equal": false
+    },
+    {
+      "run": "flips2_lora_seed44",
+      "csv_fields_identical": {
+        "predictions.csv": true,
+        "epochs/001/predictions.csv": true,
+        "epochs/002/predictions.csv": true,
+        "epochs/003/predictions.csv": true
+      },
+      "pr_weight_sha256": "53a450bd8579af8bf4d6ddf37b796dabb8c1cc2a65e48fa44e271fc48c0439ca",
+      "local_weight_sha256": "961b6b71d08d36cceb3f69889aee0a4483f66429ecd2e4140fc8cdb6dcd86971",
+      "cross_host_weight_digest_equal": false
+    }
+  ],
+  "pr_environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.12.10",
+    "packages": {
+      "torch": "2.9.1+cpu",
+      "transformers": "4.57.3",
+      "datasets": "4.4.1",
+      "numpy": "2.2.6",
+      "huggingface-hub": "0.36.2",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.8.0"
+    }
+  },
+  "local_environment": {
+    "python": "3.11.18 (main, Oct 26 2026, 11:32:31) [Clang 21.1.8 ]",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "device": "cpu",
+    "head_sha": "7fcffbb6aa7170a93692abf8a40417ee56f56722",
+    "source_tree": "7f19c4320bf0d4e26c5617a0e7b1c875ac15bf35",
+    "versions": {
+      "torch": "2.9.1",
+      "transformers": "4.57.3",
+      "datasets": "4.4.1",
+      "numpy": "2.2.6",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.22.2"
+    },
+    "offline": {
+      "HF_HUB_OFFLINE": "1",
+      "HF_DATASETS_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1"
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "pr_head": "7fcffbb6aa7170a93692abf8a40417ee56f56722",
+  "python": "3.11.18",
+  "device": "cpu",
+  "packages": {
+    "torch": "2.9.1",
+    "transformers": "4.57.3",
+    "numpy": "2.2.6"
+  },
+  "upstream": {
+    "commit": "c4593f060e6a368d7bb5af5273b8e42810cdef90",
+    "files": {
+      "loralib/__init__.py": {
+        "size": 57,
+        "sha256": "df9ca7e519d0bbe03679eac45ed00d9b99d0434d106dcdd2b600765b99192027",
+        "git_blob_sha1": "7fd9ad25a3ec6359639dfe7fa786dcc2c3c3e080",
+        "url": "https://github.com/microsoft/LoRA/blob/c4593f060e6a368d7bb5af5273b8e42810cdef90/loralib/__init__.py",
+        "equal_bytes": true
+      },
+      "loralib/layers.py": {
+        "size": 12651,
+        "sha256": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797",
+        "git_blob_sha1": "637865600fc9afbf76831e99e3d71eaca6871bda",
+        "url": "https://github.com/microsoft/LoRA/blob/c4593f060e6a368d7bb5af5273b8e42810cdef90/loralib/layers.py",
+        "equal_bytes": true
+      },
+      "loralib/utils.py": {
+        "size": 1819,
+        "sha256": "9cd157527f79d48cf6f5feb7eb87509696e5f3cbb38862a633239e464eacaa71",
+        "git_blob_sha1": "0d121c9bbd6a424d8f4233fac17335aab5141d9b",
+        "url": "https://github.com/microsoft/LoRA/blob/c4593f060e6a368d7bb5af5273b8e42810cdef90/loralib/utils.py",
+        "equal_bytes": true
+      },
+      "LICENSE.md": {
+        "size": 1141,
+        "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+        "git_blob_sha1": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+        "url": "https://github.com/microsoft/LoRA/blob/c4593f060e6a368d7bb5af5273b8e42810cdef90/LICENSE.md",
+        "equal_bytes": true
+      }
+    }
+  },
+  "probes": [
+    {
+      "seed": 42,
+      "total": 24514,
+      "ft_total": 23490,
+      "counts": {
+        "adapter": 1024,
+        "classifier": 1122,
+        "frozen": 22368
+      },
+      "trainable": 2146,
+      "names": [
+        "classifier.dense.bias",
+        "classifier.dense.weight",
+        "classifier.out_proj.bias",
+        "classifier.out_proj.weight",
+        "roberta.encoder.layer.0.attention.self.query.lora_A",
+        "roberta.encoder.layer.0.attention.self.query.lora_B",
+        "roberta.encoder.layer.0.attention.self.value.lora_A",
+        "roberta.encoder.layer.0.attention.self.value.lora_B",
+        "roberta.encoder.layer.1.attention.self.query.lora_A",
+        "roberta.encoder.layer.1.attention.self.query.lora_B",
+        "roberta.encoder.layer.1.attention.self.value.lora_A",
+        "roberta.encoder.layer.1.attention.self.value.lora_B"
+      ],
+      "qv": [
+        "roberta.encoder.layer.0.attention.self.query",
+        "roberta.encoder.layer.0.attention.self.value",
+        "roberta.encoder.layer.1.attention.self.query",
+        "roberta.encoder.layer.1.attention.self.value"
+      ],
+      "zero_init_logit_max_abs_delta": 0.0,
+      "initial_shared_tensors_equal": true,
+      "construction_rng_equal": true,
+      "frozen_sha256_before": "deb1c54626e3aecfac18fd270cf1ca0d1f91aaf2b0f6de17c8adf22219c6897a",
+      "frozen_sha256_after": "deb1c54626e3aecfac18fd270cf1ca0d1f91aaf2b0f6de17c8adf22219c6897a",
+      "sample_ids": [
+        "synthetic-train:0",
+        "synthetic-train:1"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "loss": 0.6942679286003113,
+          "grad_norms": {
+            "classifier.dense.bias": 0.018487349152565002,
+            "classifier.dense.weight": 0.16664105653762817,
+            "classifier.out_proj.bias": 0.009945887140929699,
+            "classifier.out_proj.weight": 0.20363248884677887,
+            "roberta.encoder.layer.0.attention.self.query.lora_A": 0.0,
+            "roberta.encoder.layer.0.attention.self.query.lora_B": 2.6451914436620427e-06,
+            "roberta.encoder.layer.0.attention.self.value.lora_A": 0.0,
+            "roberta.encoder.layer.0.attention.self.value.lora_B": 0.00032321648905053735,
+            "roberta.encoder.layer.1.attention.self.query.lora_A": 0.0,
+            "roberta.encoder.layer.1.attention.self.query.lora_B": 6.68544635118451e-06,
+            "roberta.encoder.layer.1.attention.self.value.lora_A": 0.0,
+            "roberta.encoder.layer.1.attention.self.value.lora_B": 0.0005248592933639884
+          },
+          "changed_tensors": [
+            "classifier.dense.bias",
+            "classifier.dense.weight",
+            "classifier.out_proj.bias",
+            "classifier.out_proj.weight",
+            "roberta.encoder.layer.0.attention.self.query.lora_B",
+            "roberta.encoder.layer.0.attention.self.value.lora_B",
+            "roberta.encoder.layer.1.attention.self.query.lora_B",
+            "roberta.encoder.layer.1.attention.self.value.lora_B"
+          ]
+        },
+        {
+          "step": 2,
+          "loss": 0.694713830947876,
+          "grad_norms": {
+            "classifier.dense.bias": 0.015732629224658012,
+            "classifier.dense.weight": 0.1495104283094406,
+            "classifier.out_proj.bias": 0.0021456116810441017,
+            "classifier.out_proj.weight": 0.18340811133384705,
+            "roberta.encoder.layer.0.attention.self.query.lora_A": 3.4556034478328e-08,
+            "roberta.encoder.layer.0.attention.self.query.lora_B": 1.926609911606647e-06,
+            "roberta.encoder.layer.0.attention.self.value.lora_A": 5.28267992194742e-06,
+            "roberta.encoder.layer.0.attention.self.value.lora_B": 0.0004357381840236485,
+            "roberta.encoder.layer.1.attention.self.query.lora_A": 5.0370012161238265e-08,
+            "roberta.encoder.layer.1.attention.self.query.lora_B": 6.542392384289997e-06,
+            "roberta.encoder.layer.1.attention.self.value.lora_A": 1.0436055163154379e-05,
+            "roberta.encoder.layer.1.attention.self.value.lora_B": 0.0004622559645213187
+          },
+          "changed_tensors": [
+            "classifier.dense.bias",
+            "classifier.dense.weight",
+            "classifier.out_proj.bias",
+            "classifier.out_proj.weight",
+            "roberta.encoder.layer.0.attention.self.query.lora_A",
+            "roberta.encoder.layer.0.attention.self.query.lora_B",
+            "roberta.encoder.layer.0.attention.self.value.lora_A",
+            "roberta.encoder.layer.0.attention.self.value.lora_B",
+            "roberta.encoder.layer.1.attention.self.query.lora_A",
+            "roberta.encoder.layer.1.attention.self.query.lora_B",
+            "roberta.encoder.layer.1.attention.self.value.lora_A",
+            "roberta.encoder.layer.1.attention.self.value.lora_B"
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "total": 24514,
+      "ft_total": 23490,
+      "counts": {
+        "adapter": 1024,
+        "classifier": 1122,
+        "frozen": 22368
+      },
+      "trainable": 2146,
+      "names": [
+        "classifier.dense.bias",
+        "classifier.dense.weight",
+        "classifier.out_proj.bias",
+        "classifier.out_proj.weight",
+        "roberta.encoder.layer.0.attention.self.query.lora_A",
+        "roberta.encoder.layer.0.attention.self.query.lora_B",
+        "roberta.encoder.layer.0.attention.self.value.lora_A",
+        "roberta.encoder.layer.0.attention.self.value.lora_B",
+        "roberta.encoder.layer.1.attention.self.query.lora_A",
+        "roberta.encoder.layer.1.attention.self.query.lora_B",
+        "roberta.encoder.layer.1.attention.self.value.lora_A",
+        "roberta.encoder.layer.1.attention.self.value.lora_B"
+      ],
+      "qv": [
+        "roberta.encoder.layer.0.attention.self.query",
+        "roberta.encoder.layer.0.attention.self.value",
+        "roberta.encoder.layer.1.attention.self.query",
+        "roberta.encoder.layer.1.attention.self.value"
+      ],
+      "zero_init_logit_max_abs_delta": 0.0,
+      "initial_shared_tensors_equal": true,
+      "construction_rng_equal": true,
+      "frozen_sha256_before": "308ee44c6d14e6ca9c5692ccbc10cc6c38071e5837c874de31d4c79eca97eacb",
+      "frozen_sha256_after": "308ee44c6d14e6ca9c5692ccbc10cc6c38071e5837c874de31d4c79eca97eacb",
+      "sample_ids": [
+        "synthetic-train:0",
+        "synthetic-train:1"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "loss": 0.6941429972648621,
+          "grad_norms": {
+            "classifier.dense.bias": 0.01254621334373951,
+            "classifier.dense.weight": 0.1610947549343109,
+            "classifier.out_proj.bias": 0.004146691411733627,
+            "classifier.out_proj.weight": 0.19063088297843933,
+            "roberta.encoder.layer.0.attention.self.query.lora_A": 0.0,
+            "roberta.encoder.layer.0.attention.self.query.lora_B": 6.732008387189126e-06,
+            "roberta.encoder.layer.0.attention.self.value.lora_A": 0.0,
+            "roberta.encoder.layer.0.attention.self.value.lora_B": 0.0005065303994342685,
+            "roberta.encoder.layer.1.attention.self.query.lora_A": 0.0,
+            "roberta.encoder.layer.1.attention.self.query.lora_B": 3.434934797041933e-06,
+            "roberta.encoder.layer.1.attention.self.value.lora_A": 0.0,
+            "roberta.encoder.layer.1.attention.self.value.lora_B": 0.0008254736894741654
+          },
+          "changed_tensors": [
+            "classifier.dense.bias",
+            "classifier.dense.weight",
+            "classifier.out_proj.bias",
+            "classifier.out_proj.weight",
+            "roberta.encoder.layer.0.attention.self.query.lora_B",
+            "roberta.encoder.layer.0.attention.self.value.lora_B",
+            "roberta.encoder.layer.1.attention.self.query.lora_B",
+            "roberta.encoder.layer.1.attention.self.value.lora_B"
+          ]
+        },
+        {
+          "step": 2,
+          "loss": 0.6924038529396057,
+          "grad_norms": {
+            "classifier.dense.bias": 0.010179177857935429,
+            "classifier.dense.weight": 0.1378849595785141,
+            "classifier.out_proj.bias": 0.0013163198018446565,
+            "classifier.out_proj.weight": 0.15271413326263428,
+            "roberta.encoder.layer.0.attention.self.query.lora_A": 1.8228902831651794e-07,
+            "roberta.encoder.layer.0.attention.self.query.lora_B": 9.264164873457048e-06,
+            "roberta.encoder.layer.0.attention.self.value.lora_A": 1.4034367268322967e-05,
+            "roberta.encoder.layer.0.attention.self.value.lora_B": 0.0007312783855013549,
+            "roberta.encoder.layer.1.attention.self.query.lora_A": 1.2023063789001753e-07,
+            "roberta.encoder.layer.1.attention.self.query.lora_B": 4.5230558498587925e-06,
+            "roberta.encoder.layer.1.attention.self.value.lora_A": 1.613836684555281e-05,
+            "roberta.encoder.layer.1.attention.self.value.lora_B": 0.0008302483474835753
+          },
+          "changed_tensors": [
+            "classifier.dense.bias",
+            "classifier.dense.weight",
+            "classifier.out_proj.bias",
+            "classifier.out_proj.weight",
+            "roberta.encoder.layer.0.attention.self.query.lora_A",
+            "roberta.encoder.layer.0.attention.self.query.lora_B",
+            "roberta.encoder.layer.0.attention.self.value.lora_A",
+            "roberta.encoder.layer.0.attention.self.value.lora_B",
+            "roberta.encoder.layer.1.attention.self.query.lora_A",
+            "roberta.encoder.layer.1.attention.self.query.lora_B",
+            "roberta.encoder.layer.1.attention.self.value.lora_A",
+            "roberta.encoder.layer.1.attention.self.value.lora_B"
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 44,
+      "total": 24514,
+      "ft_total": 23490,
+      "counts": {
+        "adapter": 1024,
+        "classifier": 1122,
+        "frozen": 22368
+      },
+      "trainable": 2146,
+      "names": [
+        "classifier.dense.bias",
+        "classifier.dense.weight",
+        "classifier.out_proj.bias",
+        "classifier.out_proj.weight",
+        "roberta.encoder.layer.0.attention.self.query.lora_A",
+        "roberta.encoder.layer.0.attention.self.query.lora_B",
+        "roberta.encoder.layer.0.attention.self.value.lora_A",
+        "roberta.encoder.layer.0.attention.self.value.lora_B",
+        "roberta.encoder.layer.1.attention.self.query.lora_A",
+        "roberta.encoder.layer.1.attention.self.query.lora_B",
+        "roberta.encoder.layer.1.attention.self.value.lora_A",
+        "roberta.encoder.layer.1.attention.self.value.lora_B"
+      ],
+      "qv": [
+        "roberta.encoder.layer.0.attention.self.query",
+        "roberta.encoder.layer.0.attention.self.value",
+        "roberta.encoder.layer.1.attention.self.query",
+        "roberta.encoder.layer.1.attention.self.value"
+      ],
+      "zero_init_logit_max_abs_delta": 0.0,
+      "initial_shared_tensors_equal": true,
+      "construction_rng_equal": true,
+      "frozen_sha256_before": "010eb916c576b8a4cff5ba8d663e7abd2e01f715d80165a4244213be4b6fa425",
+      "frozen_sha256_after": "010eb916c576b8a4cff5ba8d663e7abd2e01f715d80165a4244213be4b6fa425",
+      "sample_ids": [
+        "synthetic-train:0",
+        "synthetic-train:1"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "loss": 0.6998518705368042,
+          "grad_norms": {
+            "classifier.dense.bias": 0.02116142213344574,
+            "classifier.dense.weight": 0.19297778606414795,
+            "classifier.out_proj.bias": 0.0062424540519714355,
+            "classifier.out_proj.weight": 0.17623671889305115,
+            "roberta.encoder.layer.0.attention.self.query.lora_A": 0.0,
+            "roberta.encoder.layer.0.attention.self.query.lora_B": 6.703750386805041e-06,
+            "roberta.encoder.layer.0.attention.self.value.lora_A": 0.0,
+            "roberta.encoder.layer.0.attention.self.value.lora_B": 0.0003992319980170578,
+            "roberta.encoder.layer.1.attention.self.query.lora_A": 0.0,
+            "roberta.encoder.layer.1.attention.self.query.lora_B": 5.5233363127626944e-06,
+            "roberta.encoder.layer.1.attention.self.value.lora_A": 0.0,
+            "roberta.encoder.layer.1.attention.self.value.lora_B": 0.0006156183080747724
+          },
+          "changed_tensors": [
+            "classifier.dense.bias",
+            "classifier.dense.weight",
+            "classifier.out_proj.bias",
+            "classifier.out_proj.weight",
+            "roberta.encoder.layer.0.attention.self.query.lora_B",
+            "roberta.encoder.layer.0.attention.self.value.lora_B",
+            "roberta.encoder.layer.1.attention.self.query.lora_B",
+            "roberta.encoder.layer.1.attention.self.value.lora_B"
+          ]
+        },
+        {
+          "step": 2,
+          "loss": 0.6917680501937866,
+          "grad_norms": {
+            "classifier.dense.bias": 0.025281814858317375,
+            "classifier.dense.weight": 0.16968581080436707,
+            "classifier.out_proj.bias": 0.0032701739110052586,
+            "classifier.out_proj.weight": 0.14211034774780273,
+            "roberta.encoder.layer.0.attention.self.query.lora_A": 3.1850387216536546e-08,
+            "roberta.encoder.layer.0.attention.self.query.lora_B": 7.998224646144081e-06,
+            "roberta.encoder.layer.0.attention.self.value.lora_A": 9.291607966588344e-06,
+            "roberta.encoder.layer.0.attention.self.value.lora_B": 0.0003659184731077403,
+            "roberta.encoder.layer.1.attention.self.query.lora_A": 7.099352217210253e-08,
+            "roberta.encoder.layer.1.attention.self.query.lora_B": 4.422028268891154e-06,
+            "roberta.encoder.layer.1.attention.self.value.lora_A": 7.58265105105238e-06,
+            "roberta.encoder.layer.1.attention.self.value.lora_B": 0.0007635959191247821
+          },
+          "changed_tensors": [
+            "classifier.dense.bias",
+            "classifier.dense.weight",
+            "classifier.out_proj.bias",
+            "classifier.out_proj.weight",
+            "roberta.encoder.layer.0.attention.self.query.lora_A",
+            "roberta.encoder.layer.0.attention.self.query.lora_B",
+            "roberta.encoder.layer.0.attention.self.value.lora_A",
+            "roberta.encoder.layer.0.attention.self.value.lora_B",
+            "roberta.encoder.layer.1.attention.self.query.lora_A",
+            "roberta.encoder.layer.1.attention.self.query.lora_B",
+            "roberta.encoder.layer.1.attention.self.value.lora_A",
+            "roberta.encoder.layer.1.attention.self.value.lora_B"
+          ]
+        }
+      ]
+    }
+  ]
+}

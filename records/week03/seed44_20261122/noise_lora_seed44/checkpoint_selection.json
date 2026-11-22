@@ -1,0 +1,52 @@
+{
+  "rule": "best_validation_accuracy_earliest_epoch",
+  "best_epoch": 3,
+  "best_checkpoint": "epoch-3-step-192",
+  "weights": {
+    "filename": "best.safetensors",
+    "bytes": 3554248,
+    "sha256": "d473630c8ecd4520261fd80107156a7e87718bf11dbb18713a5a28f9f9c00ecb",
+    "tensor_count": 52
+  },
+  "epochs": [
+    {
+      "run_id": "noise_lora_seed44",
+      "method": "lora",
+      "seed": 44,
+      "checkpoint": "epoch-1-step-64",
+      "count": 872,
+      "correct": 441,
+      "accuracy": 0.5057339449541285,
+      "accuracy_percent": 50.57339449541284,
+      "epoch": 1,
+      "updates": 64,
+      "predictions": "epochs/001/predictions.csv"
+    },
+    {
+      "run_id": "noise_lora_seed44",
+      "method": "lora",
+      "seed": 44,
+      "checkpoint": "epoch-2-step-128",
+      "count": 872,
+      "correct": 720,
+      "accuracy": 0.8256880733944955,
+      "accuracy_percent": 82.56880733944953,
+      "epoch": 2,
+      "updates": 128,
+      "predictions": "epochs/002/predictions.csv"
+    },
+    {
+      "run_id": "noise_lora_seed44",
+      "method": "lora",
+      "seed": 44,
+      "checkpoint": "epoch-3-step-192",
+      "count": 872,
+      "correct": 757,
+      "accuracy": 0.8681192660550459,
+      "accuracy_percent": 86.81192660550458,
+      "epoch": 3,
+      "updates": 192,
+      "predictions": "epochs/003/predictions.csv"
+    }
+  ]
+}

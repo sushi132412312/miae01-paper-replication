@@ -1,0 +1,14 @@
+{
+  "run_id": "clean_ft_seed42",
+  "method": "ft",
+  "seed": 42,
+  "checkpoint": "epoch-3-step-192",
+  "count": 872,
+  "correct": 779,
+  "accuracy": 0.893348623853211,
+  "accuracy_percent": 89.3348623853211,
+  "best_epoch": 3,
+  "device": "cuda",
+  "verified_weights_sha256": "dfce3ed9c0c57e09ca255f2818834c0c5d1e75270c4bda69bdc6966b7137a021",
+  "all_predictions_match": true
+}

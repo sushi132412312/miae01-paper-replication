@@ -1,0 +1,113 @@
+{
+  "seed": 42,
+  "data_kind": "reduced_scale_experiment",
+  "full_validation_count": 872,
+  "train_count": 512,
+  "fixed_flipped_label_count": 51,
+  "checked_epochs_count": 12,
+  "paired_records_valid": true,
+  "verified_cloud_weight_replay_records": true,
+  "runs": {
+    "clean_ft_seed42": {
+      "correct": 779,
+      "count": 872,
+      "best_accuracy_percent": 89.3348623853211,
+      "steps": 192,
+      "best_epoch": 3,
+      "checkpoint_replay_all_predictions_match": true,
+      "epochs": [
+        {
+          "epoch": 1,
+          "correct": 726,
+          "accuracy_percent": 83.25688073394495
+        },
+        {
+          "epoch": 2,
+          "correct": 754,
+          "accuracy_percent": 86.46788990825688
+        },
+        {
+          "epoch": 3,
+          "correct": 779,
+          "accuracy_percent": 89.3348623853211
+        }
+      ]
+    },
+    "clean_lora_seed42": {
+      "correct": 777,
+      "count": 872,
+      "best_accuracy_percent": 89.10550458715596,
+      "steps": 192,
+      "best_epoch": 3,
+      "checkpoint_replay_all_predictions_match": true,
+      "epochs": [
+        {
+          "epoch": 1,
+          "correct": 609,
+          "accuracy_percent": 69.83944954128441
+        },
+        {
+          "epoch": 2,
+          "correct": 771,
+          "accuracy_percent": 88.41743119266054
+        },
+        {
+          "epoch": 3,
+          "correct": 777,
+          "accuracy_percent": 89.10550458715596
+        }
+      ]
+    },
+    "noise_ft_seed42": {
+      "correct": 759,
+      "count": 872,
+      "best_accuracy_percent": 87.04128440366972,
+      "steps": 192,
+      "best_epoch": 3,
+      "checkpoint_replay_all_predictions_match": true,
+      "epochs": [
+        {
+          "epoch": 1,
+          "correct": 496,
+          "accuracy_percent": 56.88073394495413
+        },
+        {
+          "epoch": 2,
+          "correct": 757,
+          "accuracy_percent": 86.81192660550458
+        },
+        {
+          "epoch": 3,
+          "correct": 759,
+          "accuracy_percent": 87.04128440366972
+        }
+      ]
+    },
+    "noise_lora_seed42": {
+      "correct": 756,
+      "count": 872,
+      "best_accuracy_percent": 86.69724770642202,
+      "steps": 192,
+      "best_epoch": 3,
+      "checkpoint_replay_all_predictions_match": true,
+      "epochs": [
+        {
+          "epoch": 1,
+          "correct": 444,
+          "accuracy_percent": 50.91743119266055
+        },
+        {
+          "epoch": 2,
+          "correct": 755,
+          "accuracy_percent": 86.58256880733946
+        },
+        {
+          "epoch": 3,
+          "correct": 756,
+          "accuracy_percent": 86.69724770642202
+        }
+      ]
+    }
+  },
+  "three_seed_summary_scope": "seed42 evidence only"
+}

@@ -1,0 +1,12 @@
+{
+  "model_revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+  "model_weights_sha256": "5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81",
+  "model_weights_bytes": 498818054,
+  "dataset_revision": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+  "dataset_train_parquet_sha256": "66a253e67968acfabcbe49dbe9da964b42ac1c851c40ab760e8c8942efdb3229",
+  "dataset_train_parquet_bytes": 3110468,
+  "hf_endpoint": "https://hf-mirror.com",
+  "train_selection_sha256": "917106a87d0c296c325041fe2f9a650ff5112b15c5a299433198b40a02ba4119",
+  "validation_selection_sha256": "f051075190a0cb9285507aba0bf4640c822ef0deafa5d1eef0fe895e1f9da172",
+  "validation_source_split_count": 872
+}

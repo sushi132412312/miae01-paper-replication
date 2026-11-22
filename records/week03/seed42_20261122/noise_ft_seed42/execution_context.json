@@ -1,0 +1,33 @@
+{
+  "executor": "Codex",
+  "student_independent_work": false,
+  "recorded_at_utc": "2026-11-22T07:40:52.734891+00:00",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.35",
+  "git_parent_commit": null,
+  "git_worktree_status": null,
+  "executed_source_sha256": {
+    "src/__init__.py": "d1de918205d79de9714888126b89f659a9ecee2be584345b6e18ffe183d411ce",
+    "src/checkpoints.py": "94f38110a17438677ac8c53e4f01982946c7cf52a775b0860a3c16ba9ca150e1",
+    "src/common.py": "d6654c07eacb7f8142ad6adb3ff829bc6f22bdaa76329d803c3ce29eabb1e116",
+    "src/data.py": "855b8465a67bde2e0ae5f17335c6f56aa106621e80b0cd123a58908fdcaaec85",
+    "src/evaluation.py": "2a40c89cc8b0d3913fc71e3639760ec6e6c28e808c6084fa48e299eb45b241fc",
+    "src/models.py": "468b8c9b2a9a8c26297b9c8db87b855d9adb4fe42115718850f63239915c5774",
+    "src/paired.py": "a0d8dbc6ea68b2378bc59970414399e4c24b598ede29818536e7070590c3f804",
+    "src/protocol.py": "b81a7c46f045f7a3c199a48b084406874b0004e7f55578ff8defd0907e351fbc",
+    "src/replay.py": "1ad1733e37d09a906b5c16437669c731ba5b5c8eab74047b0d19aa890cb4a450",
+    "src/train.py": "48d8d32d0be8d00d2d690c03c57a8d3489428e1759c6feb6dfed9416404a0907",
+    "tools/check_cloud_environment.py": "a3548492915825397114e2d3d03125f3aa3ffbe12e10919f47f096780239c317",
+    "tools/check_environment.py": "63b839944641b3cd678ab854479e30d8b59253b6a83bdf0bccc695226368dd13",
+    "tools/cloud_formal_queue.py": "8abfdf527d36b5ddc760f3aa55dd961d3d9cd89a6e7193873ec6b1688a2c8b65",
+    "tools/prefetch_formal_assets.py": "f315edf7acf839fdeff869bd2fe2038e667d991e9cdaa66c6e75af26de5e6e5a",
+    "tools/recompute_metrics.py": "336112354f1ca26b6e3aa75bf02a975e5a58903b82667dc23dc88b6e8e50ece4",
+    "third_party/__init__.py": "6c28bf71e6f4eebcef4183f010161a85ebd5e7c7faf89c717e4a24e2120b83b7",
+    "third_party/loralib/__init__.py": "df9ca7e519d0bbe03679eac45ed00d9b99d0434d106dcdd2b600765b99192027",
+    "third_party/loralib/layers.py": "ea9fa6bd0930dfbf5af08440f6c71aeab3408cf07d3cca7620c86c45ea730797",
+    "third_party/loralib/utils.py": "9cd157527f79d48cf6f5feb7eb87509696e5f3cbb38862a633239e464eacaa71",
+    "third_party/loralib_source.json": "7b0671d7657c4f5e6459e45d385dbd921db84e1d887fabfa8c1b0638c5d5bae4",
+    "configs/reduced_scale.clean.json": "afa3031fd008aa358fb63c474c5a1810bb5e579ba7fc0b70247eac2d1478462f",
+    "configs/reduced_scale.noise.json": "af1eb4d1ef04eca8743fc5729331aeffd50c682194dfafa7c222a3692d6745d7",
+    "configs/reduced_scale.proposed.json": "f6cc36860dbbeb6ab9024a6f8c54123d99777e378a139ec09590ada0244afd3e"
+  }
+}

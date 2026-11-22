@@ -1,0 +1,32 @@
+{
+  "total_parameters": 24514,
+  "trainable_parameters": 2146,
+  "lora_parameters": 1024,
+  "classifier_parameters": 1122,
+  "frozen_parameters": 22368,
+  "common_backbone_sha256": "27a1e1176ac8576017d7eb4e88dc0e674c82b9011b299bc96f16d92a45810b76",
+  "classifier_sha256": "10ee30ebcfa67b0191ea9f83a558f978de96006475ac9a3ddeca8a0822f67aca",
+  "frozen_parameters_sha256": "27a1e1176ac8576017d7eb4e88dc0e674c82b9011b299bc96f16d92a45810b76",
+  "trainable_parameter_names": [
+    "roberta.encoder.layer.0.attention.self.query.lora_A",
+    "roberta.encoder.layer.0.attention.self.query.lora_B",
+    "roberta.encoder.layer.0.attention.self.value.lora_A",
+    "roberta.encoder.layer.0.attention.self.value.lora_B",
+    "roberta.encoder.layer.1.attention.self.query.lora_A",
+    "roberta.encoder.layer.1.attention.self.query.lora_B",
+    "roberta.encoder.layer.1.attention.self.value.lora_A",
+    "roberta.encoder.layer.1.attention.self.value.lora_B",
+    "classifier.dense.weight",
+    "classifier.dense.bias",
+    "classifier.out_proj.weight",
+    "classifier.out_proj.bias"
+  ],
+  "lora_module_names": [
+    "roberta.encoder.layer.0.attention.self.query",
+    "roberta.encoder.layer.0.attention.self.value",
+    "roberta.encoder.layer.1.attention.self.query",
+    "roberta.encoder.layer.1.attention.self.value"
+  ],
+  "lora_merge_weights": false,
+  "lora_B_all_zero": true
+}

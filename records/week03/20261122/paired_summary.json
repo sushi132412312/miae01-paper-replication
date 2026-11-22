@@ -1,0 +1,245 @@
+{
+  "experiment_kind": "synthetic_epoch_rehearsal",
+  "planned_seeds": [
+    42,
+    43,
+    44
+  ],
+  "train_size": 8,
+  "validation_size": 6,
+  "conditions_by_flipped_label_count": {
+    "0": {
+      "status": "complete",
+      "missing": [],
+      "runs": [
+        {
+          "run_id": "flips0_ft_seed42",
+          "method": "ft",
+          "seed": 42,
+          "best_epoch": 1,
+          "steps": 12,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy_percent": 50.0
+        },
+        {
+          "run_id": "flips0_ft_seed43",
+          "method": "ft",
+          "seed": 43,
+          "best_epoch": 1,
+          "steps": 12,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy_percent": 50.0
+        },
+        {
+          "run_id": "flips0_ft_seed44",
+          "method": "ft",
+          "seed": 44,
+          "best_epoch": 1,
+          "steps": 12,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy_percent": 50.0
+        },
+        {
+          "run_id": "flips0_lora_seed42",
+          "method": "lora",
+          "seed": 42,
+          "best_epoch": 1,
+          "steps": 12,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy_percent": 50.0
+        },
+        {
+          "run_id": "flips0_lora_seed43",
+          "method": "lora",
+          "seed": 43,
+          "best_epoch": 1,
+          "steps": 12,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy_percent": 50.0
+        },
+        {
+          "run_id": "flips0_lora_seed44",
+          "method": "lora",
+          "seed": 44,
+          "best_epoch": 1,
+          "steps": 12,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy_percent": 50.0
+        }
+      ],
+      "methods": {
+        "ft": {
+          "status": "complete",
+          "seed_count": 3,
+          "seeds": [
+            42,
+            43,
+            44
+          ],
+          "mean_percent": 50.0,
+          "sample_sd_pp": 0.0
+        },
+        "lora": {
+          "status": "complete",
+          "seed_count": 3,
+          "seeds": [
+            42,
+            43,
+            44
+          ],
+          "mean_percent": 50.0,
+          "sample_sd_pp": 0.0
+        }
+      },
+      "lora_minus_ft": {
+        "by_seed_pp": {
+          "42": 0.0,
+          "43": 0.0,
+          "44": 0.0
+        },
+        "mean_pp": 0.0,
+        "sample_sd_pp": 0.0
+      }
+    },
+    "2": {
+      "status": "complete",
+      "missing": [],
+      "runs": [
+        {
+          "run_id": "flips2_ft_seed42",
+          "method": "ft",
+          "seed": 42,
+          "best_epoch": 1,
+          "steps": 12,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy_percent": 50.0
+        },
+        {
+          "run_id": "flips2_ft_seed43",
+          "method": "ft",
+          "seed": 43,
+          "best_epoch": 1,
+          "steps": 12,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy_percent": 50.0
+        },
+        {
+          "run_id": "flips2_ft_seed44",
+          "method": "ft",
+          "seed": 44,
+          "best_epoch": 1,
+          "steps": 12,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy_percent": 50.0
+        },
+        {
+          "run_id": "flips2_lora_seed42",
+          "method": "lora",
+          "seed": 42,
+          "best_epoch": 1,
+          "steps": 12,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy_percent": 50.0
+        },
+        {
+          "run_id": "flips2_lora_seed43",
+          "method": "lora",
+          "seed": 43,
+          "best_epoch": 1,
+          "steps": 12,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy_percent": 50.0
+        },
+        {
+          "run_id": "flips2_lora_seed44",
+          "method": "lora",
+          "seed": 44,
+          "best_epoch": 1,
+          "steps": 12,
+          "checkpoint": "epoch-1-step-4",
+          "count": 6,
+          "correct": 3,
+          "accuracy_percent": 50.0
+        }
+      ],
+      "methods": {
+        "ft": {
+          "status": "complete",
+          "seed_count": 3,
+          "seeds": [
+            42,
+            43,
+            44
+          ],
+          "mean_percent": 50.0,
+          "sample_sd_pp": 0.0
+        },
+        "lora": {
+          "status": "complete",
+          "seed_count": 3,
+          "seeds": [
+            42,
+            43,
+            44
+          ],
+          "mean_percent": 50.0,
+          "sample_sd_pp": 0.0
+        }
+      },
+      "lora_minus_ft": {
+        "by_seed_pp": {
+          "42": 0.0,
+          "43": 0.0,
+          "44": 0.0
+        },
+        "mean_pp": 0.0,
+        "sample_sd_pp": 0.0
+      }
+    }
+  },
+  "clean_minus_noise": {
+    "2": {
+      "ft": {
+        "by_seed_pp": {
+          "42": 0.0,
+          "43": 0.0,
+          "44": 0.0
+        },
+        "mean_pp": 0.0,
+        "sample_sd_pp": 0.0
+      },
+      "lora": {
+        "by_seed_pp": {
+          "42": 0.0,
+          "43": 0.0,
+          "44": 0.0
+        },
+        "mean_pp": 0.0,
+        "sample_sd_pp": 0.0
+      }
+    }
+  },
+  "difference_unit": "percentage points"
+}

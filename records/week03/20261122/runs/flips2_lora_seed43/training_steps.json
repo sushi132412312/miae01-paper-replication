@@ -1,0 +1,122 @@
+[
+  {
+    "step": 1,
+    "loss": 0.6941112875938416,
+    "sample_ids": [
+      "synthetic-train:4",
+      "synthetic-train:5"
+    ],
+    "epoch": 1,
+    "learning_rate": 0.0
+  },
+  {
+    "step": 2,
+    "loss": 0.6938344240188599,
+    "sample_ids": [
+      "synthetic-train:7",
+      "synthetic-train:1"
+    ],
+    "epoch": 1,
+    "learning_rate": 0.001
+  },
+  {
+    "step": 3,
+    "loss": 0.6923824548721313,
+    "sample_ids": [
+      "synthetic-train:3",
+      "synthetic-train:2"
+    ],
+    "epoch": 1,
+    "learning_rate": 0.0009090909090909091
+  },
+  {
+    "step": 4,
+    "loss": 0.684715747833252,
+    "sample_ids": [
+      "synthetic-train:6",
+      "synthetic-train:0"
+    ],
+    "epoch": 1,
+    "learning_rate": 0.0008181818181818183
+  },
+  {
+    "step": 5,
+    "loss": 0.679165244102478,
+    "sample_ids": [
+      "synthetic-train:3",
+      "synthetic-train:2"
+    ],
+    "epoch": 2,
+    "learning_rate": 0.0007272727272727273
+  },
+  {
+    "step": 6,
+    "loss": 0.6773064136505127,
+    "sample_ids": [
+      "synthetic-train:0",
+      "synthetic-train:4"
+    ],
+    "epoch": 2,
+    "learning_rate": 0.0006363636363636364
+  },
+  {
+    "step": 7,
+    "loss": 0.6938617825508118,
+    "sample_ids": [
+      "synthetic-train:6",
+      "synthetic-train:5"
+    ],
+    "epoch": 2,
+    "learning_rate": 0.0005454545454545455
+  },
+  {
+    "step": 8,
+    "loss": 0.7007132768630981,
+    "sample_ids": [
+      "synthetic-train:1",
+      "synthetic-train:7"
+    ],
+    "epoch": 2,
+    "learning_rate": 0.00045454545454545455
+  },
+  {
+    "step": 9,
+    "loss": 0.6999549269676208,
+    "sample_ids": [
+      "synthetic-train:7",
+      "synthetic-train:1"
+    ],
+    "epoch": 3,
+    "learning_rate": 0.00036363636363636367
+  },
+  {
+    "step": 10,
+    "loss": 0.6612465381622314,
+    "sample_ids": [
+      "synthetic-train:0",
+      "synthetic-train:2"
+    ],
+    "epoch": 3,
+    "learning_rate": 0.00027272727272727274
+  },
+  {
+    "step": 11,
+    "loss": 0.6896207332611084,
+    "sample_ids": [
+      "synthetic-train:6",
+      "synthetic-train:5"
+    ],
+    "epoch": 3,
+    "learning_rate": 0.00018181818181818183
+  },
+  {
+    "step": 12,
+    "loss": 0.6612088680267334,
+    "sample_ids": [
+      "synthetic-train:3",
+      "synthetic-train:4"
+    ],
+    "epoch": 3,
+    "learning_rate": 9.090909090909092e-05
+  }
+]

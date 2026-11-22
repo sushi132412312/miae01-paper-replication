@@ -1,0 +1,14 @@
+{
+  "run_id": "noise_ft_seed42",
+  "method": "ft",
+  "seed": 42,
+  "checkpoint": "epoch-3-step-192",
+  "count": 872,
+  "correct": 759,
+  "accuracy": 0.8704128440366973,
+  "accuracy_percent": 87.04128440366972,
+  "best_epoch": 3,
+  "device": "cuda",
+  "verified_weights_sha256": "cb1b7df6a99c7b04688200537f35da1797a2a1404bbb07c3775697c595302b86",
+  "all_predictions_match": true
+}

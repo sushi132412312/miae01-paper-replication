@@ -1,0 +1,3074 @@
+[
+  {
+    "step": 1,
+    "loss": 0.7347254753112793,
+    "sample_ids": [
+      "train:15295",
+      "train:64360",
+      "train:58937",
+      "train:332",
+      "train:60747",
+      "train:23543",
+      "train:49883",
+      "train:30831"
+    ],
+    "epoch": 1,
+    "learning_rate": 0.0
+  },
+  {
+    "step": 2,
+    "loss": 0.6935453414916992,
+    "sample_ids": [
+      "train:34763",
+      "train:16908",
+      "train:14758",
+      "train:61302",
+      "train:31366",
+      "train:40321",
+      "train:41114",
+      "train:15263"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.6666666666666667e-06
+  },
+  {
+    "step": 3,
+    "loss": 0.62320876121521,
+    "sample_ids": [
+      "train:7511",
+      "train:1215",
+      "train:15851",
+      "train:8336",
+      "train:43311",
+      "train:62808",
+      "train:66665",
+      "train:53477"
+    ],
+    "epoch": 1,
+    "learning_rate": 3.3333333333333333e-06
+  },
+  {
+    "step": 4,
+    "loss": 0.790844738483429,
+    "sample_ids": [
+      "train:62136",
+      "train:46321",
+      "train:48234",
+      "train:33925",
+      "train:35078",
+      "train:261",
+      "train:26193",
+      "train:20214"
+    ],
+    "epoch": 1,
+    "learning_rate": 5e-06
+  },
+  {
+    "step": 5,
+    "loss": 0.7879201769828796,
+    "sample_ids": [
+      "train:37649",
+      "train:49093",
+      "train:24710",
+      "train:2683",
+      "train:34565",
+      "train:25879",
+      "train:66545",
+      "train:16032"
+    ],
+    "epoch": 1,
+    "learning_rate": 6.666666666666667e-06
+  },
+  {
+    "step": 6,
+    "loss": 0.7095233798027039,
+    "sample_ids": [
+      "train:50993",
+      "train:61165",
+      "train:53694",
+      "train:54772",
+      "train:32526",
+      "train:34773",
+      "train:38626",
+      "train:60643"
+    ],
+    "epoch": 1,
+    "learning_rate": 8.333333333333334e-06
+  },
+  {
+    "step": 7,
+    "loss": 0.7434227466583252,
+    "sample_ids": [
+      "train:67085",
+      "train:32484",
+      "train:45568",
+      "train:59873",
+      "train:22384",
+      "train:52831",
+      "train:44095",
+      "train:54433"
+    ],
+    "epoch": 1,
+    "learning_rate": 1e-05
+  },
+  {
+    "step": 8,
+    "loss": 0.7166588306427002,
+    "sample_ids": [
+      "train:21487",
+      "train:11886",
+      "train:60197",
+      "train:8427",
+      "train:23992",
+      "train:63551",
+      "train:46703",
+      "train:44616"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.1666666666666668e-05
+  },
+  {
+    "step": 9,
+    "loss": 0.6707446575164795,
+    "sample_ids": [
+      "train:32974",
+      "train:34530",
+      "train:46616",
+      "train:48345",
+      "train:35197",
+      "train:4982",
+      "train:1839",
+      "train:13298"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.3333333333333333e-05
+  },
+  {
+    "step": 10,
+    "loss": 0.7116950750350952,
+    "sample_ids": [
+      "train:18666",
+      "train:26546",
+      "train:24628",
+      "train:59521",
+      "train:53954",
+      "train:4916",
+      "train:57890",
+      "train:40108"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.5000000000000002e-05
+  },
+  {
+    "step": 11,
+    "loss": 0.6567255854606628,
+    "sample_ids": [
+      "train:50020",
+      "train:51171",
+      "train:7868",
+      "train:41244",
+      "train:57154",
+      "train:33691",
+      "train:47069",
+      "train:36887"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.6666666666666667e-05
+  },
+  {
+    "step": 12,
+    "loss": 0.6513053178787231,
+    "sample_ids": [
+      "train:13452",
+      "train:65333",
+      "train:1238",
+      "train:16080",
+      "train:42960",
+      "train:3563",
+      "train:38288",
+      "train:65372"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.8333333333333333e-05
+  },
+  {
+    "step": 13,
+    "loss": 0.681713342666626,
+    "sample_ids": [
+      "train:56530",
+      "train:49438",
+      "train:56762",
+      "train:46098",
+      "train:39802",
+      "train:33570",
+      "train:23166",
+      "train:13898"
+    ],
+    "epoch": 1,
+    "learning_rate": 2e-05
+  },
+  {
+    "step": 14,
+    "loss": 0.59123295545578,
+    "sample_ids": [
+      "train:24380",
+      "train:52684",
+      "train:35140",
+      "train:26056",
+      "train:53810",
+      "train:4406",
+      "train:15742",
+      "train:25504"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.988888888888889e-05
+  },
+  {
+    "step": 15,
+    "loss": 0.7012127637863159,
+    "sample_ids": [
+      "train:66404",
+      "train:51032",
+      "train:9585",
+      "train:6316",
+      "train:12080",
+      "train:38019",
+      "train:59917",
+      "train:54006"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.977777777777778e-05
+  },
+  {
+    "step": 16,
+    "loss": 0.6568206548690796,
+    "sample_ids": [
+      "train:16411",
+      "train:3062",
+      "train:40201",
+      "train:27423",
+      "train:49116",
+      "train:21022",
+      "train:15503",
+      "train:59760"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.9666666666666666e-05
+  },
+  {
+    "step": 17,
+    "loss": 0.643325924873352,
+    "sample_ids": [
+      "train:3353",
+      "train:41947",
+      "train:60138",
+      "train:52701",
+      "train:41796",
+      "train:1852",
+      "train:55752",
+      "train:37431"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.9555555555555557e-05
+  },
+  {
+    "step": 18,
+    "loss": 0.7387020587921143,
+    "sample_ids": [
+      "train:11211",
+      "train:47650",
+      "train:20987",
+      "train:21153",
+      "train:55179",
+      "train:29628",
+      "train:46404",
+      "train:4339"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.9444444444444445e-05
+  },
+  {
+    "step": 19,
+    "loss": 0.6785674095153809,
+    "sample_ids": [
+      "train:5929",
+      "train:62382",
+      "train:5851",
+      "train:34415",
+      "train:18466",
+      "train:44400",
+      "train:37696",
+      "train:18598"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.9333333333333333e-05
+  },
+  {
+    "step": 20,
+    "loss": 0.7370380759239197,
+    "sample_ids": [
+      "train:16926",
+      "train:20170",
+      "train:29076",
+      "train:29428",
+      "train:24732",
+      "train:25623",
+      "train:16473",
+      "train:12394"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.9222222222222225e-05
+  },
+  {
+    "step": 21,
+    "loss": 0.6515328884124756,
+    "sample_ids": [
+      "train:55807",
+      "train:66369",
+      "train:32378",
+      "train:31448",
+      "train:28263",
+      "train:58272",
+      "train:46745",
+      "train:17676"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.9111111111111113e-05
+  },
+  {
+    "step": 22,
+    "loss": 0.6082234382629395,
+    "sample_ids": [
+      "train:40687",
+      "train:56701",
+      "train:23501",
+      "train:34553",
+      "train:46657",
+      "train:22398",
+      "train:17564",
+      "train:14076"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.9e-05
+  },
+  {
+    "step": 23,
+    "loss": 0.5866468548774719,
+    "sample_ids": [
+      "train:59365",
+      "train:14514",
+      "train:22897",
+      "train:30582",
+      "train:52591",
+      "train:55631",
+      "train:36295",
+      "train:42701"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.888888888888889e-05
+  },
+  {
+    "step": 24,
+    "loss": 0.9480498433113098,
+    "sample_ids": [
+      "train:3724",
+      "train:25753",
+      "train:14377",
+      "train:22064",
+      "train:20284",
+      "train:16152",
+      "train:27902",
+      "train:61994"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.877777777777778e-05
+  },
+  {
+    "step": 25,
+    "loss": 0.49288108944892883,
+    "sample_ids": [
+      "train:36762",
+      "train:5451",
+      "train:57468",
+      "train:6407",
+      "train:41235",
+      "train:59958",
+      "train:672",
+      "train:63417"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.866666666666667e-05
+  },
+  {
+    "step": 26,
+    "loss": 0.6854368448257446,
+    "sample_ids": [
+      "train:55130",
+      "train:41187",
+      "train:45235",
+      "train:22378",
+      "train:24047",
+      "train:28",
+      "train:11037",
+      "train:7359"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.8555555555555557e-05
+  },
+  {
+    "step": 27,
+    "loss": 0.7375891208648682,
+    "sample_ids": [
+      "train:27513",
+      "train:60687",
+      "train:17382",
+      "train:15613",
+      "train:59143",
+      "train:10353",
+      "train:31825",
+      "train:10887"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.8444444444444448e-05
+  },
+  {
+    "step": 28,
+    "loss": 0.6330887079238892,
+    "sample_ids": [
+      "train:65163",
+      "train:41083",
+      "train:65221",
+      "train:38465",
+      "train:63644",
+      "train:52017",
+      "train:54759",
+      "train:63191"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.8333333333333333e-05
+  },
+  {
+    "step": 29,
+    "loss": 0.7918288111686707,
+    "sample_ids": [
+      "train:16722",
+      "train:33052",
+      "train:41284",
+      "train:2405",
+      "train:1493",
+      "train:30321",
+      "train:43325",
+      "train:55852"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.8222222222222224e-05
+  },
+  {
+    "step": 30,
+    "loss": 0.555561900138855,
+    "sample_ids": [
+      "train:60806",
+      "train:47012",
+      "train:44149",
+      "train:18804",
+      "train:39668",
+      "train:56283",
+      "train:28668",
+      "train:28092"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.8111111111111112e-05
+  },
+  {
+    "step": 31,
+    "loss": 0.654594898223877,
+    "sample_ids": [
+      "train:24874",
+      "train:55340",
+      "train:64343",
+      "train:696",
+      "train:59985",
+      "train:4476",
+      "train:25781",
+      "train:55763"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.8e-05
+  },
+  {
+    "step": 32,
+    "loss": 0.7328231334686279,
+    "sample_ids": [
+      "train:38704",
+      "train:45586",
+      "train:41254",
+      "train:18082",
+      "train:16583",
+      "train:62802",
+      "train:32899",
+      "train:54275"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.7888888888888892e-05
+  },
+  {
+    "step": 33,
+    "loss": 0.7986844778060913,
+    "sample_ids": [
+      "train:47176",
+      "train:2846",
+      "train:5853",
+      "train:6733",
+      "train:28778",
+      "train:38146",
+      "train:38392",
+      "train:33900"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.7777777777777777e-05
+  },
+  {
+    "step": 34,
+    "loss": 0.8250771760940552,
+    "sample_ids": [
+      "train:10580",
+      "train:63296",
+      "train:49964",
+      "train:12669",
+      "train:1495",
+      "train:45097",
+      "train:21249",
+      "train:59221"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.7666666666666668e-05
+  },
+  {
+    "step": 35,
+    "loss": 0.7215267419815063,
+    "sample_ids": [
+      "train:34267",
+      "train:55045",
+      "train:22449",
+      "train:65701",
+      "train:45684",
+      "train:46821",
+      "train:56833",
+      "train:9048"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.7555555555555556e-05
+  },
+  {
+    "step": 36,
+    "loss": 0.6926442980766296,
+    "sample_ids": [
+      "train:33419",
+      "train:9110",
+      "train:11066",
+      "train:51014",
+      "train:48862",
+      "train:66358",
+      "train:27554",
+      "train:4981"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.7444444444444448e-05
+  },
+  {
+    "step": 37,
+    "loss": 0.7982141971588135,
+    "sample_ids": [
+      "train:53700",
+      "train:19357",
+      "train:34578",
+      "train:7553",
+      "train:10309",
+      "train:60433",
+      "train:57815",
+      "train:49328"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.7333333333333336e-05
+  },
+  {
+    "step": 38,
+    "loss": 0.6436307430267334,
+    "sample_ids": [
+      "train:43485",
+      "train:42598",
+      "train:4914",
+      "train:23914",
+      "train:20747",
+      "train:23194",
+      "train:8377",
+      "train:35757"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.7222222222222224e-05
+  },
+  {
+    "step": 39,
+    "loss": 0.7549835443496704,
+    "sample_ids": [
+      "train:13911",
+      "train:38257",
+      "train:28858",
+      "train:30475",
+      "train:52397",
+      "train:39517",
+      "train:37705",
+      "train:40559"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.7111111111111112e-05
+  },
+  {
+    "step": 40,
+    "loss": 0.7301805019378662,
+    "sample_ids": [
+      "train:66897",
+      "train:36284",
+      "train:12452",
+      "train:53520",
+      "train:67233",
+      "train:19052",
+      "train:29266",
+      "train:7920"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.7e-05
+  },
+  {
+    "step": 41,
+    "loss": 0.6398148536682129,
+    "sample_ids": [
+      "train:54345",
+      "train:65217",
+      "train:29219",
+      "train:1378",
+      "train:20156",
+      "train:3326",
+      "train:46130",
+      "train:34924"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.688888888888889e-05
+  },
+  {
+    "step": 42,
+    "loss": 0.688205897808075,
+    "sample_ids": [
+      "train:22723",
+      "train:29917",
+      "train:3380",
+      "train:63512",
+      "train:57244",
+      "train:28757",
+      "train:59000",
+      "train:61609"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.677777777777778e-05
+  },
+  {
+    "step": 43,
+    "loss": 0.706811249256134,
+    "sample_ids": [
+      "train:2656",
+      "train:2331",
+      "train:17117",
+      "train:21261",
+      "train:15407",
+      "train:52268",
+      "train:54609",
+      "train:61675"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.6666666666666667e-05
+  },
+  {
+    "step": 44,
+    "loss": 0.712407112121582,
+    "sample_ids": [
+      "train:24596",
+      "train:2175",
+      "train:38584",
+      "train:39965",
+      "train:40501",
+      "train:53911",
+      "train:62916",
+      "train:12205"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.6555555555555556e-05
+  },
+  {
+    "step": 45,
+    "loss": 0.6740328073501587,
+    "sample_ids": [
+      "train:20424",
+      "train:43779",
+      "train:37952",
+      "train:28458",
+      "train:41504",
+      "train:20715",
+      "train:52356",
+      "train:28336"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.6444444444444444e-05
+  },
+  {
+    "step": 46,
+    "loss": 0.6822926998138428,
+    "sample_ids": [
+      "train:65865",
+      "train:66684",
+      "train:24313",
+      "train:62769",
+      "train:34191",
+      "train:12851",
+      "train:55675",
+      "train:64643"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.6333333333333335e-05
+  },
+  {
+    "step": 47,
+    "loss": 0.7035894989967346,
+    "sample_ids": [
+      "train:26342",
+      "train:2022",
+      "train:61525",
+      "train:35211",
+      "train:43478",
+      "train:52307",
+      "train:41097",
+      "train:46694"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.6222222222222223e-05
+  },
+  {
+    "step": 48,
+    "loss": 0.6748278141021729,
+    "sample_ids": [
+      "train:43726",
+      "train:38920",
+      "train:7641",
+      "train:8241",
+      "train:44657",
+      "train:50224",
+      "train:17740",
+      "train:64162"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.6111111111111115e-05
+  },
+  {
+    "step": 49,
+    "loss": 0.691227912902832,
+    "sample_ids": [
+      "train:20234",
+      "train:41875",
+      "train:34926",
+      "train:32966",
+      "train:13444",
+      "train:34736",
+      "train:48422",
+      "train:1505"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.6000000000000003e-05
+  },
+  {
+    "step": 50,
+    "loss": 0.684450089931488,
+    "sample_ids": [
+      "train:38100",
+      "train:43251",
+      "train:52186",
+      "train:42809",
+      "train:40897",
+      "train:45915",
+      "train:60039",
+      "train:12303"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.588888888888889e-05
+  },
+  {
+    "step": 51,
+    "loss": 0.677996039390564,
+    "sample_ids": [
+      "train:62762",
+      "train:10003",
+      "train:19468",
+      "train:63183",
+      "train:16554",
+      "train:27130",
+      "train:55397",
+      "train:64856"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.577777777777778e-05
+  },
+  {
+    "step": 52,
+    "loss": 0.6757657527923584,
+    "sample_ids": [
+      "train:58254",
+      "train:51114",
+      "train:67012",
+      "train:19640",
+      "train:46158",
+      "train:30005",
+      "train:66154",
+      "train:52318"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.5666666666666667e-05
+  },
+  {
+    "step": 53,
+    "loss": 0.684728741645813,
+    "sample_ids": [
+      "train:35003",
+      "train:13935",
+      "train:11723",
+      "train:42767",
+      "train:44890",
+      "train:24536",
+      "train:54333",
+      "train:36278"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.555555555555556e-05
+  },
+  {
+    "step": 54,
+    "loss": 0.7228002548217773,
+    "sample_ids": [
+      "train:45047",
+      "train:46825",
+      "train:60060",
+      "train:1540",
+      "train:42296",
+      "train:39615",
+      "train:62178",
+      "train:56915"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.5444444444444446e-05
+  },
+  {
+    "step": 55,
+    "loss": 0.680450439453125,
+    "sample_ids": [
+      "train:12641",
+      "train:45888",
+      "train:15446",
+      "train:51547",
+      "train:18051",
+      "train:3101",
+      "train:35150",
+      "train:64262"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.5333333333333334e-05
+  },
+  {
+    "step": 56,
+    "loss": 0.6575588583946228,
+    "sample_ids": [
+      "train:16124",
+      "train:65329",
+      "train:62393",
+      "train:3868",
+      "train:50345",
+      "train:19183",
+      "train:61155",
+      "train:18972"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.5222222222222223e-05
+  },
+  {
+    "step": 57,
+    "loss": 0.6661229133605957,
+    "sample_ids": [
+      "train:28382",
+      "train:35115",
+      "train:67316",
+      "train:59774",
+      "train:18174",
+      "train:48513",
+      "train:4891",
+      "train:36144"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.5111111111111112e-05
+  },
+  {
+    "step": 58,
+    "loss": 0.6596280336380005,
+    "sample_ids": [
+      "train:40919",
+      "train:22671",
+      "train:15838",
+      "train:43119",
+      "train:41615",
+      "train:35891",
+      "train:40621",
+      "train:17198"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.5000000000000002e-05
+  },
+  {
+    "step": 59,
+    "loss": 0.681691586971283,
+    "sample_ids": [
+      "train:19771",
+      "train:15655",
+      "train:35263",
+      "train:1818",
+      "train:52064",
+      "train:15835",
+      "train:58903",
+      "train:12639"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.488888888888889e-05
+  },
+  {
+    "step": 60,
+    "loss": 0.6649948954582214,
+    "sample_ids": [
+      "train:3242",
+      "train:9625",
+      "train:13928",
+      "train:15992",
+      "train:3011",
+      "train:643",
+      "train:11752",
+      "train:20546"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.477777777777778e-05
+  },
+  {
+    "step": 61,
+    "loss": 0.6879622340202332,
+    "sample_ids": [
+      "train:12529",
+      "train:28106",
+      "train:47177",
+      "train:45484",
+      "train:11516",
+      "train:64839",
+      "train:65784",
+      "train:54491"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.4666666666666666e-05
+  },
+  {
+    "step": 62,
+    "loss": 0.6392412781715393,
+    "sample_ids": [
+      "train:41427",
+      "train:10819",
+      "train:43312",
+      "train:7373",
+      "train:28818",
+      "train:49283",
+      "train:27049",
+      "train:13205"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.4555555555555556e-05
+  },
+  {
+    "step": 63,
+    "loss": 0.6387345790863037,
+    "sample_ids": [
+      "train:64485",
+      "train:34093",
+      "train:42735",
+      "train:13752",
+      "train:12894",
+      "train:30709",
+      "train:43144",
+      "train:49040"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.4444444444444446e-05
+  },
+  {
+    "step": 64,
+    "loss": 0.6859049201011658,
+    "sample_ids": [
+      "train:46456",
+      "train:22619",
+      "train:3774",
+      "train:39195",
+      "train:59973",
+      "train:52978",
+      "train:15908",
+      "train:50936"
+    ],
+    "epoch": 1,
+    "learning_rate": 1.4333333333333334e-05
+  },
+  {
+    "step": 65,
+    "loss": 0.6722070574760437,
+    "sample_ids": [
+      "train:64839",
+      "train:29076",
+      "train:52397",
+      "train:1215",
+      "train:11037",
+      "train:45586",
+      "train:42701",
+      "train:1505"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.4222222222222224e-05
+  },
+  {
+    "step": 66,
+    "loss": 0.6287882924079895,
+    "sample_ids": [
+      "train:20156",
+      "train:46825",
+      "train:32899",
+      "train:54333",
+      "train:32484",
+      "train:65221",
+      "train:16722",
+      "train:42809"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.4111111111111113e-05
+  },
+  {
+    "step": 67,
+    "loss": 0.6086962223052979,
+    "sample_ids": [
+      "train:46158",
+      "train:24536",
+      "train:7920",
+      "train:67085",
+      "train:60039",
+      "train:55852",
+      "train:45568",
+      "train:4981"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.4e-05
+  },
+  {
+    "step": 68,
+    "loss": 0.6299997568130493,
+    "sample_ids": [
+      "train:61165",
+      "train:56833",
+      "train:61609",
+      "train:52831",
+      "train:14076",
+      "train:33691",
+      "train:3062",
+      "train:51032"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.388888888888889e-05
+  },
+  {
+    "step": 69,
+    "loss": 0.6503278017044067,
+    "sample_ids": [
+      "train:61675",
+      "train:63191",
+      "train:26056",
+      "train:36762",
+      "train:44616",
+      "train:45915",
+      "train:43478",
+      "train:63551"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.377777777777778e-05
+  },
+  {
+    "step": 70,
+    "loss": 0.6435530185699463,
+    "sample_ids": [
+      "train:41615",
+      "train:22897",
+      "train:52268",
+      "train:2405",
+      "train:1493",
+      "train:53477",
+      "train:54759",
+      "train:14758"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.3666666666666667e-05
+  },
+  {
+    "step": 71,
+    "loss": 0.6145814061164856,
+    "sample_ids": [
+      "train:41235",
+      "train:17198",
+      "train:19771",
+      "train:38920",
+      "train:46321",
+      "train:11752",
+      "train:63417",
+      "train:65329"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.3555555555555557e-05
+  },
+  {
+    "step": 72,
+    "loss": 0.6301023364067078,
+    "sample_ids": [
+      "train:2683",
+      "train:6316",
+      "train:52356",
+      "train:2846",
+      "train:45047",
+      "train:28458",
+      "train:59521",
+      "train:15742"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.3444444444444447e-05
+  },
+  {
+    "step": 73,
+    "loss": 0.6796741485595703,
+    "sample_ids": [
+      "train:42960",
+      "train:66404",
+      "train:52684",
+      "train:29219",
+      "train:60138",
+      "train:46098",
+      "train:49328",
+      "train:59000"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.3333333333333333e-05
+  },
+  {
+    "step": 74,
+    "loss": 0.5563156008720398,
+    "sample_ids": [
+      "train:13298",
+      "train:56701",
+      "train:4891",
+      "train:59917",
+      "train:34191",
+      "train:40321",
+      "train:35150",
+      "train:37696"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.3222222222222223e-05
+  },
+  {
+    "step": 75,
+    "loss": 0.6206334829330444,
+    "sample_ids": [
+      "train:24874",
+      "train:23543",
+      "train:16080",
+      "train:21249",
+      "train:38288",
+      "train:13928",
+      "train:27130",
+      "train:57890"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.3111111111111113e-05
+  },
+  {
+    "step": 76,
+    "loss": 0.6580193042755127,
+    "sample_ids": [
+      "train:6733",
+      "train:60433",
+      "train:42296",
+      "train:50936",
+      "train:35140",
+      "train:34530",
+      "train:60643",
+      "train:4982"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.3000000000000001e-05
+  },
+  {
+    "step": 77,
+    "loss": 0.5467620491981506,
+    "sample_ids": [
+      "train:28092",
+      "train:52701",
+      "train:17382",
+      "train:54006",
+      "train:44149",
+      "train:35211",
+      "train:39517",
+      "train:15908"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.288888888888889e-05
+  },
+  {
+    "step": 78,
+    "loss": 0.8040786981582642,
+    "sample_ids": [
+      "train:59365",
+      "train:32974",
+      "train:43325",
+      "train:41187",
+      "train:39195",
+      "train:29266",
+      "train:35078",
+      "train:13935"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.2777777777777777e-05
+  },
+  {
+    "step": 79,
+    "loss": 0.4996795058250427,
+    "sample_ids": [
+      "train:41083",
+      "train:54433",
+      "train:58903",
+      "train:26546",
+      "train:30321",
+      "train:60747",
+      "train:20424",
+      "train:36295"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.2666666666666667e-05
+  },
+  {
+    "step": 80,
+    "loss": 0.7062892913818359,
+    "sample_ids": [
+      "train:19052",
+      "train:54491",
+      "train:1238",
+      "train:1839",
+      "train:41427",
+      "train:65333",
+      "train:46703",
+      "train:43144"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.2555555555555557e-05
+  },
+  {
+    "step": 81,
+    "loss": 0.4216650724411011,
+    "sample_ids": [
+      "train:31448",
+      "train:643",
+      "train:24047",
+      "train:25504",
+      "train:33419",
+      "train:33052",
+      "train:61994",
+      "train:21153"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.2444444444444446e-05
+  },
+  {
+    "step": 82,
+    "loss": 0.4839171767234802,
+    "sample_ids": [
+      "train:63512",
+      "train:22398",
+      "train:11723",
+      "train:35891",
+      "train:7641",
+      "train:64360",
+      "train:46456",
+      "train:16411"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.2333333333333334e-05
+  },
+  {
+    "step": 83,
+    "loss": 0.35395118594169617,
+    "sample_ids": [
+      "train:61155",
+      "train:22449",
+      "train:261",
+      "train:62178",
+      "train:13898",
+      "train:20284",
+      "train:57468",
+      "train:53810"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.2222222222222224e-05
+  },
+  {
+    "step": 84,
+    "loss": 0.5284304022789001,
+    "sample_ids": [
+      "train:28668",
+      "train:40108",
+      "train:3242",
+      "train:46694",
+      "train:15838",
+      "train:65163",
+      "train:35115",
+      "train:34553"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.211111111111111e-05
+  },
+  {
+    "step": 85,
+    "loss": 0.4167552590370178,
+    "sample_ids": [
+      "train:13752",
+      "train:52318",
+      "train:66665",
+      "train:12394",
+      "train:3724",
+      "train:30709",
+      "train:34736",
+      "train:29428"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.2e-05
+  },
+  {
+    "step": 86,
+    "loss": 0.2747422158718109,
+    "sample_ids": [
+      "train:7511",
+      "train:30831",
+      "train:65784",
+      "train:38704",
+      "train:28382",
+      "train:46616",
+      "train:66358",
+      "train:46404"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.188888888888889e-05
+  },
+  {
+    "step": 87,
+    "loss": 0.4757362902164459,
+    "sample_ids": [
+      "train:47012",
+      "train:55675",
+      "train:47177",
+      "train:32378",
+      "train:16583",
+      "train:1818",
+      "train:24380",
+      "train:36284"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.177777777777778e-05
+  },
+  {
+    "step": 88,
+    "loss": 0.6300567984580994,
+    "sample_ids": [
+      "train:56762",
+      "train:21261",
+      "train:10003",
+      "train:7359",
+      "train:60197",
+      "train:25753",
+      "train:12669",
+      "train:18174"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.1666666666666668e-05
+  },
+  {
+    "step": 89,
+    "loss": 0.4205434024333954,
+    "sample_ids": [
+      "train:50224",
+      "train:4476",
+      "train:37431",
+      "train:11516",
+      "train:15851",
+      "train:64485",
+      "train:55179",
+      "train:27554"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.1555555555555556e-05
+  },
+  {
+    "step": 90,
+    "loss": 0.3634624481201172,
+    "sample_ids": [
+      "train:56530",
+      "train:29917",
+      "train:7868",
+      "train:16124",
+      "train:3326",
+      "train:41097",
+      "train:60687",
+      "train:60060"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.1444444444444444e-05
+  },
+  {
+    "step": 91,
+    "loss": 0.09269116073846817,
+    "sample_ids": [
+      "train:48422",
+      "train:59760",
+      "train:4914",
+      "train:30475",
+      "train:54772",
+      "train:54609",
+      "train:20170",
+      "train:59221"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.1333333333333334e-05
+  },
+  {
+    "step": 92,
+    "loss": 0.20961526036262512,
+    "sample_ids": [
+      "train:23194",
+      "train:64343",
+      "train:34267",
+      "train:16032",
+      "train:59958",
+      "train:36278",
+      "train:22378",
+      "train:16473"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.1222222222222224e-05
+  },
+  {
+    "step": 93,
+    "loss": 0.08565814793109894,
+    "sample_ids": [
+      "train:3353",
+      "train:12894",
+      "train:39615",
+      "train:33925",
+      "train:65865",
+      "train:58937",
+      "train:23914",
+      "train:66545"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.1111111111111113e-05
+  },
+  {
+    "step": 94,
+    "loss": 0.3136388957500458,
+    "sample_ids": [
+      "train:38392",
+      "train:27513",
+      "train:45484",
+      "train:33570",
+      "train:43312",
+      "train:59973",
+      "train:59774",
+      "train:34415"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.1000000000000001e-05
+  },
+  {
+    "step": 95,
+    "loss": 1.7258081436157227,
+    "sample_ids": [
+      "train:44657",
+      "train:31825",
+      "train:28757",
+      "train:53694",
+      "train:49283",
+      "train:9625",
+      "train:52978",
+      "train:28858"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.088888888888889e-05
+  },
+  {
+    "step": 96,
+    "loss": 0.3170466125011444,
+    "sample_ids": [
+      "train:62393",
+      "train:3011",
+      "train:38146",
+      "train:61525",
+      "train:24710",
+      "train:36144",
+      "train:55631",
+      "train:19468"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.0777777777777778e-05
+  },
+  {
+    "step": 97,
+    "loss": 0.08695385605096817,
+    "sample_ids": [
+      "train:12529",
+      "train:15655",
+      "train:42598",
+      "train:12851",
+      "train:34763",
+      "train:37952",
+      "train:43779",
+      "train:27423"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.0666666666666667e-05
+  },
+  {
+    "step": 98,
+    "loss": 0.5020850896835327,
+    "sample_ids": [
+      "train:1540",
+      "train:6407",
+      "train:3563",
+      "train:10887",
+      "train:672",
+      "train:41284",
+      "train:39802",
+      "train:56915"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.0555555555555557e-05
+  },
+  {
+    "step": 99,
+    "loss": 0.3852679431438446,
+    "sample_ids": [
+      "train:58254",
+      "train:28778",
+      "train:40559",
+      "train:18804",
+      "train:38100",
+      "train:15407",
+      "train:34773",
+      "train:12205"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.0444444444444445e-05
+  },
+  {
+    "step": 100,
+    "loss": 0.1366570144891739,
+    "sample_ids": [
+      "train:13444",
+      "train:2331",
+      "train:41114",
+      "train:49964",
+      "train:55807",
+      "train:17564",
+      "train:46821",
+      "train:22064"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.0333333333333335e-05
+  },
+  {
+    "step": 101,
+    "loss": 0.22876912355422974,
+    "sample_ids": [
+      "train:59985",
+      "train:62769",
+      "train:15503",
+      "train:3868",
+      "train:1852",
+      "train:8336",
+      "train:16926",
+      "train:8241"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.0222222222222223e-05
+  },
+  {
+    "step": 102,
+    "loss": 0.22921164333820343,
+    "sample_ids": [
+      "train:43251",
+      "train:50993",
+      "train:18972",
+      "train:33900",
+      "train:62808",
+      "train:10580",
+      "train:15263",
+      "train:55340"
+    ],
+    "epoch": 2,
+    "learning_rate": 1.0111111111111111e-05
+  },
+  {
+    "step": 103,
+    "loss": 0.39454957842826843,
+    "sample_ids": [
+      "train:15835",
+      "train:52591",
+      "train:65217",
+      "train:32966",
+      "train:45235",
+      "train:67012",
+      "train:54345",
+      "train:7373"
+    ],
+    "epoch": 2,
+    "learning_rate": 1e-05
+  },
+  {
+    "step": 104,
+    "loss": 0.6263702511787415,
+    "sample_ids": [
+      "train:43119",
+      "train:35003",
+      "train:18598",
+      "train:8427",
+      "train:62802",
+      "train:13911",
+      "train:2022",
+      "train:59143"
+    ],
+    "epoch": 2,
+    "learning_rate": 9.88888888888889e-06
+  },
+  {
+    "step": 105,
+    "loss": 0.45227813720703125,
+    "sample_ids": [
+      "train:29628",
+      "train:48862",
+      "train:66897",
+      "train:55130",
+      "train:49093",
+      "train:64162",
+      "train:13205",
+      "train:34926"
+    ],
+    "epoch": 2,
+    "learning_rate": 9.777777777777779e-06
+  },
+  {
+    "step": 106,
+    "loss": 0.7840709090232849,
+    "sample_ids": [
+      "train:45684",
+      "train:16908",
+      "train:62762",
+      "train:43485",
+      "train:64856",
+      "train:43311",
+      "train:23166",
+      "train:12641"
+    ],
+    "epoch": 2,
+    "learning_rate": 9.666666666666667e-06
+  },
+  {
+    "step": 107,
+    "loss": 0.5256165862083435,
+    "sample_ids": [
+      "train:21487",
+      "train:3101",
+      "train:5851",
+      "train:10353",
+      "train:44890",
+      "train:32526",
+      "train:22619",
+      "train:23992"
+    ],
+    "epoch": 2,
+    "learning_rate": 9.555555555555556e-06
+  },
+  {
+    "step": 108,
+    "loss": 0.2104475498199463,
+    "sample_ids": [
+      "train:55752",
+      "train:35197",
+      "train:20747",
+      "train:7553",
+      "train:20234",
+      "train:51171",
+      "train:39668",
+      "train:24596"
+    ],
+    "epoch": 2,
+    "learning_rate": 9.444444444444445e-06
+  },
+  {
+    "step": 109,
+    "loss": 0.1345238834619522,
+    "sample_ids": [
+      "train:22384",
+      "train:63183",
+      "train:21022",
+      "train:40897",
+      "train:10819",
+      "train:16554",
+      "train:42735",
+      "train:55045"
+    ],
+    "epoch": 2,
+    "learning_rate": 9.333333333333334e-06
+  },
+  {
+    "step": 110,
+    "loss": 0.44382208585739136,
+    "sample_ids": [
+      "train:34565",
+      "train:45888",
+      "train:66369",
+      "train:18051",
+      "train:36887",
+      "train:28106",
+      "train:3774",
+      "train:19183"
+    ],
+    "epoch": 2,
+    "learning_rate": 9.222222222222224e-06
+  },
+  {
+    "step": 111,
+    "loss": 0.6342298984527588,
+    "sample_ids": [
+      "train:38584",
+      "train:24732",
+      "train:51014",
+      "train:55763",
+      "train:10309",
+      "train:53520",
+      "train:15613",
+      "train:30005"
+    ],
+    "epoch": 2,
+    "learning_rate": 9.111111111111112e-06
+  },
+  {
+    "step": 112,
+    "loss": 0.8908979892730713,
+    "sample_ids": [
+      "train:25623",
+      "train:41244",
+      "train:15446",
+      "train:53954",
+      "train:35263",
+      "train:62382",
+      "train:46657",
+      "train:58272"
+    ],
+    "epoch": 2,
+    "learning_rate": 9e-06
+  },
+  {
+    "step": 113,
+    "loss": 1.054661750793457,
+    "sample_ids": [
+      "train:34578",
+      "train:57815",
+      "train:52064",
+      "train:1495",
+      "train:67233",
+      "train:65701",
+      "train:4916",
+      "train:20715"
+    ],
+    "epoch": 2,
+    "learning_rate": 8.888888888888888e-06
+  },
+  {
+    "step": 114,
+    "loss": 0.3066767156124115,
+    "sample_ids": [
+      "train:57154",
+      "train:46745",
+      "train:60806",
+      "train:67316",
+      "train:18466",
+      "train:35757",
+      "train:38019",
+      "train:17117"
+    ],
+    "epoch": 2,
+    "learning_rate": 8.777777777777778e-06
+  },
+  {
+    "step": 115,
+    "loss": 0.7255347371101379,
+    "sample_ids": [
+      "train:49116",
+      "train:37705",
+      "train:44095",
+      "train:34924",
+      "train:28",
+      "train:41504",
+      "train:47176",
+      "train:51114"
+    ],
+    "epoch": 2,
+    "learning_rate": 8.666666666666668e-06
+  },
+  {
+    "step": 116,
+    "loss": 0.25880488753318787,
+    "sample_ids": [
+      "train:47650",
+      "train:38626",
+      "train:59873",
+      "train:50020",
+      "train:4406",
+      "train:54275",
+      "train:13452",
+      "train:55397"
+    ],
+    "epoch": 2,
+    "learning_rate": 8.555555555555556e-06
+  },
+  {
+    "step": 117,
+    "loss": 0.16105270385742188,
+    "sample_ids": [
+      "train:62916",
+      "train:38465",
+      "train:66684",
+      "train:19357",
+      "train:11066",
+      "train:49438",
+      "train:26342",
+      "train:39965"
+    ],
+    "epoch": 2,
+    "learning_rate": 8.444444444444446e-06
+  },
+  {
+    "step": 118,
+    "loss": 0.17349515855312347,
+    "sample_ids": [
+      "train:56283",
+      "train:19640",
+      "train:14377",
+      "train:62136",
+      "train:31366",
+      "train:20987",
+      "train:52017",
+      "train:53911"
+    ],
+    "epoch": 2,
+    "learning_rate": 8.333333333333334e-06
+  },
+  {
+    "step": 119,
+    "loss": 0.20030689239501953,
+    "sample_ids": [
+      "train:23501",
+      "train:27902",
+      "train:20546",
+      "train:24313",
+      "train:27049",
+      "train:5929",
+      "train:9048",
+      "train:15992"
+    ],
+    "epoch": 2,
+    "learning_rate": 8.222222222222222e-06
+  },
+  {
+    "step": 120,
+    "loss": 0.45332783460617065,
+    "sample_ids": [
+      "train:28818",
+      "train:44400",
+      "train:41254",
+      "train:43726",
+      "train:17740",
+      "train:5451",
+      "train:332",
+      "train:40919"
+    ],
+    "epoch": 2,
+    "learning_rate": 8.111111111111112e-06
+  },
+  {
+    "step": 121,
+    "loss": 0.4108678698539734,
+    "sample_ids": [
+      "train:26193",
+      "train:2175",
+      "train:64262",
+      "train:61302",
+      "train:48345",
+      "train:46130",
+      "train:63296",
+      "train:65372"
+    ],
+    "epoch": 2,
+    "learning_rate": 8.000000000000001e-06
+  },
+  {
+    "step": 122,
+    "loss": 0.3086869418621063,
+    "sample_ids": [
+      "train:37649",
+      "train:40687",
+      "train:15295",
+      "train:9585",
+      "train:5853",
+      "train:25781",
+      "train:25879",
+      "train:11886"
+    ],
+    "epoch": 2,
+    "learning_rate": 7.88888888888889e-06
+  },
+  {
+    "step": 123,
+    "loss": 0.7070382237434387,
+    "sample_ids": [
+      "train:47069",
+      "train:48513",
+      "train:12639",
+      "train:38257",
+      "train:42767",
+      "train:50345",
+      "train:18082",
+      "train:40621"
+    ],
+    "epoch": 2,
+    "learning_rate": 7.77777777777778e-06
+  },
+  {
+    "step": 124,
+    "loss": 0.21543201804161072,
+    "sample_ids": [
+      "train:53700",
+      "train:51547",
+      "train:48234",
+      "train:41947",
+      "train:12080",
+      "train:49040",
+      "train:28336",
+      "train:41796"
+    ],
+    "epoch": 2,
+    "learning_rate": 7.666666666666667e-06
+  },
+  {
+    "step": 125,
+    "loss": 0.7799906730651855,
+    "sample_ids": [
+      "train:1378",
+      "train:12303",
+      "train:22671",
+      "train:17676",
+      "train:41875",
+      "train:66154",
+      "train:49883",
+      "train:28263"
+    ],
+    "epoch": 2,
+    "learning_rate": 7.555555555555556e-06
+  },
+  {
+    "step": 126,
+    "loss": 0.45354777574539185,
+    "sample_ids": [
+      "train:30582",
+      "train:4339",
+      "train:696",
+      "train:2656",
+      "train:45097",
+      "train:18666",
+      "train:11211",
+      "train:24628"
+    ],
+    "epoch": 2,
+    "learning_rate": 7.444444444444445e-06
+  },
+  {
+    "step": 127,
+    "loss": 0.37392282485961914,
+    "sample_ids": [
+      "train:40201",
+      "train:57244",
+      "train:52186",
+      "train:22723",
+      "train:40501",
+      "train:8377",
+      "train:14514",
+      "train:52307"
+    ],
+    "epoch": 2,
+    "learning_rate": 7.333333333333333e-06
+  },
+  {
+    "step": 128,
+    "loss": 0.28365060687065125,
+    "sample_ids": [
+      "train:20214",
+      "train:3380",
+      "train:16152",
+      "train:34093",
+      "train:12452",
+      "train:9110",
+      "train:64643",
+      "train:63644"
+    ],
+    "epoch": 2,
+    "learning_rate": 7.222222222222223e-06
+  },
+  {
+    "step": 129,
+    "loss": 0.316295862197876,
+    "sample_ids": [
+      "train:59973",
+      "train:30005",
+      "train:8427",
+      "train:14514",
+      "train:52064",
+      "train:15263",
+      "train:41796",
+      "train:40501"
+    ],
+    "epoch": 3,
+    "learning_rate": 7.111111111111112e-06
+  },
+  {
+    "step": 130,
+    "loss": 0.1481744349002838,
+    "sample_ids": [
+      "train:4914",
+      "train:4982",
+      "train:1495",
+      "train:22449",
+      "train:5853",
+      "train:54333",
+      "train:13898",
+      "train:38626"
+    ],
+    "epoch": 3,
+    "learning_rate": 7e-06
+  },
+  {
+    "step": 131,
+    "loss": 0.3590410053730011,
+    "sample_ids": [
+      "train:15908",
+      "train:43119",
+      "train:25753",
+      "train:12394",
+      "train:4339",
+      "train:3062",
+      "train:59774",
+      "train:37696"
+    ],
+    "epoch": 3,
+    "learning_rate": 6.88888888888889e-06
+  },
+  {
+    "step": 132,
+    "loss": 0.13799631595611572,
+    "sample_ids": [
+      "train:37431",
+      "train:3774",
+      "train:32484",
+      "train:3011",
+      "train:63551",
+      "train:7511",
+      "train:46130",
+      "train:39965"
+    ],
+    "epoch": 3,
+    "learning_rate": 6.777777777777779e-06
+  },
+  {
+    "step": 133,
+    "loss": 0.09370110183954239,
+    "sample_ids": [
+      "train:10003",
+      "train:12639",
+      "train:9110",
+      "train:27423",
+      "train:5929",
+      "train:53911",
+      "train:34924",
+      "train:63183"
+    ],
+    "epoch": 3,
+    "learning_rate": 6.666666666666667e-06
+  },
+  {
+    "step": 134,
+    "loss": 0.26687613129615784,
+    "sample_ids": [
+      "train:65329",
+      "train:66369",
+      "train:60806",
+      "train:46456",
+      "train:43251",
+      "train:3724",
+      "train:47650",
+      "train:9048"
+    ],
+    "epoch": 3,
+    "learning_rate": 6.555555555555556e-06
+  },
+  {
+    "step": 135,
+    "loss": 0.28812122344970703,
+    "sample_ids": [
+      "train:54006",
+      "train:30709",
+      "train:12894",
+      "train:1852",
+      "train:62178",
+      "train:42735",
+      "train:53954",
+      "train:38288"
+    ],
+    "epoch": 3,
+    "learning_rate": 6.444444444444445e-06
+  },
+  {
+    "step": 136,
+    "loss": 0.21478867530822754,
+    "sample_ids": [
+      "train:17117",
+      "train:65372",
+      "train:22897",
+      "train:20987",
+      "train:25504",
+      "train:22064",
+      "train:64343",
+      "train:55675"
+    ],
+    "epoch": 3,
+    "learning_rate": 6.333333333333333e-06
+  },
+  {
+    "step": 137,
+    "loss": 0.259093701839447,
+    "sample_ids": [
+      "train:34415",
+      "train:44616",
+      "train:35078",
+      "train:39195",
+      "train:4406",
+      "train:49883",
+      "train:58903",
+      "train:45484"
+    ],
+    "epoch": 3,
+    "learning_rate": 6.222222222222223e-06
+  },
+  {
+    "step": 138,
+    "loss": 0.09830479323863983,
+    "sample_ids": [
+      "train:27049",
+      "train:34093",
+      "train:20284",
+      "train:55852",
+      "train:54491",
+      "train:36295",
+      "train:59873",
+      "train:15503"
+    ],
+    "epoch": 3,
+    "learning_rate": 6.111111111111112e-06
+  },
+  {
+    "step": 139,
+    "loss": 0.47066569328308105,
+    "sample_ids": [
+      "train:10353",
+      "train:60433",
+      "train:12452",
+      "train:11066",
+      "train:7553",
+      "train:3868",
+      "train:28092",
+      "train:14758"
+    ],
+    "epoch": 3,
+    "learning_rate": 6e-06
+  },
+  {
+    "step": 140,
+    "loss": 0.3476891815662384,
+    "sample_ids": [
+      "train:19771",
+      "train:43311",
+      "train:55179",
+      "train:12205",
+      "train:61994",
+      "train:58272",
+      "train:42598",
+      "train:35003"
+    ],
+    "epoch": 3,
+    "learning_rate": 5.88888888888889e-06
+  },
+  {
+    "step": 141,
+    "loss": 0.18857982754707336,
+    "sample_ids": [
+      "train:20234",
+      "train:40919",
+      "train:54345",
+      "train:65163",
+      "train:55130",
+      "train:12669",
+      "train:39668",
+      "train:31825"
+    ],
+    "epoch": 3,
+    "learning_rate": 5.777777777777778e-06
+  },
+  {
+    "step": 142,
+    "loss": 0.4107952415943146,
+    "sample_ids": [
+      "train:643",
+      "train:31448",
+      "train:46745",
+      "train:15655",
+      "train:11723",
+      "train:49328",
+      "train:53694",
+      "train:23992"
+    ],
+    "epoch": 3,
+    "learning_rate": 5.666666666666667e-06
+  },
+  {
+    "step": 143,
+    "loss": 0.08676473051309586,
+    "sample_ids": [
+      "train:30475",
+      "train:39517",
+      "train:50020",
+      "train:66665",
+      "train:65865",
+      "train:13205",
+      "train:45586",
+      "train:38392"
+    ],
+    "epoch": 3,
+    "learning_rate": 5.555555555555557e-06
+  },
+  {
+    "step": 144,
+    "loss": 0.0830034464597702,
+    "sample_ids": [
+      "train:57244",
+      "train:42296",
+      "train:33052",
+      "train:35211",
+      "train:59365",
+      "train:62136",
+      "train:55752",
+      "train:52831"
+    ],
+    "epoch": 3,
+    "learning_rate": 5.444444444444445e-06
+  },
+  {
+    "step": 145,
+    "loss": 0.45997855067253113,
+    "sample_ids": [
+      "train:36144",
+      "train:46321",
+      "train:43779",
+      "train:4476",
+      "train:58254",
+      "train:40321",
+      "train:29917",
+      "train:56762"
+    ],
+    "epoch": 3,
+    "learning_rate": 5.333333333333334e-06
+  },
+  {
+    "step": 146,
+    "loss": 0.12836360931396484,
+    "sample_ids": [
+      "train:34565",
+      "train:66154",
+      "train:34773",
+      "train:7868",
+      "train:60138",
+      "train:45915",
+      "train:46821",
+      "train:15835"
+    ],
+    "epoch": 3,
+    "learning_rate": 5.2222222222222226e-06
+  },
+  {
+    "step": 147,
+    "loss": 0.1722782850265503,
+    "sample_ids": [
+      "train:28458",
+      "train:42809",
+      "train:24732",
+      "train:36278",
+      "train:18082",
+      "train:25623",
+      "train:16908",
+      "train:47177"
+    ],
+    "epoch": 3,
+    "learning_rate": 5.1111111111111115e-06
+  },
+  {
+    "step": 148,
+    "loss": 0.07368312776088715,
+    "sample_ids": [
+      "train:20715",
+      "train:38465",
+      "train:54433",
+      "train:55397",
+      "train:10580",
+      "train:34763",
+      "train:11211",
+      "train:47069"
+    ],
+    "epoch": 3,
+    "learning_rate": 5e-06
+  },
+  {
+    "step": 149,
+    "loss": 0.09986358135938644,
+    "sample_ids": [
+      "train:11752",
+      "train:45047",
+      "train:16583",
+      "train:13752",
+      "train:35197",
+      "train:16554",
+      "train:25879",
+      "train:11037"
+    ],
+    "epoch": 3,
+    "learning_rate": 4.888888888888889e-06
+  },
+  {
+    "step": 150,
+    "loss": 0.055459391325712204,
+    "sample_ids": [
+      "train:7641",
+      "train:53520",
+      "train:18174",
+      "train:2405",
+      "train:61165",
+      "train:672",
+      "train:40621",
+      "train:19357"
+    ],
+    "epoch": 3,
+    "learning_rate": 4.777777777777778e-06
+  },
+  {
+    "step": 151,
+    "loss": 0.0827341303229332,
+    "sample_ids": [
+      "train:59985",
+      "train:55340",
+      "train:65784",
+      "train:52356",
+      "train:1238",
+      "train:59000",
+      "train:24313",
+      "train:12529"
+    ],
+    "epoch": 3,
+    "learning_rate": 4.666666666666667e-06
+  },
+  {
+    "step": 152,
+    "loss": 0.28405341506004333,
+    "sample_ids": [
+      "train:10887",
+      "train:42767",
+      "train:4981",
+      "train:41083",
+      "train:45684",
+      "train:16926",
+      "train:38146",
+      "train:51114"
+    ],
+    "epoch": 3,
+    "learning_rate": 4.555555555555556e-06
+  },
+  {
+    "step": 153,
+    "loss": 0.0695498064160347,
+    "sample_ids": [
+      "train:40201",
+      "train:59221",
+      "train:48862",
+      "train:63417",
+      "train:1839",
+      "train:34926",
+      "train:63296",
+      "train:64162"
+    ],
+    "epoch": 3,
+    "learning_rate": 4.444444444444444e-06
+  },
+  {
+    "step": 154,
+    "loss": 0.4466077983379364,
+    "sample_ids": [
+      "train:40108",
+      "train:48234",
+      "train:43312",
+      "train:38704",
+      "train:32974",
+      "train:24710",
+      "train:52397",
+      "train:24380"
+    ],
+    "epoch": 3,
+    "learning_rate": 4.333333333333334e-06
+  },
+  {
+    "step": 155,
+    "loss": 0.29235178232192993,
+    "sample_ids": [
+      "train:61302",
+      "train:27513",
+      "train:1215",
+      "train:45097",
+      "train:19183",
+      "train:41504",
+      "train:28336",
+      "train:56283"
+    ],
+    "epoch": 3,
+    "learning_rate": 4.222222222222223e-06
+  },
+  {
+    "step": 156,
+    "loss": 0.3147013187408447,
+    "sample_ids": [
+      "train:50345",
+      "train:56833",
+      "train:2683",
+      "train:22671",
+      "train:7373",
+      "train:53477",
+      "train:60747",
+      "train:60060"
+    ],
+    "epoch": 3,
+    "learning_rate": 4.111111111111111e-06
+  },
+  {
+    "step": 157,
+    "loss": 0.8158297538757324,
+    "sample_ids": [
+      "train:49964",
+      "train:32899",
+      "train:50936",
+      "train:28382",
+      "train:22398",
+      "train:36284",
+      "train:22619",
+      "train:32966"
+    ],
+    "epoch": 3,
+    "learning_rate": 4.000000000000001e-06
+  },
+  {
+    "step": 158,
+    "loss": 0.4082842767238617,
+    "sample_ids": [
+      "train:33925",
+      "train:41244",
+      "train:33900",
+      "train:17382",
+      "train:20546",
+      "train:52268",
+      "train:58937",
+      "train:38019"
+    ],
+    "epoch": 3,
+    "learning_rate": 3.88888888888889e-06
+  },
+  {
+    "step": 159,
+    "loss": 0.05892603099346161,
+    "sample_ids": [
+      "train:33570",
+      "train:18051",
+      "train:26342",
+      "train:27130",
+      "train:24047",
+      "train:59521",
+      "train:21153",
+      "train:57468"
+    ],
+    "epoch": 3,
+    "learning_rate": 3.777777777777778e-06
+  },
+  {
+    "step": 160,
+    "loss": 0.14763090014457703,
+    "sample_ids": [
+      "train:44149",
+      "train:8241",
+      "train:49040",
+      "train:18804",
+      "train:13452",
+      "train:49283",
+      "train:14076",
+      "train:64856"
+    ],
+    "epoch": 3,
+    "learning_rate": 3.6666666666666666e-06
+  },
+  {
+    "step": 161,
+    "loss": 0.475246399641037,
+    "sample_ids": [
+      "train:64262",
+      "train:15295",
+      "train:17740",
+      "train:66897",
+      "train:36762",
+      "train:55763",
+      "train:23194",
+      "train:49438"
+    ],
+    "epoch": 3,
+    "learning_rate": 3.555555555555556e-06
+  },
+  {
+    "step": 162,
+    "loss": 0.39672601222991943,
+    "sample_ids": [
+      "train:11886",
+      "train:3242",
+      "train:34267",
+      "train:5851",
+      "train:17198",
+      "train:10819",
+      "train:12080",
+      "train:48513"
+    ],
+    "epoch": 3,
+    "learning_rate": 3.444444444444445e-06
+  },
+  {
+    "step": 163,
+    "loss": 0.3997187614440918,
+    "sample_ids": [
+      "train:46825",
+      "train:22378",
+      "train:40559",
+      "train:13928",
+      "train:53700",
+      "train:15838",
+      "train:35115",
+      "train:28263"
+    ],
+    "epoch": 3,
+    "learning_rate": 3.3333333333333333e-06
+  },
+  {
+    "step": 164,
+    "loss": 0.07149161398410797,
+    "sample_ids": [
+      "train:55807",
+      "train:44095",
+      "train:33691",
+      "train:696",
+      "train:9625",
+      "train:38100",
+      "train:1505",
+      "train:16032"
+    ],
+    "epoch": 3,
+    "learning_rate": 3.2222222222222227e-06
+  },
+  {
+    "step": 165,
+    "loss": 0.3486645817756653,
+    "sample_ids": [
+      "train:32378",
+      "train:44890",
+      "train:38920",
+      "train:20156",
+      "train:21022",
+      "train:50224",
+      "train:66358",
+      "train:3563"
+    ],
+    "epoch": 3,
+    "learning_rate": 3.1111111111111116e-06
+  },
+  {
+    "step": 166,
+    "loss": 0.06425618380308151,
+    "sample_ids": [
+      "train:35140",
+      "train:50993",
+      "train:15992",
+      "train:43478",
+      "train:261",
+      "train:62393",
+      "train:2331",
+      "train:37952"
+    ],
+    "epoch": 3,
+    "learning_rate": 3e-06
+  },
+  {
+    "step": 167,
+    "loss": 0.4112735092639923,
+    "sample_ids": [
+      "train:63512",
+      "train:4916",
+      "train:42960",
+      "train:8377",
+      "train:62382",
+      "train:38257",
+      "train:66684",
+      "train:40897"
+    ],
+    "epoch": 3,
+    "learning_rate": 2.888888888888889e-06
+  },
+  {
+    "step": 168,
+    "loss": 0.11271340399980545,
+    "sample_ids": [
+      "train:10309",
+      "train:44657",
+      "train:1540",
+      "train:46657",
+      "train:41875",
+      "train:28",
+      "train:51171",
+      "train:1493"
+    ],
+    "epoch": 3,
+    "learning_rate": 2.7777777777777783e-06
+  },
+  {
+    "step": 169,
+    "loss": 0.06344275176525116,
+    "sample_ids": [
+      "train:43144",
+      "train:56530",
+      "train:7920",
+      "train:30831",
+      "train:15742",
+      "train:59917",
+      "train:21487",
+      "train:43485"
+    ],
+    "epoch": 3,
+    "learning_rate": 2.666666666666667e-06
+  },
+  {
+    "step": 170,
+    "loss": 0.06759792566299438,
+    "sample_ids": [
+      "train:11516",
+      "train:62808",
+      "train:20424",
+      "train:13298",
+      "train:34553",
+      "train:64360",
+      "train:65701",
+      "train:52701"
+    ],
+    "epoch": 3,
+    "learning_rate": 2.5555555555555557e-06
+  },
+  {
+    "step": 171,
+    "loss": 0.44936829805374146,
+    "sample_ids": [
+      "train:60039",
+      "train:51014",
+      "train:48422",
+      "train:22384",
+      "train:3326",
+      "train:52318",
+      "train:62762",
+      "train:26546"
+    ],
+    "epoch": 3,
+    "learning_rate": 2.4444444444444447e-06
+  },
+  {
+    "step": 172,
+    "loss": 0.09067945927381516,
+    "sample_ids": [
+      "train:48345",
+      "train:60197",
+      "train:41947",
+      "train:35891",
+      "train:41615",
+      "train:17564",
+      "train:62916",
+      "train:34530"
+    ],
+    "epoch": 3,
+    "learning_rate": 2.3333333333333336e-06
+  },
+  {
+    "step": 173,
+    "loss": 0.15847685933113098,
+    "sample_ids": [
+      "train:57890",
+      "train:29076",
+      "train:67316",
+      "train:49093",
+      "train:61675",
+      "train:23914",
+      "train:18666",
+      "train:45235"
+    ],
+    "epoch": 3,
+    "learning_rate": 2.222222222222222e-06
+  },
+  {
+    "step": 174,
+    "loss": 0.08890578150749207,
+    "sample_ids": [
+      "train:39802",
+      "train:15613",
+      "train:7359",
+      "train:52017",
+      "train:30582",
+      "train:24596",
+      "train:24536",
+      "train:59760"
+    ],
+    "epoch": 3,
+    "learning_rate": 2.1111111111111114e-06
+  },
+  {
+    "step": 175,
+    "loss": 0.07263146340847015,
+    "sample_ids": [
+      "train:52684",
+      "train:23501",
+      "train:61525",
+      "train:20747",
+      "train:18972",
+      "train:14377",
+      "train:29219",
+      "train:57154"
+    ],
+    "epoch": 3,
+    "learning_rate": 2.0000000000000003e-06
+  },
+  {
+    "step": 176,
+    "loss": 0.6909465193748474,
+    "sample_ids": [
+      "train:19052",
+      "train:54759",
+      "train:28818",
+      "train:16411",
+      "train:45568",
+      "train:6733",
+      "train:15446",
+      "train:28668"
+    ],
+    "epoch": 3,
+    "learning_rate": 1.888888888888889e-06
+  },
+  {
+    "step": 177,
+    "loss": 0.08886270970106125,
+    "sample_ids": [
+      "train:49116",
+      "train:59143",
+      "train:56701",
+      "train:21261",
+      "train:18598",
+      "train:47012",
+      "train:41097",
+      "train:46404"
+    ],
+    "epoch": 3,
+    "learning_rate": 1.777777777777778e-06
+  },
+  {
+    "step": 178,
+    "loss": 0.06938682496547699,
+    "sample_ids": [
+      "train:29428",
+      "train:55631",
+      "train:12641",
+      "train:41235",
+      "train:41427",
+      "train:15851",
+      "train:1818",
+      "train:43325"
+    ],
+    "epoch": 3,
+    "learning_rate": 1.6666666666666667e-06
+  },
+  {
+    "step": 179,
+    "loss": 0.40513965487480164,
+    "sample_ids": [
+      "train:54609",
+      "train:34578",
+      "train:29266",
+      "train:59958",
+      "train:46703",
+      "train:39615",
+      "train:65221",
+      "train:52307"
+    ],
+    "epoch": 3,
+    "learning_rate": 1.5555555555555558e-06
+  },
+  {
+    "step": 180,
+    "loss": 0.035835668444633484,
+    "sample_ids": [
+      "train:41284",
+      "train:2175",
+      "train:60687",
+      "train:31366",
+      "train:16152",
+      "train:6316",
+      "train:24874",
+      "train:54772"
+    ],
+    "epoch": 3,
+    "learning_rate": 1.4444444444444445e-06
+  },
+  {
+    "step": 181,
+    "loss": 0.4251435399055481,
+    "sample_ids": [
+      "train:51547",
+      "train:8336",
+      "train:21249",
+      "train:62769",
+      "train:16124",
+      "train:25781",
+      "train:34191",
+      "train:28858"
+    ],
+    "epoch": 3,
+    "learning_rate": 1.3333333333333334e-06
+  },
+  {
+    "step": 182,
+    "loss": 0.07065015286207199,
+    "sample_ids": [
+      "train:28778",
+      "train:46098",
+      "train:26193",
+      "train:41114",
+      "train:19640",
+      "train:52186",
+      "train:23543",
+      "train:1378"
+    ],
+    "epoch": 3,
+    "learning_rate": 1.2222222222222223e-06
+  },
+  {
+    "step": 183,
+    "loss": 0.12064754962921143,
+    "sample_ids": [
+      "train:54275",
+      "train:17676",
+      "train:46616",
+      "train:35150",
+      "train:23166",
+      "train:2846",
+      "train:61155",
+      "train:15407"
+    ],
+    "epoch": 3,
+    "learning_rate": 1.111111111111111e-06
+  },
+  {
+    "step": 184,
+    "loss": 0.4680422246456146,
+    "sample_ids": [
+      "train:65217",
+      "train:16473",
+      "train:60643",
+      "train:28757",
+      "train:64839",
+      "train:47176",
+      "train:42701",
+      "train:4891"
+    ],
+    "epoch": 3,
+    "learning_rate": 1.0000000000000002e-06
+  },
+  {
+    "step": 185,
+    "loss": 0.08145909756422043,
+    "sample_ids": [
+      "train:43726",
+      "train:3101",
+      "train:6407",
+      "train:13935",
+      "train:38584",
+      "train:12851",
+      "train:28106",
+      "train:63644"
+    ],
+    "epoch": 3,
+    "learning_rate": 8.88888888888889e-07
+  },
+  {
+    "step": 186,
+    "loss": 0.12479821592569351,
+    "sample_ids": [
+      "train:41254",
+      "train:36887",
+      "train:16722",
+      "train:52978",
+      "train:9585",
+      "train:67233",
+      "train:67012",
+      "train:332"
+    ],
+    "epoch": 3,
+    "learning_rate": 7.777777777777779e-07
+  },
+  {
+    "step": 187,
+    "loss": 0.06141235679388046,
+    "sample_ids": [
+      "train:26056",
+      "train:52591",
+      "train:41187",
+      "train:27902",
+      "train:44400",
+      "train:18466",
+      "train:33419",
+      "train:64485"
+    ],
+    "epoch": 3,
+    "learning_rate": 6.666666666666667e-07
+  },
+  {
+    "step": 188,
+    "loss": 0.5529428720474243,
+    "sample_ids": [
+      "train:32526",
+      "train:30321",
+      "train:67085",
+      "train:22723",
+      "train:57815",
+      "train:20170",
+      "train:66545",
+      "train:53810"
+    ],
+    "epoch": 3,
+    "learning_rate": 5.555555555555555e-07
+  },
+  {
+    "step": 189,
+    "loss": 0.22561772167682648,
+    "sample_ids": [
+      "train:63191",
+      "train:40687",
+      "train:27554",
+      "train:66404",
+      "train:65333",
+      "train:19468",
+      "train:13444",
+      "train:46158"
+    ],
+    "epoch": 3,
+    "learning_rate": 4.444444444444445e-07
+  },
+  {
+    "step": 190,
+    "loss": 0.5951991081237793,
+    "sample_ids": [
+      "train:61609",
+      "train:29628",
+      "train:20214",
+      "train:37705",
+      "train:62802",
+      "train:12303",
+      "train:5451",
+      "train:55045"
+    ],
+    "epoch": 3,
+    "learning_rate": 3.3333333333333335e-07
+  },
+  {
+    "step": 191,
+    "loss": 0.15463581681251526,
+    "sample_ids": [
+      "train:2022",
+      "train:34736",
+      "train:56915",
+      "train:46694",
+      "train:51032",
+      "train:35263",
+      "train:64643",
+      "train:35757"
+    ],
+    "epoch": 3,
+    "learning_rate": 2.2222222222222224e-07
+  },
+  {
+    "step": 192,
+    "loss": 0.10115717351436615,
+    "sample_ids": [
+      "train:37649",
+      "train:3380",
+      "train:13911",
+      "train:16080",
+      "train:45888",
+      "train:3353",
+      "train:2656",
+      "train:24628"
+    ],
+    "epoch": 3,
+    "learning_rate": 1.1111111111111112e-07
+  }
+]

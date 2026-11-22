@@ -1,0 +1,14 @@
+{
+  "url": "https://github.com/sushi132412312/miae01-paper-replication/pull/6",
+  "number": 6,
+  "title": "[2260032070 郑子俊] 实现按轮评估、最佳权重回读和三种子复算",
+  "state": "open",
+  "merged": false,
+  "base": "main",
+  "base_sha": "69743a591879d26228380ea540dbe4b886fcd0e6",
+  "head": "week03/epoch-workflow-20261122",
+  "head_sha": "7fcffbb6aa7170a93692abf8a40417ee56f56722",
+  "head_repo_full_name": "sushi132412312/miae01-paper-replication",
+  "commits": 1,
+  "changed_files": 163
+}

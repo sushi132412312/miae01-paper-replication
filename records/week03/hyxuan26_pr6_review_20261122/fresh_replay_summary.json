@@ -1,0 +1,151 @@
+{
+  "runs": [
+    {
+      "run": "flips0_ft_seed42",
+      "epochs_correct": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "validation_rows": 6,
+      "weights_sha256": "c90be583b91d0283ce0c6b3cedd0d3926d1d6ca175335b7380d5ef37e9378036",
+      "csv_sha256": "d49e577c6ad3d47f9da8c060b9777e5022324a85ea2e47ce15400c0ac0cb8114"
+    },
+    {
+      "run": "flips0_lora_seed42",
+      "epochs_correct": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "validation_rows": 6,
+      "weights_sha256": "9cc2b2f27cc2c4283c59e26240b12a48ff5f491fcf8a71a7a43e1d80fd58c4d1",
+      "csv_sha256": "e370a8aeab9feccf5806c79268e7e627c0bddde56fc621cfda36a13cfee512a7"
+    },
+    {
+      "run": "flips0_ft_seed43",
+      "epochs_correct": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "validation_rows": 6,
+      "weights_sha256": "d9728fc52d6f16ece68000cf08bf2e49a1071f7d733121202f0b096cd0a95357",
+      "csv_sha256": "69cd7f475cc481e68ce9013d91c7f51da19c432db6b87caa856a8b5ff2024885"
+    },
+    {
+      "run": "flips0_lora_seed43",
+      "epochs_correct": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "validation_rows": 6,
+      "weights_sha256": "694a94d695362530d30923842dfed8a71744b8023d2f406be7e34d4558b2afd4",
+      "csv_sha256": "296af757a988b12265ab5f5e735bd6b6e90dc4b3e0d9bcab5e5fd39de347a6c7"
+    },
+    {
+      "run": "flips0_ft_seed44",
+      "epochs_correct": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "validation_rows": 6,
+      "weights_sha256": "a0880fd93a08450c6f2f4c432d2816ca160edd05dc9bf472116ecc1c5307398a",
+      "csv_sha256": "6bfa9fc513a64c8bee7e87e2763124da4a337c1a4d91994b144a57980bb6aad2"
+    },
+    {
+      "run": "flips0_lora_seed44",
+      "epochs_correct": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "validation_rows": 6,
+      "weights_sha256": "a1d2852ee51126cfef3cbc59a30fde719fe81ad333af052c7de890377d4c8b04",
+      "csv_sha256": "f7fbfb7c34c499c619f5bebdfbee1da4576729b542d3436a4c6315a6d3e9ba59"
+    },
+    {
+      "run": "flips2_ft_seed42",
+      "epochs_correct": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "validation_rows": 6,
+      "weights_sha256": "3dfa36bdd4298b7a1f1b622d640b6044783f695b28fb110d3bffbe4e677a35d3",
+      "csv_sha256": "afa948198f7ab3c7517cf0e276f49a565bfee0e9559e938aad5e03b2f4effdda"
+    },
+    {
+      "run": "flips2_lora_seed42",
+      "epochs_correct": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "validation_rows": 6,
+      "weights_sha256": "a009f01cf25003974cb0cf050a3980981ed777ee5af61dbc6e69a19b3d63aeed",
+      "csv_sha256": "7dd413631a452561db3dce7a63ab83a51e5e42ec5f19aae435f1c1d2b813f891"
+    },
+    {
+      "run": "flips2_ft_seed43",
+      "epochs_correct": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "validation_rows": 6,
+      "weights_sha256": "1d9bee4cd2e4a80585f85198a66d2dc0a0ec566868c9f367817905ab336c570a",
+      "csv_sha256": "1fc2b2460bc5f52f974fb2b347674a3c2daa62da38ee42d28692ae6f5e7b32fa"
+    },
+    {
+      "run": "flips2_lora_seed43",
+      "epochs_correct": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "validation_rows": 6,
+      "weights_sha256": "1434fd43a6a61d240a4262c2584464c1fe36a3862a902aa12aa44935fe255dd0",
+      "csv_sha256": "e99b5c4826fff771a31cc1a0e819d7a73fe35c3a60151335c5df45e4b8e01cf1"
+    },
+    {
+      "run": "flips2_ft_seed44",
+      "epochs_correct": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "validation_rows": 6,
+      "weights_sha256": "08a26267d777e51eeccc4dfd356257c92068726235ac9cd0036324ca5b838157",
+      "csv_sha256": "e730ccbd812b4d9f49b7b7a1cb2f9bced5eee1be6e53cea2368ae29e202e6336"
+    },
+    {
+      "run": "flips2_lora_seed44",
+      "epochs_correct": [
+        3,
+        3,
+        3
+      ],
+      "best_epoch": 1,
+      "validation_rows": 6,
+      "weights_sha256": "961b6b71d08d36cceb3f69889aee0a4483f66429ecd2e4140fc8cdb6dcd86971",
+      "csv_sha256": "e135d212d48619bd635fac79a734ab972aa3eb5a77f8e9c4e8599b382812d1b9"
+    }
+  ],
+  "matched_rows": 72,
+  "lora_matched_rows": 36,
+  "all_fields_match": true
+}

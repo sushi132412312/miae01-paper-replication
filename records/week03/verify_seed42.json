@@ -1,0 +1,182 @@
+{
+  "reviewer": "林树辉 2260031586",
+  "date": "2026-11-22",
+  "scope": "seed42 四种运行（clean/noise x ft/lora），每轮 872 条验证",
+  "problems": [],
+  "checks": {
+    "1_epoch_recount": {
+      "clean_ft_seed42": {
+        "method": "ft",
+        "seed": 42,
+        "epochs": [
+          {
+            "epoch": 1,
+            "count": 872,
+            "correct": 726,
+            "percent": 83.25688073394495
+          },
+          {
+            "epoch": 2,
+            "count": 872,
+            "correct": 754,
+            "percent": 86.46788990825688
+          },
+          {
+            "epoch": 3,
+            "count": 872,
+            "correct": 779,
+            "percent": 89.3348623853211
+          }
+        ],
+        "best_epoch": 3,
+        "best_correct": 779,
+        "best_percent": 89.3348623853211,
+        "checkpoint": "epoch-3-step-192",
+        "selection_rule": "best_validation_accuracy_earliest_epoch",
+        "validation_size": 872,
+        "train_selection_sha256": "917106a87d0c296c325041fe2f9a650ff5112b15c5a299433198b40a02ba4119",
+        "validation_selection_sha256": "f051075190a0cb9285507aba0bf4640c822ef0deafa5d1eef0fe895e1f9da172",
+        "steps": 192
+      },
+      "clean_lora_seed42": {
+        "method": "lora",
+        "seed": 42,
+        "epochs": [
+          {
+            "epoch": 1,
+            "count": 872,
+            "correct": 609,
+            "percent": 69.83944954128441
+          },
+          {
+            "epoch": 2,
+            "count": 872,
+            "correct": 771,
+            "percent": 88.41743119266054
+          },
+          {
+            "epoch": 3,
+            "count": 872,
+            "correct": 777,
+            "percent": 89.10550458715596
+          }
+        ],
+        "best_epoch": 3,
+        "best_correct": 777,
+        "best_percent": 89.10550458715596,
+        "checkpoint": "epoch-3-step-192",
+        "selection_rule": "best_validation_accuracy_earliest_epoch",
+        "validation_size": 872,
+        "train_selection_sha256": "917106a87d0c296c325041fe2f9a650ff5112b15c5a299433198b40a02ba4119",
+        "validation_selection_sha256": "f051075190a0cb9285507aba0bf4640c822ef0deafa5d1eef0fe895e1f9da172",
+        "steps": 192
+      },
+      "noise_ft_seed42": {
+        "method": "ft",
+        "seed": 42,
+        "epochs": [
+          {
+            "epoch": 1,
+            "count": 872,
+            "correct": 496,
+            "percent": 56.88073394495413
+          },
+          {
+            "epoch": 2,
+            "count": 872,
+            "correct": 757,
+            "percent": 86.81192660550458
+          },
+          {
+            "epoch": 3,
+            "count": 872,
+            "correct": 759,
+            "percent": 87.04128440366972
+          }
+        ],
+        "best_epoch": 3,
+        "best_correct": 759,
+        "best_percent": 87.04128440366972,
+        "checkpoint": "epoch-3-step-192",
+        "selection_rule": "best_validation_accuracy_earliest_epoch",
+        "validation_size": 872,
+        "train_selection_sha256": "ebc55537f5722369fc21857c06dc8c388de99d48b35313b1a4f948a81da96094",
+        "validation_selection_sha256": "f051075190a0cb9285507aba0bf4640c822ef0deafa5d1eef0fe895e1f9da172",
+        "steps": 192
+      },
+      "noise_lora_seed42": {
+        "method": "lora",
+        "seed": 42,
+        "epochs": [
+          {
+            "epoch": 1,
+            "count": 872,
+            "correct": 444,
+            "percent": 50.91743119266055
+          },
+          {
+            "epoch": 2,
+            "count": 872,
+            "correct": 755,
+            "percent": 86.58256880733946
+          },
+          {
+            "epoch": 3,
+            "count": 872,
+            "correct": 756,
+            "percent": 86.69724770642202
+          }
+        ],
+        "best_epoch": 3,
+        "best_correct": 756,
+        "best_percent": 86.69724770642202,
+        "checkpoint": "epoch-3-step-192",
+        "selection_rule": "best_validation_accuracy_earliest_epoch",
+        "validation_size": 872,
+        "train_selection_sha256": "ebc55537f5722369fc21857c06dc8c388de99d48b35313b1a4f948a81da96094",
+        "validation_selection_sha256": "f051075190a0cb9285507aba0bf4640c822ef0deafa5d1eef0fe895e1f9da172",
+        "steps": 192
+      }
+    },
+    "2_label_flips": {
+      "ft": {
+        "same_sample_ids_and_order": true,
+        "label_diff_count": 51,
+        "expected_flips_from_verified_run": 51
+      },
+      "lora": {
+        "same_sample_ids_and_order": true,
+        "label_diff_count": 51,
+        "expected_flips_from_verified_run": 51
+      }
+    },
+    "3_pairing": {
+      "clean": {
+        "common_backbone_same": true,
+        "classifier_init_same": true,
+        "train_selection_same": true,
+        "validation_selection_same": true,
+        "steps_same": true,
+        "trainable_ft": 124647170,
+        "trainable_lora": 887042,
+        "lora_params": 294912
+      },
+      "noise": {
+        "common_backbone_same": true,
+        "classifier_init_same": true,
+        "train_selection_same": true,
+        "validation_selection_same": true,
+        "steps_same": true,
+        "trainable_ft": 124647170,
+        "trainable_lora": 887042,
+        "lora_params": 294912
+      }
+    }
+  },
+  "consistent": {
+    "epoch_recount_matches": true,
+    "flips_are_51": true,
+    "pairing_ok": true,
+    "summary_rows_match": true
+  }
+}

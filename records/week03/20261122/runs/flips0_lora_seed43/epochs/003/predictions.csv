@@ -1,0 +1,7 @@
+run_id,method,seed,checkpoint,sample_id,gold_label,predicted_label
+flips0_lora_seed43,lora,43,epoch-3-step-12,synthetic-validation:0,0,1
+flips0_lora_seed43,lora,43,epoch-3-step-12,synthetic-validation:1,1,1
+flips0_lora_seed43,lora,43,epoch-3-step-12,synthetic-validation:2,0,1
+flips0_lora_seed43,lora,43,epoch-3-step-12,synthetic-validation:3,1,1
+flips0_lora_seed43,lora,43,epoch-3-step-12,synthetic-validation:4,0,1
+flips0_lora_seed43,lora,43,epoch-3-step-12,synthetic-validation:5,1,1

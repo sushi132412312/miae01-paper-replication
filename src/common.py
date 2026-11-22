@@ -1,6 +1,7 @@
 """通用记录与随机性设置；不在导入时联网或加载模型。"""
 import hashlib
 import json
+import os
 import platform
 import random
 import subprocess
@@ -57,9 +58,10 @@ def execution_context():
         for path in sorted((PROJECT_ROOT / directory).rglob("*")):
             if path.is_file() and path.suffix in (".py", ".json"):
                 code[path.relative_to(PROJECT_ROOT).as_posix()] = hashlib.sha256(path.read_bytes()).hexdigest()
+    operator = os.environ.get("MIAE01_RUN_OPERATOR") or None
     return {
-        "executor": "AI assistant, executed with user authorization",
-        "student_independent_work": False,
+        "executor": operator,
+        "student_independent_work": False if operator == "Codex" else None,
         "recorded_at_utc": datetime.now(timezone.utc).isoformat(),
         "platform": platform.platform(),
         "git_parent_commit": git("rev-parse", "HEAD"),

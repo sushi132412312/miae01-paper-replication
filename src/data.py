@@ -4,6 +4,7 @@ import random
 import re
 
 from .common import json_hash
+from .protocol import uses_epoch_schedule, validate_epoch_schedule
 
 
 def validate_records(records):
@@ -51,22 +52,30 @@ def batch_order(sample_count, train_seed, epochs=1):
 
 
 def validate_real_config(config):
-    if config.get("status") != "approved_engineering_pilot":
+    status = config.get("status")
+    if status not in ("approved_engineering_pilot", "approved_reduced_scale"):
         raise PermissionError("真实模型训练设置尚待组长确认；当前仅允许离线合成自检")
     for key in ("model_revision", "dataset_revision"):
         if not re.fullmatch(r"[0-9a-f]{40}", config.get(key) or ""):
             raise ValueError(f"{key} 必须填写已核验的完整版本 SHA，不能使用浮动 main")
     if config.get("precision") != "float32":
         raise ValueError("此入口当前只验证了 float32；其他精度需另行验证")
-    for key in ("train_size", "validation_size", "batch_size", "max_steps", "max_length", "lora_r"):
+    for key in ("train_size", "validation_size", "batch_size", "max_length", "lora_r"):
         if type(config.get(key)) is not int or config[key] <= 0:
             raise ValueError(f"{key} 必须为正整数")
     if config["max_length"] > 512:
         raise ValueError("RoBERTa-base 的本入口最大文本长度限定为 512")
     if config.get("model_id") != "FacebookAI/roberta-base" or config.get("dataset_id") != "nyu-mll/glue":
         raise ValueError("此入口当前仅针对 RoBERTa-base / GLUE SST-2")
-    if config.get("checkpoint_rule") != "final_step_for_engineering_pilot_only":
-        raise ValueError("当前只支持末步工程试跑；正式最佳轮次选择尚未实现")
+    if status == "approved_reduced_scale":
+        if not uses_epoch_schedule(config):
+            raise ValueError("缩小规模实验需要按轮评估，并按验证准确率选择最佳轮次")
+        validate_epoch_schedule(config)
+    else:
+        if config.get("checkpoint_rule") != "final_step_for_engineering_pilot_only":
+            raise ValueError("工程试跑使用末步检查点")
+        if type(config.get("max_steps")) is not int or config["max_steps"] <= 0:
+            raise ValueError("工程试跑的 max_steps 必须为正整数")
     if config.get("lora_alpha", 0) <= 0 or config.get("weight_decay", -1) < 0:
         raise ValueError("LoRA alpha/weight_decay 无效")
     for method in ("ft", "lora"):
@@ -74,8 +83,27 @@ def validate_real_config(config):
             raise ValueError(f"缺少有效 {method} 学习率")
 
 
+def apply_training_label_flips(selected, manifests, config):
+    if not uses_epoch_schedule(config):
+        return
+    training = selected["train"]
+    count, seed = config["train_label_flips"], config["label_noise_seed"]
+    positions = random.Random(seed).sample(range(len(training)), count)
+    original = manifests["train"]
+    for position in positions:
+        row = training[position]
+        training[position] = {**row, "label": 1 - row["label"]}
+    manifests["train"] = {
+        **original, **manifest_for(training, "train", config["subset_seed"]),
+        "clean_selection_sha256": original["selection_sha256"],
+        "train_label_flips": count,
+        "label_noise_seed": seed,
+        "flipped_sample_ids": sorted(training[position]["sample_id"] for position in positions),
+    }
+
+
 def prepare_sst2(config, cache_dir):
-    """仅在显式确认配置后联网；本次交付未运行此函数。"""
+    """固定划分，记录原始数据版本及实际用于训练的标签。"""
     validate_real_config(config)
     from datasets import load_dataset
     dataset = load_dataset(config["dataset_id"], "sst2", revision=config["dataset_revision"],
@@ -89,6 +117,7 @@ def prepare_sst2(config, cache_dir):
         manifests[split]["dataset_fingerprint"] = dataset[split]._fingerprint
         manifests[split]["dataset_revision"] = config["dataset_revision"]
         manifests[split]["source_split_count"] = len(rows)
+    apply_training_label_flips(selected, manifests, config)
     return selected, manifests
 
 
@@ -104,6 +133,7 @@ def synthetic_data(config):
                          "input_ids": tokens, "attention_mask": [1] * len(tokens)})
         result[split] = rows
         manifests[split] = manifest_for(rows, split, config["subset_seed"])
+    apply_training_label_flips(result, manifests, config)
     return result, manifests
 
 

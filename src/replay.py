@@ -4,11 +4,12 @@ import tempfile
 from pathlib import Path
 
 from .checkpoints import restore_best_weights
-from .common import PROJECT_ROOT, read_json, save_json
+from .common import PROJECT_ROOT, json_hash, read_json, save_json
 from .data import validate_real_config
 from .evaluation import evaluate_model
 from .models import build_model, parameter_report
-from .protocol import uses_epoch_schedule, validate_epoch_schedule
+from .paired import read_manifest, read_verified_selection
+from .protocol import training_steps, uses_epoch_schedule, validate_epoch_schedule
 from .train import load_run_data
 
 
@@ -16,16 +17,22 @@ def replay(folder, device=None, cache_dir=None):
     folder = Path(folder)
     config = read_json(folder / "config.json")
     metrics = read_json(folder / "metrics.json")
-    selection = read_json(folder / "checkpoint_selection.json")
-    initial = read_json(folder / "model_initialization.json")
-    if (not uses_epoch_schedule(config) or selection["best_checkpoint"] != metrics["checkpoint"]
-            or selection["best_epoch"] != metrics["best_epoch"]):
-        raise ValueError("运行配置、最佳轮次和预测检查点不一致")
+    if not uses_epoch_schedule(config):
+        raise ValueError("回读需要按轮训练记录")
     synthetic = config.get("status") == "synthetic_selfcheck"
     if synthetic:
         validate_epoch_schedule(config)
     else:
         validate_real_config(config)
+    protocol = {key: value for key, value in config.items() if key != "train_seed"}
+    if (metrics["protocol_sha256"] != json_hash(protocol) or metrics["seed"] != config["train_seed"]
+            or metrics["steps"] != training_steps(config)):
+        raise ValueError("保存的指标与原训练协议、种子或步数不一致")
+    validation = read_manifest(folder, "validation", config["validation_size"])
+    if validation["selection_sha256"] != metrics["validation_selection_sha256"]:
+        raise ValueError("保存的验证清单与原运行不同")
+    selection = read_verified_selection(folder, config, metrics, validation)
+    initial = read_json(folder / "model_initialization.json")
     device = device or metrics["device"]
     cache_dir = Path(cache_dir or PROJECT_ROOT / "cache")
     data, manifests = load_run_data(config, synthetic, cache_dir)
@@ -33,8 +40,6 @@ def replay(folder, device=None, cache_dir=None):
         raise ValueError("回读时的验证集与原运行不同")
 
     context = {key: metrics[key] for key in ("run_id", "method", "seed", "checkpoint")}
-    if context["seed"] != config["train_seed"]:
-        raise ValueError("运行种子与保存配置不符")
     model = build_model(context["method"], context["seed"], config, synthetic, str(cache_dir))
     original = parameter_report(model)
     if original["common_backbone_sha256"] != initial["common_backbone_sha256"]:

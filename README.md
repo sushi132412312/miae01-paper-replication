@@ -4,11 +4,11 @@
 
 ## 当前阶段
 
-2026-11-22 补齐按轮评估、最佳权重回读、固定标签翻转和三种子配对复算。26 项回归检查通过，12 次本机合成演练完成。正式 SST-2 训练规模和 GPU 资源由组长定稿。
+正式训练已完成。2026-11-22 在单张 V100 上完成原始标签与固定翻转 51 条训练标签两种条件，每种条件均有 FT 和 LoRA 的三个种子，共 12 次真实 RoBERTa-base／SST-2 运行。每次使用 512 条训练、872 条完整验证、3 轮。原始标签的验证准确率为 FT 89.14% ± 0.88 个百分点，LoRA 89.72% ± 0.58 个百分点（均值 ± 样本标准差）。
 
-本周看 [第三周结果与三人交接](docs/week03/README_本周结果_中文.md) 和 [实验协议与运行指南](docs/week03/01_实验协议与运行指南_中文.md)。
+2026-11-28 已补齐并复算三位成员的逐轮证据，表格、图、论文对照及下周分工见 [第四周实验验收](docs/week04/实验收尾_中文.md)。较早的合成检查见 [第三周结果与三人交接](docs/week03/README_本周结果_中文.md)。
 
-上周已在 RTX 4090 完成固定 64 条训练候选、64 条验证、种子 42、每种方法 10 步的真实试跑。FT 与 LoRA 均答对 34/64，全部预测为类别 0。原始指标和局限见 [云端试跑记录](docs/week02/04_云端真实试跑记录_中文.md)，安装与离线检查见 [第二周运行指南](docs/week02/README_运行指南_中文.md)。
+早期 RTX 4090 工程试跑使用固定 64 条训练候选、64 条验证、种子 42、每种方法 10 步。FT 与 LoRA 均答对 34/64，全部预测为类别 0。原始指标和局限见 [云端试跑记录](docs/week02/04_云端真实试跑记录_中文.md)，安装与离线检查见 [第二周运行指南](docs/week02/README_运行指南_中文.md)。
 
 林树辉已提交 [评估模块复核](https://github.com/sushi132412312/miae01-paper-replication/blob/69743a591879d26228380ea540dbe4b886fcd0e6/records/week02/recount_verification/README.md)。黄翊轩的 [LoRA 独立模块 PR #5](https://github.com/sushi132412312/miae01-paper-replication/pull/5) 和本组 [试跑集成 PR #4](https://github.com/sushi132412312/miae01-paper-replication/pull/4) 已合并。
 
@@ -26,7 +26,41 @@
 
 参考版本：c4593f060e6a368d7bb5af5273b8e42810cdef90。第一周检查SST-2脚本、任务主程序、RoBERTa模型接入和LoRA线性层；第二周引入未改动的官方loralib，保留MIT许可证与[来源校验](third_party/loralib_source.json)，另写现代Transformers训练入口，未沿用上游旧版NLU训练栈。
 
-本次真实工程试跑采用RoBERTa-base / SST-2，已获组长确认；老师没有指定必须采用这一格实验。正式训练规模、轮次及扩展设计仍需确定。老师允许声明后的缩小规模，要求至少三个种子、一项扩展、英文最终报告、展示和持续Git周更。
+选择复现论文 Table 2 中的 RoBERTa-base／SST-2，并按附录 Table 9 对照训练设置。课程允许声明后的缩小规模，要求至少三个种子、一项扩展、英文最终报告、展示和持续 Git 周更。正式实跑使用 [项目训练提交 7fcffbb6](https://github.com/sushi132412312/miae01-paper-replication/tree/7fcffbb6aa7170a93692abf8a40417ee56f56722)。包括训练、数据、模型与评估的源文件校验值见 [部署清单](records/week03/seed42_20261122/deployment_manifest.json)，固定模型和数据 revision 见各次 `config.json`。
+
+## 复算和复跑
+
+先在仓库根目录用 Python 3.10 或更新版本复算 12 次真实运行。汇总报告和制图数据位于 [records/week04/20261128](records/week04/20261128)。
+
+~~~bash
+python tools/audit_v100_results.py --output local_runs/verified_v100.json
+~~~
+
+要从模型重新训练，使用匹配 CUDA 12.6 的 NVIDIA GPU 和 Linux conda 环境。实跑依赖详见 [环境记录](records/week03/seed42_20261122/environment_gpu.json)。执行以下命令安装、预检并运行完整矩阵：
+
+~~~bash
+conda create -n miae01-v100 python=3.10.12 pip -y
+conda activate miae01-v100
+python -m pip install "torch==2.7.1+cu126" --index-url https://download.pytorch.org/whl/cu126
+python -m pip install -r records/week03/seed42_20261122/requirements.v100.local.lock.txt
+python -m pip check
+export CUBLAS_WORKSPACE_CONFIG=:4096:8
+export HF_HUB_DISABLE_XET=1
+python tools/check_cloud_environment.py --output local_runs/reproduction_environment.json
+for condition in clean noise; do
+  config="records/week03/seed42_20261122/${condition}_ft_seed42/config.json"
+  for seed in 42 43 44; do
+    for method in ft lora; do
+      run="local_runs/reproduction/${condition}_${method}_seed${seed}"
+      python -m src.train --config "$config" --method "$method" --train-seed "$seed" --device cuda --output "$run" || exit 1
+      python -m src.replay --run "$run" --output "$run/replay.json" || exit 1
+    done
+  done
+done
+python -m src.paired --runs local_runs/reproduction/* --seeds 42 43 44 --output local_runs/reproduction_summary.json
+~~~
+
+首次运行按配置下载固定版本模型与数据。默认 Hugging Face；本次 V100 环境的实际镜像与哈希见 [资源校验](records/week03/seed42_20261122/verified_assets.json)。以 V100 实测为参考，一次训练进程约 62–72 秒，首次设置与下载、权重回读另计。每个目录会生成 `metrics.json`、逐轮和最佳轮次的预测、样本清单、模型权重及回读记录。缓存和权重存于本地运行环境。
 
 ## 第一周源码核对记录
 
@@ -48,6 +82,6 @@ python tools/week01_readonly_audit.py --repo "官方源码所在目录" --part s
 
 ## 后续执行
 
-锁定正式协议后，执行三种子主实验和一项扩展，收集逐例预测、统计汇总及差异分析所需证据。随后整理完整图表、英文报告和展示材料，并在最终检查完成后发布 v1.0。
+使用已验收的实验表、图和原始证据撰写英文报告、整理展示材料并互审。按 [第四周分工](docs/week04/实验收尾_中文.md) 完成最终检查后发布 v1.0。
 
 每条Git提交信息包含实际提交者学号和全名；三位成员分别使用本人账号。现有LICENSE保留；如后续引入上游源码，保留相应原版权和许可证。

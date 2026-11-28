@@ -21,28 +21,9 @@ def read_manifest(folder, split, count):
     return manifest
 
 
-def read_run(folder):
-    folder = Path(folder)
-    config = read_json(folder / "config.json")
-    metrics = read_json(folder / "metrics.json")
-    if not uses_epoch_schedule(config):
-        raise ValueError(f"{folder.name} 不是按轮训练记录")
-    validate_epoch_schedule(config)
-    synthetic = config["status"] == "synthetic_selfcheck"
-    if not synthetic:
-        validate_real_config(config)
-    kind = "synthetic_epoch_rehearsal" if synthetic else "reduced_scale_experiment"
-    protocol = {key: value for key, value in config.items() if key != "train_seed"}
-    train = read_manifest(folder, "train", config["train_size"])
-    validation = read_manifest(folder, "validation", config["validation_size"])
+def read_verified_selection(folder, config, metrics, validation):
+    """按原始逐轮预测复算并验证保存的最佳轮次。"""
     context = {key: metrics[key] for key in ("run_id", "method", "seed")}
-    if (metrics["seed"] != config["train_seed"] or metrics["experiment_kind"] != kind
-            or metrics["protocol_sha256"] != json_hash(protocol)
-            or metrics["train_selection_sha256"] != train["selection_sha256"]
-            or metrics["validation_selection_sha256"] != validation["selection_sha256"]
-            or metrics["steps"] != training_steps(config)):
-        raise ValueError(f"{folder.name} 的配置、指标、样本清单或更新步数不一致")
-
     selection = read_json(folder / "checkpoint_selection.json")
     history = selection["epochs"]
     batches = math.ceil(config["train_size"] / config["batch_size"])
@@ -66,9 +47,34 @@ def read_run(folder):
             or (folder / "predictions.csv").read_text(encoding="utf-8")
             != (folder / best["predictions"]).read_text(encoding="utf-8")):
         raise ValueError(f"{folder.name} 的最佳轮次或逐例预测不符合选择规则")
+    return selection
+
+
+def read_run(folder):
+    folder = Path(folder)
+    config = read_json(folder / "config.json")
+    metrics = read_json(folder / "metrics.json")
+    if not uses_epoch_schedule(config):
+        raise ValueError(f"{folder.name} 不是按轮训练记录")
+    validate_epoch_schedule(config)
+    synthetic = config["status"] == "synthetic_selfcheck"
+    if not synthetic:
+        validate_real_config(config)
+    kind = "synthetic_epoch_rehearsal" if synthetic else "reduced_scale_experiment"
+    protocol = {key: value for key, value in config.items() if key != "train_seed"}
+    train = read_manifest(folder, "train", config["train_size"])
+    validation = read_manifest(folder, "validation", config["validation_size"])
+    if (metrics["seed"] != config["train_seed"] or metrics["experiment_kind"] != kind
+            or metrics["protocol_sha256"] != json_hash(protocol)
+            or metrics["train_selection_sha256"] != train["selection_sha256"]
+            or metrics["validation_selection_sha256"] != validation["selection_sha256"]
+            or metrics["steps"] != training_steps(config)):
+        raise ValueError(f"{folder.name} 的配置、指标、样本清单或更新步数不一致")
+    read_verified_selection(folder, config, metrics, validation)
 
     steps = read_json(folder / "training_steps.json")
     sample_order = [step["sample_ids"] for step in steps]
+    batches = math.ceil(config["train_size"] / config["batch_size"])
     if len(steps) != metrics["steps"] or any(step["step"] != i for i, step in enumerate(steps, start=1)):
         raise ValueError(f"{folder.name} 的训练步次记录缺失或乱序")
     train_ids = sorted(sample["sample_id"] for sample in train["samples"])

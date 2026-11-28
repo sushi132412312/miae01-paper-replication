@@ -102,10 +102,25 @@ def main():
         selection["best_epoch"] = 2 if original == 1 else 1
         save_json(manifest, selection)
         wrong_epoch = rejection(lambda: summarize([copied], seeds), ValueError, "最佳轮次")
+        metrics_path = copied / "metrics.json"
+        metrics = read_json(metrics_path)
+        metrics["best_epoch"] = selection["best_epoch"]
+        save_json(metrics_path, metrics)
+        replay_wrong_epoch = rejection(lambda: replay(copied), ValueError, "最佳轮次")
+        metrics["best_epoch"] = original
+        save_json(metrics_path, metrics)
         selection["best_epoch"] = original
         selection["weights"]["sha256"] = "0" * 64
         save_json(manifest, selection)
         wrong_hash = rejection(lambda: replay(copied), ValueError, "SHA256")
+
+        lora_copy = Path(temporary) / "lo_ra_config_probe"
+        shutil.copytree(folders[1], lora_copy)
+        config_path = lora_copy / "config.json"
+        changed = read_json(config_path)
+        changed["lora_alpha"] *= 2
+        save_json(config_path, changed)
+        replay_wrong_alpha = rejection(lambda: replay(lora_copy), ValueError, "原训练协议")
 
     save_json(output / "paired_summary.json", combined)
     save_json(output / "checkpoint_replay.json", replays)
@@ -118,6 +133,8 @@ def main():
         "duplicate_run_rejection": duplicate,
         "wrong_best_epoch_rejection": wrong_epoch,
         "wrong_weights_sha256_rejection": wrong_hash,
+        "replay_inconsistent_best_epoch_rejection": replay_wrong_epoch,
+        "replay_changed_lora_alpha_rejection": replay_wrong_alpha,
         "later_best_checkpoint_fixture": later_best,
         "execution_context": execution_context(),
     })

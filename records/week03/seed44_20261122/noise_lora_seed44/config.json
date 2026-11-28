@@ -1,0 +1,27 @@
+{
+  "status": "approved_reduced_scale",
+  "purpose": "RoBERTa-base / SST-2 course reduced-scale experiment",
+  "model_id": "FacebookAI/roberta-base",
+  "model_revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+  "dataset_id": "nyu-mll/glue",
+  "dataset_revision": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+  "train_size": 512,
+  "validation_size": 872,
+  "subset_seed": 2026,
+  "train_seed": 44,
+  "max_length": 128,
+  "batch_size": 8,
+  "epochs": 3,
+  "warmup_ratio": 0.06,
+  "lora_r": 8,
+  "lora_alpha": 8,
+  "learning_rates": {
+    "ft": 2e-05,
+    "lora": 0.0005
+  },
+  "weight_decay": 0.1,
+  "precision": "float32",
+  "train_label_flips": 51,
+  "label_noise_seed": 2027,
+  "checkpoint_rule": "best_validation_accuracy_earliest_epoch"
+}

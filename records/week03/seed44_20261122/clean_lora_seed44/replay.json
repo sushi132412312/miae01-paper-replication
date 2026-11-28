@@ -1,0 +1,14 @@
+{
+  "run_id": "clean_lora_seed44",
+  "method": "lora",
+  "seed": 44,
+  "checkpoint": "epoch-3-step-192",
+  "count": 872,
+  "correct": 783,
+  "accuracy": 0.8979357798165137,
+  "accuracy_percent": 89.79357798165138,
+  "best_epoch": 3,
+  "device": "cuda",
+  "verified_weights_sha256": "1e263fb1d1ec0e3c5b2f94b485d45214c7a30143da706a10dc5456a47a9aa997",
+  "all_predictions_match": true
+}
